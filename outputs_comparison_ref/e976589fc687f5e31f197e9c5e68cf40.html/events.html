@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Calendar - Granary Theatre</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="events.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Events Calendar</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Book Tickets</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="news.html">News & Updates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <label for="event-filter">Filter Events:</label>
+            <select id="event-filter">
+                <option value="all">All</option>
+                <option value="performance">Performances</option>
+                <option value="rehearsal">Rehearsals</option>
+                <option value="workshop">Workshops</option>
+            </select>
+        </section>
+
+        <section id="event-list">
+            <!-- Pseudo-data for demonstration -->
+            <div class="event" data-category="performance">
+                <h2>Macbeth</h2>
+                <p>Date: October 31, 2023</p>
+                <p>Description: A haunting performance of Shakespeare's Macbeth.</p>
+            </div>
+            <div class="event" data-category="rehearsal">
+                <h2>Rehearsal: Hamlet</h2>
+                <p>Date: October 25, 2023</p>
+                <p>Description: Rehearsal for the upcoming Hamlet production.</p>
+            </div>
+            <div class="event" data-category="workshop">
+                <h2>Acting Workshop</h2>
+                <p>Date: November 5, 2023</p>
+                <p>Description: Workshop for aspiring actors.</p>
+            </div>
+            <div class="event" data-category="performance">
+                <h2>A Midsummer Night's Dream</h2>
+                <p>Date: November 10, 2023</p>
+                <p>Description: A whimsical performance of Shakespeare's classic.</p>
+            </div>
+            <div class="event" data-category="rehearsal">
+                <h2>Rehearsal: Macbeth</h2>
+                <p>Date: November 3, 2023</p>
+                <p>Description: Final rehearsal for Macbeth.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Granary Theatre, University College Cork</p>
+    </footer>
+</body>
+</html>

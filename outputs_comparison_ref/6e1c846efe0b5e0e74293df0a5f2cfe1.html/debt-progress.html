@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debt Progress Tracker - DebtWise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DebtWise</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    <section class="progress-tracker">
+        <h2>Debt Progress Tracker</h2>
+        <div class="progress-bar">
+            <div class="progress" style="width: 30%;">30%</div>
+        </div>
+        <button onclick="alert('Set your debt reduction goals!')">Set Goals</button>
+        <button onclick="alert('Viewing your progress...')">View Progress</button>
+    </section>
+    <style>
+        .progress-bar {
+            width: 100%;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .progress {
+            height: 30px;
+            background: linear-gradient(90deg, red, green);
+            border-radius: 5px;
+            text-align: center;
+            color: white;
+            line-height: 30px;
+            transition: width 0.5s ease;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiteCraft - E-commerce Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .carousel {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .carousel img {
+            width: 100%;
+        }
+        .product-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .product-card {
+            width: calc(33.333% - 20px);
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-card img {
+            width: 100%;
+        }
+        .product-card .details {
+            padding: 10px;
+            text-align: center;
+        }
+        .product-card .details h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .product-card .details p {
+            font-size: 1em;
+            font-weight: bold;
+        }
+        .product-card .add-to-cart {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: #ff9800;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .product-card .add-to-cart:hover {
+            background-color: #e68900;
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        <img src="../../../../placeholder/placeholder.png" alt="Featured Product">
+        <button>View Details</button>
+    </div>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="../../../../placeholder/placeholder.png" alt="Product Image">
+            <div class="details">
+                <h3>Product 1</h3>
+                <p>$19.99</p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="../../../../placeholder/placeholder.png" alt="Product Image">
+            <div class="details">
+                <h3>Product 2</h3>
+                <p>$29.99</p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="../../../../placeholder/placeholder.png" alt="Product Image">
+            <div class="details">
+                <h3>Product 3</h3>
+                <p>$39.99</p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="../../../../placeholder/placeholder.png" alt="Product Image">
+            <div class="details">
+                <h3>Product 4</h3>
+                <p>$49.99</p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="../../../../placeholder/placeholder.png" alt="Product Image">
+            <div class="details">
+                <h3>Product 5</h3>
+                <p>$59.99</p>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

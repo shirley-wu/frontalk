@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sermon Archive - Alpine Lutheran Church</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sermon Archive</h1>
+    </header>
+    <main>
+        <input type="text" id="sermon-search" placeholder="Search Sermons">
+        <div id="sermon-list">
+            <div class="sermon-card">
+                <h2>The Power of Faith</h2>
+                <p><em>Date: September 10, 2023</em></p>
+                <p>Format: <a href="../../../../placeholder/placeholder.mp4">Video</a> / <a href="../../../../placeholder/placeholder.mp3">Audio</a></p>
+            </div>
+            <div class="sermon-card">
+                <h2>Love and Kindness</h2>
+                <p><em>Date: September 17, 2023</em></p>
+                <p>Format: <a href="../../../../placeholder/placeholder.mp4">Video</a> / <a href="../../../../placeholder/placeholder.mp3">Audio</a></p>
+            </div>
+            <div class="sermon-card">
+                <h2>Walking in Grace</h2>
+                <p><em>Date: September 24, 2023</em></p>
+                <p>Format: <a href="../../../../placeholder/placeholder.mp4">Video</a> / <a href="../../../../placeholder/placeholder.mp3">Audio</a></p>
+            </div>
+            <div class="sermon-card">
+                <h2>Hope in Times of Trouble</h2>
+                <p><em>Date: October 1, 2023</em></p>
+                <p>Format: <a href="../../../../placeholder/placeholder.mp4">Video</a> / <a href="../../../../placeholder/placeholder.mp3">Audio</a></p>
+            </div>
+            <div class="sermon-card">
+                <h2>Community and Unity</h2>
+                <p><em>Date: October 8, 2023</em></p>
+                <p>Format: <a href="../../../../placeholder/placeholder.mp4">Video</a> / <a href="../../../../placeholder/placeholder.mp3">Audio</a></p>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.getElementById('sermon-search').addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            document.querySelectorAll('.sermon-card').forEach(card => {
+                const title = card.querySelector('h2').innerText.toLowerCase();
+                card.style.display = title.includes(query) ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration & Ticketing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Registration & Ticketing</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <form id="registration-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="workshops">Select Workshops</label>
+                <div class="grid-layout">
+                    <div class="workshop-item">
+                        <input type="checkbox" id="workshop1" name="workshop1">
+                        <label for="workshop1">Workshop 1</label>
+                    </div>
+                    <div class="workshop-item">
+                        <input type="checkbox" id="workshop2" name="workshop2">
+                        <label for="workshop2">Workshop 2</label>
+                    </div>
+                    <!-- More workshops -->
+                </div>
+            </div>
+            <button type="submit" class="checkout-btn">Checkout</button>
+        </form>
+    </section>
+</body>
+</html>

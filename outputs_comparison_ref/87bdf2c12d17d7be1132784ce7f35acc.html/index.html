@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birds of the World</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Hero Banner -->
+    <header class="hero-banner">
+        <div class="banner-content">
+            <h1>Birds of the World</h1>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#search" title="Search"><img src="../../../../placeholder/placeholder.png" alt="Search Icon"><span class="tooltip">Search</span></a></li>
+            <li><a href="#range-maps" title="Range Maps"><img src="../../../../placeholder/placeholder.png" alt="Range Maps Icon"><span class="tooltip">Range Maps</span></a></li>
+            <li><a href="#conservation-dashboard" title="Conservation Dashboard"><img src="../../../../placeholder/placeholder.png" alt="Conservation Dashboard Icon"><span class="tooltip">Conservation Dashboard</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Featured Birds -->
+    <section id="featured-birds" class="carousel">
+        <h2>Featured Birds</h2>
+        <div class="carousel-content">
+            <div class="carousel-item">
+                <img src="../../../../placeholder/placeholder.png" alt="Bird Image">
+                <p>Bird 1: Description <a href="bird1.html">Learn More</a></p>
+            </div>
+            <div class="carousel-item">
+                <img src="../../../../placeholder/placeholder.png" alt="Bird Image">
+                <p>Bird 2: Description <a href="bird2.html">Learn More</a></p>
+            </div>
+            <div class="carousel-item">
+                <img src="../../../../placeholder/placeholder.png" alt="Bird Image">
+                <p>Bird 3: Description <a href="bird3.html">Learn More</a></p>
+            </div>
+            <div class="carousel-item">
+                <img src="../../../../placeholder/placeholder.png" alt="Bird Image">
+                <p>Bird 4: Description <a href="bird4.html">Learn More</a></p>
+            </div>
+            <div class="carousel-item">
+                <img src="../../../../placeholder/placeholder.png" alt="Bird Image">
+                <p>Bird 5: Description <a href="bird5.html">Learn More</a></p>
+            </div>
+        </div>
+        <button class="carousel-control prev" onclick="prevFeatured()">&#10094;</button>
+        <button class="carousel-control next" onclick="nextFeatured()">&#10095;</button>
+    </section>
+
+    <!-- Bird of the Month -->
+    <section id="bird-of-the-month">
+        <h2>Bird of the Month</h2>
+        <div class="bird-month-content">
+            <img src="../../../../placeholder/placeholder.png" alt="Bird of the Month Image" class="bird-month-img">
+            <div class="bird-month-info">
+                <h3 class="bird-name">Bird of the Month Name</h3>
+                <p class="bird-overview">This is a brief overview of the bird of the month, highlighting its unique features and habitat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bird Facts -->
+    <section id="bird-facts" class="carousel">
+        <h2>Bird Facts</h2>
+        <div class="carousel-content">
+            <div class="carousel-item" style="background-color: #e0f7fa;">
+                <img src="../../../../placeholder/placeholder.png" alt="Bird Fact Image">
+                <p><span class="icon">&#x1F426;</span> Fact 1: Interesting fact about a bird.</p>
+            </div>
+            <div class="carousel-item" style="background-color: #ffecb3;">
+                <img src="../../../../placeholder/placeholder.png" alt="Bird Fact Image">
+                <p><span class="icon">&#x1F426;</span> Fact 2: Another intriguing bird fact.</p>
+            </div>
+            <div class="carousel-item" style="background-color: #c8e6c9;">
+                <img src="../../../../placeholder/placeholder.png" alt="Bird Fact Image">
+                <p><span class="icon">&#x1F426;</span> Fact 3: Yet another bird-related fact.</p>
+            </div>
+        </div>
+        <button class="carousel-control prev" onclick="prevFact()">&#10094;</button>
+        <button class="carousel-control next" onclick="nextFact()">&#10095;</button>
+    </section>
+
+    <!-- Bird Watching Events -->
+    <section id="bird-watching-events">
+        <h2>Bird Watching Events</h2>
+        <div class="event-filters">
+            <label for="region-filter">Region:</label>
+            <select id="region-filter">
+                <option value="all">All</option>
+                <option value="americas">Americas</option>
+                <option value="europe">Europe</option>
+                <option value="asia">Asia</option>
+                <option value="africa">Africa</option>
+                <option value="oceania">Oceania</option>
+            </select>
+            <label for="date-filter">Date:</label>
+            <input type="date" id="date-filter">
+        </div>
+        <div class="event-list">
+            <div class="event-card" data-region="americas" data-date="2023-12-01">
+                <h3>Bird Watching in the Amazon</h3>
+                <p>Date: December 1, 2023</p>
+                <p>Location: Amazon Rainforest</p>
+                <p>Description: Join us for an exciting bird watching tour in the heart of the Amazon.</p>
+            </div>
+            <div class="event-card" data-region="europe" data-date="2023-11-15">
+                <h3>European Birding Adventure</h3>
+                <p>Date: November 15, 2023</p>
+                <p>Location: Various European Sites</p>
+                <p>Description: Explore the diverse bird species across Europe.</p>
+            </div>
+            <div class="event-card" data-region="asia" data-date="2023-10-20">
+                <h3>Asian Bird Watching Festival</h3>
+                <p>Date: October 20, 2023</p>
+                <p>Location: Southeast Asia</p>
+                <p>Description: Discover the exotic birds of Southeast Asia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section id="search">
+        <h2>Search for Bird Species</h2>
+        <input type="text" id="search-bar" placeholder="Enter bird species or family name..." onfocus="showAdvancedFilters()">
+        <div id="advanced-filters" style="display: none;">
+            <label for="habitat-filter">Habitat Type:</label>
+            <select id="habitat-filter">
+                <option value="all">All</option>
+                <option value="forest">Forest</option>
+                <option value="wetland">Wetland</option>
+                <option value="desert">Desert</option>
+            </select>
+            <label for="region-filter">Region:</label>
+            <select id="region-filter">
+                <option value="all">All</option>
+                <option value="americas">Americas</option>
+                <option value="europe">Europe</option>
+                <option value="asia">Asia</option>
+            </select>
+            <label for="conservation-status-filter">Conservation Status:</label>
+            <select id="conservation-status-filter">
+                <option value="all">All</option>
+                <option value="least-concern">Least Concern</option>
+                <option value="endangered">Endangered</option>
+                <option value="critically-endangered">Critically Endangered</option>
+            </select>
+        </div>
+        <div id="recent-searches">
+            <h3>Recent Searches</h3>
+            <ul>
+                <li><a href="#">Sparrow</a></li>
+                <li><a href="#">Eagle</a></li>
+                <li><a href="#">Parrot</a></li>
+                <li><a href="#">Hummingbird</a></li>
+                <li><a href="#">Penguin</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Range Maps -->
+    <section id="range-maps">
+        <h2>Interactive Range Maps</h2>
+        <p>Explore the geographical distribution of various bird species.</p>
+        <img src="../../../../placeholder/placeholder.png" alt="Range Maps">
+    </section>
+
+    <!-- Conservation Status Dashboard -->
+    <section id="conservation-dashboard">
+        <h2>Conservation Status Dashboard</h2>
+        <p>Insights into the threat levels of different bird species.</p>
+        <div class="pie-chart">
+            <img src="../../../../placeholder/placeholder.png" alt="Conservation Pie Chart">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Birds of the World</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Testimonials</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Photo Gallery</a></li>
+                <li><a href="tips.html">Photography Tips & Tutorials</a></li>
+                <li><a href="shop.html">Online Shop</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="testimonial-carousel">
+            <div class="testimonial">
+                <img src="../../../../placeholder/placeholder.png" alt="Customer Profile">
+                <p><strong>John Doe</strong></p>
+                <p>Amazing photography services that capture moments beautifully!</p>
+            </div>
+            <div class="testimonial">
+                <img src="../../../../placeholder/placeholder.png" alt="Customer Profile">
+                <p><strong>Jane Smith</strong></p>
+                <p>Highly recommend their digital design resources!</p>
+            </div>
+            <div class="testimonial">
+                <img src="../../../../placeholder/placeholder.png" alt="Customer Profile">
+                <p><strong>Emily Johnson</strong></p>
+                <p>Fantastic overlays that enhance my photos perfectly.</p>
+            </div>
+            <div class="testimonial">
+                <img src="../../../../placeholder/placeholder.png" alt="Customer Profile">
+                <p><strong>Michael Brown</strong></p>
+                <p>Great tips and tutorials that are easy to follow.</p>
+            </div>
+            <div class="testimonial">
+                <img src="../../../../placeholder/placeholder.png" alt="Customer Profile">
+                <p><strong>Sarah Wilson</strong></p>
+                <p>The scrapbooking kits are beautiful and versatile.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Lifestyle Photography & Design</p>
+    </footer>
+
+    <script>
+        let currentTestimonial = 0;
+        const testimonials = document.querySelectorAll('.testimonial');
+        
+        function showTestimonial(index) {
+            testimonials.forEach((testimonial, i) => {
+                testimonial.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        function nextTestimonial() {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }
+
+        function prevTestimonial() {
+            currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showTestimonial(currentTestimonial);
+            setInterval(nextTestimonial, 5000);
+
+            document.querySelector('#testimonial-carousel').addEventListener('mouseover', () => {
+                clearInterval(interval);
+            });
+
+            document.querySelector('#testimonial-carousel').addEventListener('mouseout', () => {
+                interval = setInterval(nextTestimonial, 5000);
+            });
+        });
+    </script>
+
+    <style>
+        #testimonial-carousel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px;
+        }
+
+        .testimonial {
+            text-align: center;
+            border: 2px solid #0044cc;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            transition: transform 0.5s ease;
+        }
+
+        .testimonial img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        .testimonial p {
+            margin: 10px 0;
+        }
+
+        .testimonial strong {
+            font-size: 1.2em;
+        }
+    </style>
+</body>
+</html>

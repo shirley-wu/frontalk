@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Explorer</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .hero { background: linear-gradient(45deg, #FF6F61, #6B5B95); color: white; text-align: center; padding: 50px 20px; }
+        .hero h1 { font-size: 3em; margin: 0; }
+        .hero img { width: 50px; vertical-align: middle; animation: rotate 10s linear infinite; }
+        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        nav { background: #333; color: white; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        .content { padding: 20px; }
+        .section { margin-bottom: 40px; }
+        .recent-searches, .favorites { list-style: none; padding: 0; }
+        .recent-searches li, .favorites li { background: #f4f4f4; margin: 5px 0; padding: 10px; border-radius: 5px; }
+        .search-bar { margin-bottom: 20px; }
+        .search-bar input[type="text"] { width: 80%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        .search-bar input[type="submit"] { padding: 10px 20px; border: none; background: #FF6F61; color: white; border-radius: 5px; cursor: pointer; }
+        .word-of-the-day { padding: 20px; border: 2px solid #FF6F61; border-radius: 10px; background: #fff5f5; }
+        .word-of-the-day h2 { margin: 0; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Word Explorer <img src="../../../../placeholder/placeholder.png" alt="Globe Icon"></h1>
+    </div>
+    <nav>
+        <a href="#search">Search</a>
+        <a href="browse.html">Browse Words</a>
+        <a href="translate.html">Translate</a>
+        <a href="#word-of-the-day">Word of the Day</a>
+        <a href="favorites.html">Favorites</a>
+    </nav>
+    <div class="content">
+        <div class="section" id="search">
+            <h2>Search for a Word</h2>
+            <div class="search-bar">
+                <input type="text" placeholder="Enter a word...">
+                <input type="submit" value="Search">
+            </div>
+        </div>
+        <div class="section" id="recent-searches">
+            <h2>Recent Searches</h2>
+            <ul class="recent-searches">
+                <li><a href="word.html">Aberration</a></li>
+                <li><a href="word.html">Euphoria</a></li>
+                <li><a href="word.html">Luminous</a></li>
+                <li><a href="word.html">Serendipity</a></li>
+                <li><a href="word.html">Zephyr</a></li>
+            </ul>
+        </div>
+        <div class="section" id="word-of-the-day">
+            <h2>Word of the Day</h2>
+            <div class="word-of-the-day">
+                <h3><a href="word-of-the-day.html">Ephemeral</a></h3>
+                <p>Definition: Lasting for a very short time.</p>
+                <p>Synonyms: Transient, Fleeting, Short-lived</p>
+                <p>Translations: <br>
+                    Spanish: Efímero <br>
+                    German: Flüchtig <br>
+                    French: Éphémère
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

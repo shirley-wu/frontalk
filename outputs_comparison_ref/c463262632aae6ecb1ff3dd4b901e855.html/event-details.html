@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details - EventTickets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="my-account.html">My Account</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Event Details</h2>
+        <section class="event-info">
+            <h3>Event Name</h3>
+            <p>Date: 2023-11-01</p>
+            <p>Venue: Venue Name</p>
+            <img src="../../../../placeholder/placeholder.png" alt="Event Image">
+            <button onclick="location.href='cart.html'">Buy Tickets</button>
+            <button class="gift-button" onclick="showGiftForm()">Gift Tickets</button>
+            <div id="giftForm" style="display:none;">
+                <h4>Gift Tickets</h4>
+                <input type="email" placeholder="Recipient's Email" required>
+                <textarea placeholder="Personal Message"></textarea>
+                <button onclick="sendGift()">Send Gift</button>
+            </div>
+        </section>
+        <section class="reviews">
+            <h3>User Reviews</h3>
+            <div class="review">
+                <div class="stars">⭐⭐⭐⭐</div>
+                <p>Great event! Had a wonderful time.</p>
+            </div>
+            <div class="review">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>Amazing performance!</p>
+            </div>
+            <div class="review">
+                <div class="stars">⭐⭐⭐⭐</div>
+                <p>Enjoyed it a lot!</p>
+            </div>
+            <button onclick="location.href='submit-review.html'">Submit Your Review</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 EventTickets</p>
+    </footer>
+    <script>
+        function showGiftForm() {
+            const giftForm = document.getElementById('giftForm');
+            giftForm.style.display = 'block';
+        }
+
+        function sendGift() {
+            alert('Gift sent successfully!');
+        }
+    </script>
+</body>
+</html>

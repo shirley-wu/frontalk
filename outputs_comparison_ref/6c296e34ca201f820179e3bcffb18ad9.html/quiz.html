@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Take a Quiz</h1>
+        <div class="quiz">
+            <div class="question">
+                <h2>What is the capital of France?</h2>
+                <button onclick="checkAnswer(this, true)">Paris</button>
+                <button onclick="checkAnswer(this, false)">London</button>
+                <button onclick="checkAnswer(this, false)">Berlin</button>
+                <button onclick="checkAnswer(this, false)">Madrid</button>
+            </div>
+            <div class="question">
+                <h2>Which city is known as the Big Apple?</h2>
+                <button onclick="checkAnswer(this, false)">Los Angeles</button>
+                <button onclick="checkAnswer(this, true)">New York</button>
+                <button onclick="checkAnswer(this, false)">Chicago</button>
+                <button onclick="checkAnswer(this, false)">San Francisco</button>
+            </div>
+            <div class="question">
+                <h2>What is the currency used in Japan?</h2>
+                <button onclick="checkAnswer(this, false)">Won</button>
+                <button onclick="checkAnswer(this, false)">Yuan</button>
+                <button onclick="checkAnswer(this, true)">Yen</button>
+                <button onclick="checkAnswer(this, false)">Dollar</button>
+            </div>
+            <div class="question">
+                <h2>Which continent is Australia part of?</h2>
+                <button onclick="checkAnswer(this, true)">Australia</button>
+                <button onclick="checkAnswer(this, false)">Asia</button>
+                <button onclick="checkAnswer(this, false)">Europe</button>
+                <button onclick="checkAnswer(this, false)">Africa</button>
+            </div>
+            <div class="question">
+                <h2>What is the famous landmark in Cape Town?</h2>
+                <button onclick="checkAnswer(this, false)">Eiffel Tower</button>
+                <button onclick="checkAnswer(this, false)">Statue of Liberty</button>
+                <button onclick="checkAnswer(this, false)">Colosseum</button>
+                <button onclick="checkAnswer(this, true)">Table Mountain</button>
+            </div>
+            <div id="quiz-result">
+                <button onclick="showResults()">Show Results</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 The59Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>

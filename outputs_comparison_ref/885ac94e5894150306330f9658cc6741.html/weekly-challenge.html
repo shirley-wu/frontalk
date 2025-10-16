@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Recipe Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Weekly Recipe Challenge</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="challenge-description">
+            <h2>This Week's Challenge: Comfort Foods</h2>
+            <p>Explore the warmth of comfort foods and share your best creations.</p>
+        </section>
+
+        <section id="submission-form">
+            <h2>Submit Your Entry</h2>
+            <form>
+                <label for="recipe-photo">Photo:</label>
+                <input type="file" id="recipe-photo" accept="image/*" required>
+                <label for="description">Description:</label>
+                <textarea id="description" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="user-submissions">
+            <h2>User Submissions</h2>
+            <!-- Example Submission -->
+            <div class="submission">
+                <img src="../../../../placeholder/placeholder.png" alt="User Recipe">
+                <p>Submitted by: Jane Doe</p>
+                <p>A delightful homemade mac and cheese.</p>
+            </div>
+            <!-- Repeat for more submissions -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Cooking with Andrew. All rights reserved.</p>
+    </footer>
+</body>
+</html>

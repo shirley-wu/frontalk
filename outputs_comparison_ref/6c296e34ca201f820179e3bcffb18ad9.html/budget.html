@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Estimator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Estimate Your Budget</h1>
+        <form id="budget-form">
+            <label for="transportation">Transportation Cost:</label>
+            <input type="number" id="transportation" name="transportation">
+            <label for="accommodation">Accommodation Cost:</label>
+            <input type="number" id="accommodation" name="accommodation">
+            <label for="activities">Activities Cost:</label>
+            <input type="number" id="activities" name="activities">
+            <button type="button" id="calculate-budget">Calculate Total Budget</button>
+        </form>
+        <div id="budget-result"></div>
+    </main>
+    <footer>
+        <p>&copy; 2023 The59Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>

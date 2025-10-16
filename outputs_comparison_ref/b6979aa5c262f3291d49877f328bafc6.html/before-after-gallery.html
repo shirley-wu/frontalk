@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before-and-After Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Before-and-After Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="gallery">
+            <div class="tag-filter">
+                <select>
+                    <option value="all">All</option>
+                    <option value="botox">Botox</option>
+                    <option value="dermal-fillers">Dermal Fillers</option>
+                    <option value="skin-rejuvenation">Skin Rejuvenation</option>
+                </select>
+            </div>
+            <div class="image-card" data-tags="botox">
+                <img src="../../../../placeholder/placeholder.png" alt="Before and After Botox">
+                <div class="caption">Botox: Wrinkle reduction</div>
+            </div>
+            <div class="image-card" data-tags="dermal-fillers">
+                <img src="../../../../placeholder/placeholder.png" alt="Before and After Dermal Fillers">
+                <div class="caption">Dermal Fillers: Enhanced cheek volume</div>
+            </div>
+            <div class="image-card" data-tags="skin-rejuvenation">
+                <img src="../../../../placeholder/placeholder.png" alt="Before and After Skin Rejuvenation">
+                <div class="caption">Skin Rejuvenation: Improved texture and tone</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Facial Enhancements Hub</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

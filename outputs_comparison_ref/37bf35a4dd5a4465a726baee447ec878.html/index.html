@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUS-CERT Information Security Office</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="announcement-banner" class="announcement-banner">
+        <p>Important: Upcoming Security Workshop on October 20th!</p>
+        <button onclick="dismissBanner()">Dismiss</button>
+    </div>
+    <header class="hero-section">
+        <img src="../../../../placeholder/placeholder.png" alt="IT Security Background" class="hero-image">
+        <div class="hero-text">
+            <h1>Welcome to RUS-CERT</h1>
+            <p>Your trusted source for IT and Information Security at the University of Stuttgart</p>
+            <a href="incident-report.html" class="cta-button">Report an Incident</a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="resource-library.html">Resource Library</a></li>
+            <li><a href="training-events.html">Training & Events</a></li>
+        </ul>
+    </nav>
+    <script>
+        function dismissBanner() {
+            document.getElementById('announcement-banner').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    background-color: #fffde7;
+}
+
+.events-list {
+    padding: 20px;
+}
+
+.event {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.event:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.workshop {
+    border-left: 5px solid #ff9800;
+}
+
+.plant-swap {
+    border-left: 5px solid #4caf50;
+}
+
+.garden-tour {
+    border-left: 5px solid #2196f3;
+}

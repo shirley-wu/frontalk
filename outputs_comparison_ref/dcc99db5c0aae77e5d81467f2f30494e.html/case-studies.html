@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Case Studies</h1>
+    </header>
+    <main>
+        <div class="carousel">
+            <div class="carousel-item">
+                <h2>Business 1</h2>
+                <p>Description of Business 1.</p>
+                <p>Challenges faced and solutions implemented.</p>
+                <button onclick="toggleDetails(1)">Learn More</button>
+                <div id="details1" class="details">
+                    <p>Additional strategies and testimonials.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <h2>Business 2</h2>
+                <p>Description of Business 2.</p>
+                <p>Challenges faced and solutions implemented.</p>
+                <button onclick="toggleDetails(2)">Learn More</button>
+                <div id="details2" class="details">
+                    <p>Additional strategies and testimonials.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <h2>Business 3</h2>
+                <p>Description of Business 3.</p>
+                <p>Challenges faced and solutions implemented.</p>
+                <button onclick="toggleDetails(3)">Learn More</button>
+                <div id="details3" class="details">
+                    <p>Additional strategies and testimonials.</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <span class="arrow left">&lt;</span>
+            <span class="arrow right">&gt;</span>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="design-your-gift-card.html">Design Your Gift Card</a></li>
+                <li><a href="loyalty-dashboard.html">Loyalty Dashboard</a></li>
+                <li><a href="support-and-resources.html">Support & Resources</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="carousel.js" defer></script>
+</body>
+</html>

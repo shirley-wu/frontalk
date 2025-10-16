@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Collector's Blog</h1>
+    </header>
+    <main>
+        <section class="blog-posts">
+            <article>
+                <h2>Understanding Star Wars Collectibles</h2>
+                <img src="../../../../placeholder/placeholder.png" alt="Blog Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </article>
+            <article>
+                <h2>Grading Your Collection</h2>
+                <img src="../../../../placeholder/placeholder.png" alt="Blog Image">
+                <p>Praesent commodo cursus magna, vel scelerisque nisl...</p>
+            </article>
+            <article>
+                <h2>Tips for New Collectors</h2>
+                <img src="../../../../placeholder/placeholder.png" alt="Blog Image">
+                <p>Curabitur blandit tempus porttitor...</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Star Wars Collectibles</p>
+    </footer>
+    <script>
+        const images = document.querySelectorAll('.blog-posts article img');
+        images.forEach(img => {
+            img.addEventListener('mouseover', function() {
+                const caption = document.createElement('div');
+                caption.innerHTML = 'Additional context for the image';
+                caption.style.position = 'absolute';
+                caption.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+                caption.style.color = '#fff';
+                caption.style.padding = '5px';
+                caption.style.transition = 'opacity 0.3s';
+                caption.style.opacity = '0';
+                this.parentElement.appendChild(caption);
+                setTimeout(() => caption.style.opacity = '1', 100);
+                this.addEventListener('mouseout', function() {
+                    caption.style.opacity = '0';
+                    setTimeout(() => caption.remove(), 300);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

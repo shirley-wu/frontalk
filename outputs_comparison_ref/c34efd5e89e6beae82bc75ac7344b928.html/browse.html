@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Words - Word Explorer</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .tabs { display: flex; justify-content: center; background: #333; padding: 10px 0; }
+        .tab { color: white; padding: 10px 20px; cursor: pointer; }
+        .tab:hover { background: #555; }
+        .active { text-decoration: underline; box-shadow: 0 2px 5px rgba(0,0,0,0.3); }
+        .word-list { list-style: none; padding: 0; }
+        .word-list li { background: #f4f4f4; margin: 5px 0; padding: 10px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+    <div class="tabs">
+        <div class="tab active">A</div>
+        <div class="tab">B</div>
+        <div class="tab">C</div>
+        <!-- Add more tabs as needed -->
+    </div>
+    <div class="content">
+        <h2>Words Starting with A</h2>
+        <ul class="word-list">
+            <li><a href="word.html">Aberration</a></li>
+            <li><a href="word.html">Abhor</a></li>
+            <li><a href="word.html">Abide</a></li>
+            <li><a href="word.html">Abolish</a></li>
+            <li><a href="word.html">Abrupt</a></li>
+        </ul>
+    </div>
+</body>
+</html>

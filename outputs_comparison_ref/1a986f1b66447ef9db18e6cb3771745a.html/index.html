@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Statesman</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>The Statesman</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sections.html#national">National</a></li>
+                    <li><a href="sections.html#international">International</a></li>
+                    <li><a href="sections.html#business">Business</a></li>
+                    <li><a href="sections.html#sports">Sports</a></li>
+                    <li><a href="sections.html#entertainment">Entertainment</a></li>
+                    <li><a href="sections.html#lifestyle">Lifestyle</a></li>
+                    <li><a href="register.html">Sign Up</a></li>
+                    <li><a href="profile.html" id="profile-link" style="display:none;">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="weather-widget">
+            <p>Current Weather: <span>Sunny, 25°C</span></p>
+        </div>
+
+        <section class="featured-article">
+            <img src="../../../../placeholder/placeholder.png" alt="Featured Article" class="featured-image">
+            <div class="featured-content">
+                <h2>Featured Article Headline</h2>
+                <p>Brief summary of the featured article to capture user attention.</p>
+            </div>
+        </section>
+
+        <section class="search-bar">
+            <input type="text" placeholder="Search articles..." id="search-input">
+            <button id="search-button">Search</button>
+            <div class="filters">
+                <select id="section-filter">
+                    <option value="">All Sections</option>
+                    <option value="national">National</option>
+                    <option value="international">International</option>
+                    <option value="business">Business</option>
+                    <option value="sports">Sports</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="lifestyle">Lifestyle</option>
+                </select>
+                <input type="date" id="date-filter">
+                <input type="text" placeholder="Author" id="author-filter">
+                <button id="reset-filters">Reset</button>
+            </div>
+        </section>
+
+        <section class="articles">
+            <article>
+                <img src="../../../../placeholder/placeholder.png" alt="Article Image">
+                <h3><a href="article1.html">Article 1 Title</a></h3>
+                <p>Summary of article 1...</p>
+            </article>
+            <article>
+                <img src="../../../../placeholder/placeholder.png" alt="Article Image">
+                <h3><a href="article2.html">Article 2 Title</a></h3>
+                <p>Summary of article 2...</p>
+            </article>
+            <article>
+                <img src="../../../../placeholder/placeholder.png" alt="Article Image">
+                <h3><a href="article3.html">Article 3 Title</a></h3>
+                <p>Summary of article 3...</p>
+            </article>
+            <article>
+                <img src="../../../../placeholder/placeholder.png" alt="Article Image">
+                <h3><a href="article4.html">Article 4 Title</a></h3>
+                <p>Summary of article 4...</p>
+            </article>
+            <article>
+                <img src="../../../../placeholder/placeholder.png" alt="Article Image">
+                <h3><a href="article5.html">Article 5 Title</a></h3>
+                <p>Summary of article 5...</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 The Statesman</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - EventTickets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="my-account.html">My Account</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Shopping Cart</h2>
+        <section class="cart">
+            <div class="cart-item">
+                <img src="../../../../placeholder/placeholder.png" alt="Event Image">
+                <div>
+                    <h3>Concert 1</h3>
+                    <p>Date: 2023-11-01</p>
+                    <p>Venue: Venue Name</p>
+                    <button class="remove-button" onclick="removeItem(this)">Remove</button>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="../../../../placeholder/placeholder.png" alt="Event Image">
+                <div>
+                    <h3>Sport 1</h3>
+                    <p>Date: 2023-11-02</p>
+                    <p>Venue: Venue Name</p>
+                    <button class="remove-button" onclick="removeItem(this)">Remove</button>
+                </div>
+            </div>
+            <div class="cart-summary">
+                <h3>Cart Summary</h3>
+                <p>Total Items: 2</p>
+                <p>Total Price: $200</p>
+                <button onclick="checkout()">Proceed to Checkout</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 EventTickets</p>
+    </footer>
+    <script>
+        function removeItem(button) {
+            const item = button.parentNode.parentNode;
+            item.parentNode.removeChild(item);
+        }
+
+        function checkout() {
+            alert('Proceeding to checkout...');
+        }
+    </script>
+</body>
+</html>

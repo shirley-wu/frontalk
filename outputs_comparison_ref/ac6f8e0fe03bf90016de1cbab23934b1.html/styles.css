@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+#search {
+    margin-bottom: 20px;
+}
+
+#featured-shows .carousel {
+    display: flex;
+    overflow: auto;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 200px;
+    height: 150px;
+    transition: transform 0.3s;
+}
+
+.carousel-item:hover img {
+    transform: scale(1.05);
+}
+
+.carousel-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#latest-news .news-card {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.news-card:hover {
+    background-color: #e0e0e0;
+}
+
+.news-card h3 {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+}
+
+.news-card .badge {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}

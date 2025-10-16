@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Service - Cleaning & Restoration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="booking.html" class="book-now">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Book a Service</h1>
+        <form action="#" method="post" class="booking-form">
+            <label for="service">Select Service:</label>
+            <select id="service" name="service">
+                <option value="home-cleaning">Home Cleaning</option>
+                <option value="office-cleaning">Office Cleaning</option>
+                <option value="carpet-cleaning">Carpet Cleaning</option>
+                <option value="window-cleaning">Window Cleaning</option>
+                <option value="restoration-services">Restoration Services</option>
+            </select>
+            <label for="date">Choose Date:</label>
+            <input type="date" id="date" name="date" required>
+            <fieldset>
+                <legend>Additional Services:</legend>
+                <div>
+                    <input type="checkbox" id="leather-cleaning" name="add-ons" value="leather-cleaning">
+                    <label for="leather-cleaning"><img src="../../../../placeholder/placeholder.png" alt="Icon"> Leather Cleaning</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="upholstery-care" name="add-ons" value="upholstery-care">
+                    <label for="upholstery-care"><img src="../../../../placeholder/placeholder.png" alt="Icon"> Upholstery Care</label>
+                </div>
+            </fieldset>
+            <button type="submit" class="submit-button">Confirm Booking</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2023 Cleaning & Restoration Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>

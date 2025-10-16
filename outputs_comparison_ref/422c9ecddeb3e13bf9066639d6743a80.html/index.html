@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amsterdam Eats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Amsterdam Eats</h1>
+        <div class="hero-carousel">
+            <div class="carousel-slide">
+                <img src="../../../../placeholder/placeholder.png" alt="Featured Restaurant">
+                <div class="overlay">
+                    <h2>Discover Amsterdam's Finest</h2>
+                    <p>Explore top-rated restaurants with ease</p>
+                </div>
+            </div>
+            <!-- Add more carousel slides as needed -->
+            <button class="carousel-nav prev">❮</button>
+            <button class="carousel-nav next">❯</button>
+        </div>
+    </header>
+    <main>
+        <section id="search-filter">
+            <h2>Find Your Perfect Dining Experience</h2>
+            <form>
+                <div class="filter-group">
+                    <label for="cuisine">Cuisine Type:</label>
+                    <select id="cuisine">
+                        <option>Italian</option>
+                        <option>Chinese</option>
+                        <option>Indian</option>
+                        <option>French</option>
+                        <option>Dutch</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="location">Location:</label>
+                    <select id="location">
+                        <option>Amsterdam</option>
+                        <option>Rotterdam</option>
+                        <option>Utrecht</option>
+                        <option>The Hague</option>
+                        <option>Leiden</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="rating">Rating:</label>
+                    <select id="rating">
+                        <option>1 Star</option>
+                        <option>2 Stars</option>
+                        <option>3 Stars</option>
+                        <option>4 Stars</option>
+                        <option>5 Stars</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price">Price Range:</label>
+                    <select id="price">
+                        <option>€</option>
+                        <option>€€</option>
+                        <option>€€€</option>
+                        <option>€€€€</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Special Features:</label>
+                    <div>
+                        <input type="checkbox" id="outdoor" name="features" value="Outdoor Seating">
+                        <label for="outdoor">Outdoor Seating</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="live-music" name="features" value="Live Music">
+                        <label for="live-music">Live Music</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="vegetarian" name="features" value="Vegetarian Options">
+                        <label for="vegetarian">Vegetarian Options</label>
+                    </div>
+                </div>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        <section id="restaurant-list">
+            <h2>Top Restaurants</h2>
+            <ul>
+                <li><a href="restaurant1.html">Restaurant 1</a></li>
+                <li><a href="restaurant2.html">Restaurant 2</a></li>
+                <li><a href="restaurant3.html">Restaurant 3</a></li>
+                <li><a href="restaurant4.html">Restaurant 4</a></li>
+                <li><a href="restaurant5.html">Restaurant 5</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <a href="owner-portal.html">Restaurant Owner Portal</a>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

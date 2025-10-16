@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Watchlist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Stock Watchlist</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="watchlist">
+            <h2>Your Watchlist</h2>
+            <form id="watchlist-form">
+                <label for="stock-symbol">Stock Symbol:</label>
+                <input type="text" id="stock-symbol" name="stock-symbol">
+                <button type="submit">Add to Watchlist</button>
+            </form>
+            <div id="watchlist-summary">
+                <h3>Watchlist Summary</h3>
+                <div class="watchlist-item">
+                    <p>Company A</p>
+                    <p>Price: $150.00</p>
+                    <p>Change: +2%</p>
+                </div>
+                <div class="watchlist-item">
+                    <p>Company B</p>
+                    <p>Price: $250.00</p>
+                    <p>Change: -1%</p>
+                </div>
+                <div class="watchlist-item">
+                    <p>Company C</p>
+                    <p>Price: $350.00</p>
+                    <p>Change: +0.5%</p>
+                </div>
+                <div class="watchlist-item">
+                    <p>Company D</p>
+                    <p>Price: $450.00</p>
+                    <p>Change: -0.2%</p>
+                </div>
+                <div class="watchlist-item">
+                    <p>Company E</p>
+                    <p>Price: $550.00</p>
+                    <p>Change: +3%</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

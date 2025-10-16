@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoOLEGAL - Submit a Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Submit a Legal Document</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resource-center.html">Resource Center</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <form>
+            <label for="title">Document Title:</label>
+            <input type="text" id="title" name="title" required>
+            
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="corporate">Corporate Law</option>
+                <option value="family">Family Law</option>
+                <option value="criminal">Criminal Law</option>
+                <option value="real-estate">Real Estate</option>
+                <option value="intellectual-property">Intellectual Property</option>
+            </select>
+            
+            <label for="document">Upload Document:</label>
+            <input type="file" id="document" name="document" accept=".pdf" required>
+            
+            <button type="submit">Submit Document</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2023 SoOLEGAL. All rights reserved.</p>
+    </footer>
+</body>
+</html>

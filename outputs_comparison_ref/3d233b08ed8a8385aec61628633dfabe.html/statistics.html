@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics - Global Economics Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Global Economics Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="statistics-dashboard">
+            <h2>Statistics Dashboard</h2>
+            <select id="time-frame" onchange="updateCharts()">
+                <option value="monthly">Monthly</option>
+                <option value="quarterly">Quarterly</option>
+                <option value="yearly">Yearly</option>
+            </select>
+            <select id="region-comparison" onchange="compareRegions()">
+                <option value="none">Select Regions for Comparison</option>
+                <option value="region-1">Region 1</option>
+                <option value="region-2">Region 2</option>
+                <option value="region-3">Region 3</option>
+                <option value="region-4">Region 4</option>
+                <option value="region-5">Region 5</option>
+            </select>
+            <div id="charts">
+                <div class="chart" id="gdp-growth">
+                    <h3>GDP Growth</h3>
+                    <img src="../../../../placeholder/placeholder.png" alt="GDP Growth Chart">
+                </div>
+                <div class="chart" id="unemployment-rates">
+                    <h3>Unemployment Rates</h3>
+                    <img src="../../../../placeholder/placeholder.png" alt="Unemployment Rates Chart">
+                </div>
+                <div class="chart" id="inflation-trends">
+                    <h3>Inflation Trends</h3>
+                    <img src="../../../../placeholder/placeholder.png" alt="Inflation Trends Chart">
+                </div>
+            </div>
+            <div id="comparison-summary">
+                <h3>Comparison Summary</h3>
+                <p>Key differences and similarities between the selected regions...</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Global Economics Hub</p>
+    </footer>
+</body>
+</html>

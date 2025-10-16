@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.navbar nav ul li a:hover {
+    color: #ddd;
+}
+
+.weather-widget {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    animation: weatherAnimation 10s infinite;
+}
+
+@keyframes weatherAnimation {
+    0% { opacity: 0.8; }
+    50% { opacity: 1; }
+    100% { opacity: 0.8; }
+}
+
+.featured-article {
+    display: flex;
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.featured-article:hover {
+    transform: scale(1.05);
+}
+
+.featured-image {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.featured-content h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.featured-content p {
+    font-size: 1.2em;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.search-bar input, .search-bar select, .search-bar button {
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.articles article {
+    background-color: #fff;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.articles article:hover {
+    transform: scale(1.05);
+}
+
+.articles article img {
+    width: 100%;
+    height: auto;
+}
+
+.articles article h3 {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.articles article p {
+    font-size: 0.9em;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+}
