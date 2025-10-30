@@ -1,0 +1,10 @@
+filelock==3.18.0
+matplotlib==3.10.5
+numpy==2.2.6
+openai==1.98.0
+pdfplumber==0.11.7
+pillow==11.3.0
+seaborn==0.13.2
+selenium==4.34.2
+tabulate==0.9.0
+tqdm==4.67.1

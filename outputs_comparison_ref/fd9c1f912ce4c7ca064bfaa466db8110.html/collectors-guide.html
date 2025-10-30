@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collector's Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Collector's Guide</h1>
+    </header>
+    <main>
+        <div class="timeline">
+            <h2>Power of the Force Series Timeline</h2>
+            <div class="years">
+                <button data-year="1996">1996</button>
+                <button data-year="1997">1997</button>
+                <button data-year="1998">1998</button>
+                <button data-year="1999">1999</button>
+            </div>
+            <div class="year-info">
+                <p>Select a year to see detailed information about the series.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Star Wars Collectibles</p>
+    </footer>
+    <script>
+        const yearButtons = document.querySelectorAll('.years button');
+        const yearInfo = document.querySelector('.year-info');
+        yearButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const year = this.getAttribute('data-year');
+                yearInfo.innerHTML = `<h3>${year} Series Information</h3><p>Details about the ${year} series...</p>`;
+            });
+        });
+    </script>
+</body>
+</html>

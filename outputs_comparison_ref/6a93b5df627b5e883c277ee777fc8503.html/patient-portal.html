@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="allergy-resources.html">Allergy Resources</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="patient-portal.html">Patient Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#medical-records">Medical Records</a></li>
+                <li><a href="#test-results">Test Results</a></li>
+                <li><a href="#messages">Messages</a></li>
+                <li><a href="#medication">Medication</a></li>
+            </ul>
+        </aside>
+        <section class="portal-content">
+            <h2>Patient Portal</h2>
+            <div id="medical-records">
+                <h3>Medical Records</h3>
+                <p>View your medical history and records here.</p>
+            </div>
+            <div id="test-results">
+                <h3>Test Results</h3>
+                <p>Access your recent test results.</p>
+            </div>
+            <div id="messages">
+                <h3>Messages</h3>
+                <p>Send secure messages to your healthcare providers.</p>
+            </div>
+            <div id="medication">
+                <h3>Medication</h3>
+                <p>View prescribed medications and request refills.</p>
+                <form action="#">
+                    <label for="medication-name">Medication Name:</label>
+                    <input type="text" id="medication-name" name="medication-name" required>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" required>
+                    <button type="submit">Submit Request</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

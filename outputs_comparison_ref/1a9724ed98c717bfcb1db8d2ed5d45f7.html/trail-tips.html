@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trail Tips</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .tip {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            cursor: pointer;
+        }
+        .tip img {
+            margin-right: 10px;
+        }
+        .tip-details {
+            display: none;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+        .tip.expanded .tip-details {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trail Tips</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="tip" onclick="toggleDetails(this)">
+                <img src="../../../../placeholder/placeholder.png" alt="Safety Icon">
+                <div>
+                    <h3>Trail Safety</h3>
+                    <p>Stay safe on your hikes with these essential tips.</p>
+                </div>
+                <div class="tip-details">
+                    <p>Always let someone know your itinerary, carry a first aid kit, and be aware of your surroundings.</p>
+                </div>
+            </div>
+            <div class="tip" onclick="toggleDetails(this)">
+                <img src="../../../../placeholder/placeholder.png" alt="Gear Icon">
+                <div>
+                    <h3>Essential Gear</h3>
+                    <p>Don't forget these must-have items for your hike.</p>
+                </div>
+                <div class="tip-details">
+                    <p>Ensure you have proper footwear, plenty of water, a map, and a compass.</p>
+                </div>
+            </div>
+            <div class="tip" onclick="toggleDetails(this)">
+                <img src="../../../../placeholder/placeholder.png" alt="Season Icon">
+                <div>
+                    <h3>Seasonal Considerations</h3>
+                    <p>Plan your hike according to the season.</p>
+                </div>
+                <div class="tip-details">
+                    <p>Check the weather forecast, dress in layers, and be prepared for sudden changes in weather.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Pacific Northwest Snapshot. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleDetails(element) {
+            element.classList.toggle('expanded');
+        }
+    </script>
+</body>
+</html>

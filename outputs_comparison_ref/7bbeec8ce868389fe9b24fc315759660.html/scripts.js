@@ -1,0 +1,1 @@
+// Placeholder for future JavaScript functionalities, such as interactive features or dynamic content loading.

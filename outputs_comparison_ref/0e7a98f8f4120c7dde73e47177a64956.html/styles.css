@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header, footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-banner {
+    background: url('../../../../placeholder/placeholder.png') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero-banner h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-banner p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
+
+.hero-banner button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.hero-banner button:hover {
+    background-color: #0056b3;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #343a40;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+main {
+    padding: 20px;
+}
+
+.latest-activity, .featured-articles, .reviews-grid, .forum-threads, .top-contributors {
+    margin: 20px 0;
+}
+
+.latest-activity ul, .top-contributors ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.latest-activity ul li, .top-contributors ul li {
+    margin: 10px 0;
+}
+
+.latest-activity ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.latest-activity ul li a:hover {
+    text-decoration: underline;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 20px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.review-card, .thread-card {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-card img, .thread-card img {
+    width: 100%;
+    height: auto;
+}
+
+.review-card h3, .thread-card h3 {
+    margin-top: 0;
+}
+
+.review-card button, .thread-card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.review-card button:hover, .thread-card button:hover {
+    background-color: #0056b3;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #343a40;
+    color: #fff;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-column form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column form input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.footer-column form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.footer-column form button:hover {
+    background-color: #0056b3;
+}

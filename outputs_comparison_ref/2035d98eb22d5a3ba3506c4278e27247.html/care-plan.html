@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Plan Customization Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Care Plan Customization Tool</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    <main>
+        <div class="progress-bar">
+            <div class="step completed">Step 1</div>
+            <div class="step">Step 2</div>
+            <div class="step">Step 3</div>
+        </div>
+        
+        <div class="sidebar">
+            <h2>Tips & Suggestions</h2>
+            <ul>
+                <li><img src="../../../../placeholder/placeholder.png" alt="Tip Icon"> Consider your daily routine.</li>
+                <li><img src="../../../../placeholder/placeholder.png" alt="Tip Icon"> Evaluate your medical needs.</li>
+                <li><img src="../../../../placeholder/placeholder.png" alt="Tip Icon"> Think about your social preferences.</li>
+            </ul>
+        </div>
+
+        <form>
+            <h2>Customize Your Care Plan</h2>
+            <label for="needs">Care Needs:</label>
+            <input type="text" id="needs" name="needs" required>
+
+            <label for="preferences">Preferences:</label>
+            <input type="text" id="preferences" name="preferences" required>
+
+            <button type="submit">Generate Plan</button>
+            <button type="button" onclick="savePlan()">Save Plan</button>
+        </form>
+
+        <div id="confirmation" style="display:none;">
+            <p>Your care plan has been saved successfully!</p>
+        </div>
+    </main>
+    <script>
+        function savePlan() {
+            document.getElementById('confirmation').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

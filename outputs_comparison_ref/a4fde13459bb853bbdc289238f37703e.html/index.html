@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bauer Funeral Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="fixed-header">
+        <img src="../../../../placeholder/placeholder.png" alt="Bauer Funeral Home Logo" class="logo">
+        <h1>Welcome to Bauer Funeral Home</h1>
+        <p>Providing compassionate support and services for grieving families.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="obituaries.html">Obituaries</a></li>
+            <li><a href="grief-support.html">Grief Support</a></li>
+            <li><a href="pre-planning-resources.html">Pre-Planning Resources</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>Bauer Funeral Home in Valley City, Ohio, is dedicated to providing personalized and professional funeral services.</p>
+        </section>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector("header").style.opacity = 0;
+            setTimeout(() => {
+                document.querySelector("header").style.transition = "opacity 2s";
+                document.querySelector("header").style.opacity = 1;
+            }, 100);
+        });
+    </script>
+</body>
+</html>

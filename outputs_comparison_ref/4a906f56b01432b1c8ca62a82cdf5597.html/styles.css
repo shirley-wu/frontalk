@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: url('../../../../placeholder/placeholder.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.carousel, .highlight, .article, .opportunity, #popular-tags ul, #contact-info, #social-media {
+    margin: 20px;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#search-bar:hover {
+    background-color: #f0f0f0;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #0056b3;
+}
+
+#social-media a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s, color 0.2s;
+}
+
+#social-media a:hover img {
+    transform: scale(1.2);
+    color: #007BFF;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#contact-info img {
+    width: 100%;
+    max-width: 400px;
+}

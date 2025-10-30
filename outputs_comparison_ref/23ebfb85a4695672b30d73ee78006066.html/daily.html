@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Horoscope</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="../../../../placeholder/placeholder.png" alt="Aries Symbol" class="zodiac-symbol">
+            <h1>Aries</h1>
+        </div>
+        <a href="index.html" class="back-home">Back to Homepage</a>
+    </header>
+    <main>
+        <p>Today is a day of new beginnings. Embrace the change and let go of past grievances. The stars are aligned in your favor, and it's the perfect time to start something new.</p>
+    </main>
+    <footer>
+        <p>&copy; 2023 Everyday Horoscopes</p>
+    </footer>
+    <style>
+        header {
+            background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+        }
+        
+        .zodiac-symbol {
+            width: 50px;
+            height: 50px;
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</body>
+</html>

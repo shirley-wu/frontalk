@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+#breaking-news {
+    background: #ff0000;
+    color: #fff;
+    padding: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+#hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+#featured-articles {
+    padding: 20px;
+}
+
+#featured-articles h2 {
+    text-align: center;
+}
+
+#featured-articles .articles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#featured-articles article {
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#featured-articles article h3 {
+    margin-top: 0;
+}
+
+#featured-articles article a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+}
+
+footer button.subscribe-button {
+    background-color: #ff6600;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+footer button.subscribe-button:hover {
+    background-color: #ff4500;
+}
+
+footer label span {
+    margin-right: 5px;
+}

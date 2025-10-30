@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Search Results</h1>
+    </header>
+    <main>
+        <div class="filter-panel">
+            <button onclick="toggleFilters()">Toggle Filters</button>
+            <div id="filters" style="display:none;">
+                <label for="rating">Rating:</label>
+                <input type="range" id="rating" name="rating" min="0" max="100">
+                <label for="price">Price Range:</label>
+                <input type="range" id="price" name="price" min="0" max="1000">
+                <label for="type">Wine Type:</label>
+                <select id="type" name="type">
+                    <option value="red">Red</option>
+                    <option value="white">White</option>
+                    <option value="rose">Rosé</option>
+                </select>
+            </div>
+        </div>
+        <section class="search-results">
+            <div class="card">
+                <h3>Wine Name 1</h3>
+                <p>Description of Wine 1</p>
+                <p>Rating: 90</p>
+            </div>
+            <div class="card">
+                <h3>Wine Name 2</h3>
+                <p>Description of Wine 2</p>
+                <p>Rating: 85</p>
+            </div>
+            <div class="card">
+                <h3>Wine Name 3</h3>
+                <p>Description of Wine 3</p>
+                <p>Rating: 92</p>
+            </div>
+            <div class="card">
+                <h3>Wine Name 4</h3>
+                <p>Description of Wine 4</p>
+                <p>Rating: 88</p>
+            </div>
+            <div class="card">
+                <h3>Wine Name 5</h3>
+                <p>Description of Wine 5</p>
+                <p>Rating: 91</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Wine World</p>
+    </footer>
+    <script>
+        function toggleFilters() {
+            var filters = document.getElementById('filters');
+            if (filters.style.display === 'none') {
+                filters.style.display = 'block';
+            } else {
+                filters.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

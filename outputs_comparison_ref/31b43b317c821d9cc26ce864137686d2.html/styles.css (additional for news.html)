@@ -1,0 +1,36 @@
+#news-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.news-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.news-card:hover {
+    transform: scale(1.05);
+    background-color: #eaeaea;
+}
+
+.news-card h2 {
+    margin: 0 0 10px;
+    position: relative;
+}
+
+.news-card h2:before {
+    content: '📰';
+    position: absolute;
+    left: -25px;
+}
+
+.news-card p {
+    margin: 5px 0;
+}

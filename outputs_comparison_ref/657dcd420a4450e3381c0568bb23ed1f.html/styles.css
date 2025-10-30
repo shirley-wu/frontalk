@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.day {
+    padding: 10px;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.event {
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.event-description {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px;
+    z-index: 10;
+}
+
+.event:hover .event-description {
+    display: block;
+}
+
+.qa-response {
+    margin-bottom: 20px;
+}
+
+.expert-response {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.forum-post {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.user-badge {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.new-contributor {
+    background-color: #9e9e9e;
+}
+
+.top-contributor {
+    background-color: #ffeb3b;
+}
+
+.highlight {
+    background-color: #e0f7fa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.planning {
+    background-color: #ffcc80;
+    width: 25%;
+}
+
+.in-progress {
+    background-color: #64b5f6;
+    width: 50%;
+}
+
+.completed {
+    background-color: #81c784;
+    width: 100%;
+}
+
+.policy-sidebar {
+    float: left;
+    width: 20%;
+    margin-right: 20px;
+}
+
+.policy-sidebar ul {
+    padding: 0;
+}
+
+.policy-sidebar li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.category-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.category-link:hover {
+    background-color: #ddd;
+}

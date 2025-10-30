@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Forums - Sailor's Haven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>User Forums</h1>
+        <nav class="fixed-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="event-calendar.html">Event Calendar</a></li>
+                <li><a href="classified-listings.html">Classified Listings</a></li>
+                <li><a href="#general">General Discussion</a></li>
+                <li><a href="#tips">Sailing Tips</a></li>
+                <li><a href="#gear">Gear Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="forums">
+            <h2>Discussion Topics</h2>
+            <div class="forum-card new">
+                <h3>Best Sailing Spots</h3>
+                <p>Started by: Alice</p>
+                <button>Reply</button>
+                <span class="badge">New</span>
+            </div>
+            <div class="forum-card popular">
+                <h3>Sailing Safety Tips</h3>
+                <p>Started by: Bob</p>
+                <button>Reply</button>
+                <span class="badge">Popular</span>
+            </div>
+            <div class="forum-card">
+                <h3>Choosing the Right Gear</h3>
+                <p>Started by: Charlie</p>
+                <button>Reply</button>
+            </div>
+            <div class="forum-card">
+                <h3>Regatta Preparation</h3>
+                <p>Started by: Dave</p>
+                <button>Reply</button>
+            </div>
+            <div class="forum-card">
+                <h3>Maintenance Tips</h3>
+                <p>Started by: Eve</p>
+                <button>Reply</button>
+            </div>
+        </section>
+        <section class="add-topic">
+            <h2>Post New Topic</h2>
+            <form id="topicForm">
+                <label for="topicTitle">Title:</label>
+                <input type="text" id="topicTitle" name="topicTitle" required>
+                <label for="topicContent">Content:</label>
+                <textarea id="topicContent" name="topicContent" required></textarea>
+                <button type="submit">Post Topic</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="event-calendar.html">Event Calendar</a></li>
+                    <li><a href="classified-listings.html">Classified Listings</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href="#"><img src="../../../../placeholder/placeholder.png" alt="Facebook"></a>
+                <a href="#"><img src="../../../../placeholder/placeholder.png" alt="Twitter"></a>
+                <a href="#"><img src="../../../../placeholder/placeholder.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('topicForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('New topic posted successfully!');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Updates - Golf Ireland Directory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>News & Updates</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="membership.html">Membership & Booking</a></li>
+            <li><a href="directory.html">Club Directory</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="search-bar">
+            <input type="text" id="newsSearch" placeholder="Search articles...">
+        </section>
+        <section class="news-list">
+            <!-- Example news articles -->
+            <article>
+                <h2>Irish Open Results</h2>
+                <p>Date: 2023-10-15</p>
+                <p>Summary: The Irish Open concluded with thrilling matches and unexpected victories...</p>
+                <button class="read-more">Read More</button>
+            </article>
+            <article>
+                <h2>New Trends in Golfing</h2>
+                <p>Date: 2023-10-10</p>
+                <p>Summary: Discover the latest trends in golfing, including eco-friendly courses and innovative equipment...</p>
+                <button class="read-more">Read More</button>
+            </article>
+            <!-- Add more articles as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 Golf Ireland Directory. All rights reserved.</p>
+    </footer>
+    <script>
+        const newsSearch = document.getElementById('newsSearch');
+        newsSearch.addEventListener('input', function() {
+            // Implement search functionality here
+        });
+    </script>
+</body>
+</html>

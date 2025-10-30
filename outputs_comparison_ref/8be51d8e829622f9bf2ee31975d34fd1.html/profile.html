@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Quilter's Haven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Profile</h1>
+        <a href="index.html">Back to Homepage</a>
+    </header>
+    <main>
+        <section class="profile-banner">
+            <img src="../../../../placeholder/placeholder.png" alt="Profile Banner" class="profile-banner-img">
+            <button>Change Banner</button>
+        </section>
+        <section class="personal-info">
+            <h2>Personal Information</h2>
+            <form id="update-info-form">
+                <label for="profile-name">Name:</label>
+                <input type="text" id="profile-name" name="profile-name" value="John Doe" required>
+                <label for="profile-email">Email:</label>
+                <input type="email" id="profile-email" name="profile-email" value="john@example.com" required>
+                <button type="submit">Update Information</button>
+            </form>
+        </section>
+        <section class="workshop-registrations">
+            <h2>Your Workshops</h2>
+            <ul>
+                <li class="workshop-item beginner">
+                    <img src="../../../../placeholder/placeholder.png" alt="Workshop Icon">
+                    <div class="workshop-details">
+                        <p><strong>Beginner Workshop: Patchwork Basics</strong></p>
+                        <p>Date: 12th Nov, Time: 10 AM, Location: Quilt Hall</p>
+                    </div>
+                </li>
+                <li class="workshop-item advanced">
+                    <img src="../../../../placeholder/placeholder.png" alt="Workshop Icon">
+                    <div class="workshop-details">
+                        <p><strong>Advanced Techniques: Free Motion</strong></p>
+                        <p>Date: 15th Nov, Time: 2 PM, Location: Quilt Studio</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

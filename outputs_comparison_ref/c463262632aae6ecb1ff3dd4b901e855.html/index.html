@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventTickets - Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1>Featured Events</h1>
+            <p>Discover the most exciting events happening near you!</p>
+            <button onclick="location.href='featured-events.html'">Explore Featured Events</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="my-account.html">My Account</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="search-section">
+            <h2>Find Tickets</h2>
+            <input type="text" placeholder="Search by artist, team, event, or venue">
+            <select>
+                <option value="">Filter by availability</option>
+                <option value="available">Available</option>
+                <option value="sold-out">Sold Out</option>
+            </select>
+            <select>
+                <option value="">Filter by location</option>
+                <option value="city1">City 1</option>
+                <option value="city2">City 2</option>
+            </select>
+            <button>Search</button>
+        </section>
+        <section class="calendar-section">
+            <h2>Upcoming Events</h2>
+            <div id="calendar"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 EventTickets</p>
+    </footer>
+</body>
+</html>

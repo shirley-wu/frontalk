@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum - Global Economics Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Global Economics Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="forum">
+            <h2>Discussion Forum</h2>
+            <input type="text" id="search-bar" placeholder="Search threads..." oninput="searchThreads()">
+            <div id="threads">
+                <!-- Example discussion threads -->
+                <div class="thread-card" data-keywords="global economy">
+                    <h3>Global Economic Shifts</h3>
+                    <p>Author: Jane Doe</p>
+                    <p>Replies: 12</p>
+                </div>
+                <div class="thread-card" data-keywords="inflation trends">
+                    <h3>Inflation Trends in 2023</h3>
+                    <p>Author: John Smith</p>
+                    <p>Replies: 8</p>
+                </div>
+                <div class="thread-card" data-keywords="unemployment rates">
+                    <h3>Unemployment Rates Analysis</h3>
+                    <p>Author: Emily Johnson</p>
+                    <p>Replies: 5</p>
+                </div>
+                <div class="thread-card" data-keywords="economic policies">
+                    <h3>Economic Policies Impact</h3>
+                    <p>Author: Michael Brown</p>
+                    <p>Replies: 10</p>
+                </div>
+                <div class="thread-card" data-keywords="regional trade">
+                    <h3>Regional Trade Agreements</h3>
+                    <p>Author: Sarah Lee</p>
+                    <p>Replies: 7</p>
+                </div>
+            </div>
+            <p id="no-results" style="display:none;">No results found.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Global Economics Hub</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-image: url('../../../../placeholder/placeholder.png');
+    background-size: cover;
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+}
+
+.banner-headline {
+    font-size: 2.5em;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.banner p {
+    font-size: 1.2em;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+.lessons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.lesson {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: calc(33% - 20px);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.lesson img {
+    width: 100%;
+}
+
+.community-links a {
+    display: block;
+    margin: 10px 0;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.community-links a:hover {
+    text-decoration: underline;
+}
+
+#progress-tracker a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#progress-tracker a:hover {
+    background-color: #0056b3;
+}

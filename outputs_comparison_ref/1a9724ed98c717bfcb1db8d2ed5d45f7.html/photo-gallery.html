@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .caption {
+            text-align: center;
+            font-size: 0.9em;
+            font-style: italic;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Photo Gallery</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <div class="gallery-item">
+                <img src="../../../../placeholder/placeholder.png" alt="Scenic View 1">
+                <p class="caption">Trail A - Scenic View</p>
+            </div>
+            <div class="gallery-item">
+                <img src="../../../../placeholder/placeholder.png" alt="Scenic View 2">
+                <p class="caption">Trail B - Mountain Peak</p>
+            </div>
+            <div class="gallery-item">
+                <img src="../../../../placeholder/placeholder.png" alt="Scenic View 3">
+                <p class="caption">Trail C - Forest Path</p>
+            </div>
+            <div class="gallery-item">
+                <img src="../../../../placeholder/placeholder.png" alt="Scenic View 4">
+                <p class="caption">Trail D - River Crossing</p>
+            </div>
+            <div class="gallery-item">
+                <img src="../../../../placeholder/placeholder.png" alt="Scenic View 5">
+                <p class="caption">Trail E - Sunset Vista</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Pacific Northwest Snapshot. All rights reserved.</p>
+    </footer>
+</body>
+</html>

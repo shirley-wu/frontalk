@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Consultation Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Virtual Consultation Booking</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#faq">Consultation FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="booking">
+            <div class="progress-indicator">
+                <div class="step completed">Select Date & Time</div>
+                <div class="step">Enter Contact Information</div>
+                <div class="step">Confirm Booking</div>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="date">Select Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Select Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit" class="primary-action">Confirm Booking</button>
+            </form>
+        </section>
+        <section id="faq">
+            <h2>Consultation FAQs</h2>
+            <input type="text" id="faq-search" placeholder="Search FAQs...">
+            <div class="faq-item">
+                <h3>What is the duration of the consultation?</h3>
+                <div class="faq-answer">The consultation lasts approximately 30 minutes.</div>
+            </div>
+            <div class="faq-item">
+                <h3>How should I prepare for the consultation?</h3>
+                <div class="faq-answer">Prepare any questions you may have and ensure a quiet, well-lit space for the video call.</div>
+            </div>
+            <div class="faq-item">
+                <h3>Can I reschedule my consultation?</h3>
+                <div class="faq-answer">Yes, you can reschedule up to 24 hours before the appointment.</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Facial Enhancements Hub</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

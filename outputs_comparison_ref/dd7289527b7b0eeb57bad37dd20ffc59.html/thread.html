@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thread View</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Community Forum</h1>
+    </header>
+
+    <main>
+        <h2>Thread Title</h2>
+        <div class="thread-content">
+            <p>Thread content goes here...</p>
+            <p><strong>Posted by: Username</strong></p>
+        </div>
+
+        <h3>Replies</h3>
+        <div class="reply-card">
+            <p>Reply content goes here...</p>
+            <p><strong>Reply by: User1</strong></p>
+            <div class="reply-actions">
+                <span class="like-icon">👍</span>
+                <span class="dislike-icon">👎</span>
+                <button>Reply</button>
+            </div>
+        </div>
+        <!-- Repeat reply-card for other replies -->
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Community Forum</p>
+    </footer>
+
+    <style>
+        .thread-content, .reply-card {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .reply-actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .like-icon, .dislike-icon {
+            margin-right: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .like-icon:hover, .dislike-icon:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniWiki - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header class="hero-section">
+        <img src="../../../../placeholder/placeholder.png" alt="Day School Campus" class="hero-image">
+        <div class="hero-overlay">
+            <h1 class="hero-title">Welcome to MiniWiki</h1>
+            <p class="hero-description">Your go-to resource for educational institutions and topics.</p>
+        </div>
+    </header>
+
+    <nav class="language-selection">
+        <label for="language">Language:</label>
+        <select id="language" name="language">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+        </select>
+    </nav>
+
+    <section class="search-section">
+        <input type="text" id="search-bar" placeholder="Search educational topics...">
+        <button id="search-button">Search</button>
+        <a href="#advanced-search" class="advanced-search-link">Advanced Search</a>
+    </section>
+
+    <section id="advanced-search" class="advanced-search">
+        <h2>Advanced Search</h2>
+        <form id="advanced-search-form">
+            <label for="categories">Categories:</label>
+            <select id="categories" name="categories" multiple>
+                <option value="history">History</option>
+                <option value="science">Science</option>
+                <option value="arts">Arts</option>
+            </select>
+            <button type="submit">Apply Filters</button>
+        </form>
+    </section>
+
+    <section class="about-section">
+        <h2>About MiniWiki</h2>
+        <p>MiniWiki is dedicated to providing comprehensive information on educational institutions and topics. Our mission is to foster learning and collaboration among users worldwide.</p>
+    </section>
+
+    <section class="featured-articles">
+        <h2>Featured Articles</h2>
+        <ul>
+            <li><a href="article1.html">Article 1 Title</a> - Brief summary of Article 1.</li>
+            <li><a href="article2.html">Article 2 Title</a> - Brief summary of Article 2.</li>
+            <li><a href="article3.html">Article 3 Title</a> - Brief summary of Article 3.</li>
+        </ul>
+    </section>
+
+    <section class="recent-edits">
+        <h2>Recent Edits</h2>
+        <ul>
+            <li><a href="article4.html">Article 4 Title</a> - Edited on 2023-10-01</li>
+            <li><a href="article5.html">Article 5 Title</a> - Edited on 2023-10-02</li>
+            <li><a href="article6.html">Article 6 Title</a> - Edited on 2023-10-03</li>
+            <li><a href="article7.html">Article 7 Title</a> - Edited on 2023-10-04</li>
+            <li><a href="article8.html">Article 8 Title</a> - Edited on 2023-10-05</li>
+        </ul>
+        <p>Only articles edited by registered users appear here.</p>
+    </section>
+
+    <section class="top-contributors">
+        <h2>Top Contributors</h2>
+        <ol>
+            <li><a href="contributor1.html">User1</a> - 25 edits</li>
+            <li><a href="contributor2.html">User2</a> - 20 edits</li>
+            <li><a href="contributor3.html">User3</a> - 15 edits</li>
+        </ol>
+    </section>
+</body>
+</html>

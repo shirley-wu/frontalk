@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation - Alpine Lutheran Church</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Thank You for Signing Up!</h1>
+    </header>
+    <main>
+        <p>Thank you, <span id="name"></span>, for signing up for <span id="opportunity"></span>.</p>
+        <p>A confirmation email has been sent to <span id="email"></span>.</p>
+        <a href="index.html">Return to Homepage</a>
+    </main>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('name').innerText = urlParams.get('name');
+        document.getElementById('email').innerText = urlParams.get('email');
+        document.getElementById('opportunity').innerText = urlParams.get('opportunity').replace('_', ' ');
+    </script>
+</body>
+</html>

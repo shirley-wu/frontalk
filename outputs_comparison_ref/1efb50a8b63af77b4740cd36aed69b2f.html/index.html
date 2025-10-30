@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaacs & Associates</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="fixed-nav">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="appointment.html">Book Appointment</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="#" id="liveChat">Live Chat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Isaacs & Associates</h1>
+            <p>Your partner in mental health and well-being</p>
+            <a href="appointment.html" class="cta-button">Book an Appointment</a>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-carousel">
+            <div class="testimonial">
+                <img src="../../../../placeholder/placeholder.png" alt="Client Photo">
+                <p><em>"Isaacs & Associates changed my life for the better."</em></p>
+                <strong>- John</strong>
+            </div>
+            <div class="testimonial">
+                <img src="../../../../placeholder/placeholder.png" alt="Client Photo">
+                <p><em>"The therapists are truly caring and professional."</em></p>
+                <strong>- Sarah</strong>
+            </div>
+            <div class="testimonial">
+                <img src="../../../../placeholder/placeholder.png" alt="Client Photo">
+                <p><em>"I feel supported and understood here."</em></p>
+                <strong>- Michael</strong>
+            </div>
+            <div class="testimonial">
+                <img src="../../../../placeholder/placeholder.png" alt="Client Photo">
+                <p><em>"A safe space to explore my mental health."</em></p>
+                <strong>- Emily</strong>
+            </div>
+            <div class="testimonial">
+                <img src="../../../../placeholder/placeholder.png" alt="Client Photo">
+                <p><em>"Highly recommend their services."</em></p>
+                <strong>- David</strong>
+            </div>
+        </div>
+    </section>
+
+    <div id="chat-box" class="chat-box hidden">
+        <h3>Live Chat</h3>
+        <div class="chat-content">
+            <!-- Chat content goes here -->
+        </div>
+        <textarea placeholder="Type your message here..."></textarea>
+        <button id="send-chat">Send</button>
+        <button id="end-chat">End Chat</button>
+    </div>
+
+    <div id="feedback-box" class="feedback-box hidden">
+        <h3>Rate Your Chat Experience</h3>
+        <label for="rating">Satisfaction (1-5):</label>
+        <input type="number" id="rating" min="1" max="5">
+        <textarea placeholder="Additional comments..."></textarea>
+        <button id="submit-feedback">Submit Feedback</button>
+    </div>
+</body>
+</html>

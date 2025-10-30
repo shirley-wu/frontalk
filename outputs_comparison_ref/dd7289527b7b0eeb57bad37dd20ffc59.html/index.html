@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Forum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Community Forum</h1>
+        <nav>
+            <a href="profile.html">Profile</a>
+            <a href="notifications.html"><span class="notification-icon">🔔</span><span class="badge">3</span></a>
+            <form action="search.html" method="get" class="search-form">
+                <input type="text" name="q" placeholder="Search threads...">
+                <button type="submit">Search</button>
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <section class="auth-buttons">
+            <button onclick="location.href='signup.html'">Sign Up</button>
+            <button onclick="location.href='login.html'">Log In</button>
+        </section>
+
+        <section class="new-thread">
+            <button onclick="location.href='new-thread.html'">New Thread</button>
+        </section>
+
+        <section class="tags">
+            <h2>Popular Tags</h2>
+            <div class="tags-grid">
+                <span class="tag">Technology</span>
+                <span class="tag">Health</span>
+                <span class="tag">Education</span>
+                <span class="tag">Sports</span>
+                <span class="tag">Entertainment</span>
+            </div>
+        </section>
+
+        <section class="threads">
+            <h2>Recent Threads</h2>
+            <ul>
+                <li><a href="thread.html?id=1">Thread Title 1</a></li>
+                <li><a href="thread.html?id=2">Thread Title 2</a></li>
+                <li><a href="thread.html?id=3">Thread Title 3</a></li>
+                <li><a href="thread.html?id=4">Thread Title 4</a></li>
+                <li><a href="thread.html?id=5">Thread Title 5</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Community Forum</p>
+    </footer>
+</body>
+</html>

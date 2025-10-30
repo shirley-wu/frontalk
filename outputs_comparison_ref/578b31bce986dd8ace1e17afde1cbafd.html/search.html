@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - ActiveMatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ActiveMatch</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile_creation.html">Create Profile</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="advanced-search">
+            <h2>Advanced Search</h2>
+            <form id="searchForm">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location">
+                <label for="interests">Interests:</label>
+                <select id="interests" name="interests" multiple>
+                    <option value="hiking">Hiking</option>
+                    <option value="cycling">Cycling</option>
+                    <option value="yoga">Yoga</option>
+                    <option value="running">Running</option>
+                    <option value="swimming">Swimming</option>
+                </select>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

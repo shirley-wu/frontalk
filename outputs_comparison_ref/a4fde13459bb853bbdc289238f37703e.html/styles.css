@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.fixed-header {
+    position: fixed;
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+nav {
+    margin-top: 80px;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.obituary-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.obituary-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: calc(33.333% - 20px);
+}
+
+.obituary-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.social-share a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.recent-obituaries {
+    position: fixed;
+    right: 20px;
+    top: 150px;
+    width: 200px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.recent-obituaries img {
+    width: 30px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.email-signup {
+    margin-bottom: 40px;
+}
+
+.email-signup form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.recommended-reading ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recommended-reading li {
+    margin-bottom: 20px;
+}
+
+.faq div {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.faq div p {
+    display: none;
+}
+
+.faq div:hover p {
+    display: block;
+}
+
+section img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+section img:hover {
+    transform: scale(1.1);
+}

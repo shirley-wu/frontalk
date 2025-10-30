@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - EventTickets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="my-account.html">My Account</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>My Account</h2>
+        <section class="dashboard">
+            <h3>Past Orders</h3>
+            <ul>
+                <li>Order 1: Concert Ticket</li>
+                <li>Order 2: Sports Event Ticket</li>
+                <li>Order 3: Theater Ticket</li>
+                <li>Order 4: Concert Ticket</li>
+                <li>Order 5: Sports Event Ticket</li>
+            </ul>
+            <h3>Recommended Events</h3>
+            <ul>
+                <li>
+                    Concert 3 - <button onclick="location.href='event-details.html?event=Concert 3'">View Details</button>
+                    <button onclick="addToWishList('Concert 3')">Add to Wish List</button>
+                </li>
+                <li>
+                    Sport 3 - <button onclick="location.href='event-details.html?event=Sport 3'">View Details</button>
+                    <button onclick="addToWishList('Sport 3')">Add to Wish List</button>
+                </li>
+                <li>
+                    Theater 2 - <button onclick="location.href='event-details.html?event=Theater 2'">View Details</button>
+                    <button onclick="addToWishList('Theater 2')">Add to Wish List</button>
+                </li>
+            </ul>
+            <h3>Wish List</h3>
+            <ul id="wishList">
+                <!-- Dynamic content -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 EventTickets</p>
+    </footer>
+    <script>
+        function addToWishList(event) {
+            const wishList = document.getElementById('wishList');
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `${event} - <button onclick="removeFromWishList(this)">Remove</button>`;
+            wishList.appendChild(listItem);
+        }
+
+        function removeFromWishList(button) {
+            const listItem = button.parentNode;
+            listItem.parentNode.removeChild(listItem);
+        }
+    </script>
+</body>
+</html>

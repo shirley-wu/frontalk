@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doubtful Sounds</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header class="hero">
+        <div class="overlay">
+            <h1>Doubtful Sounds</h1>
+            <button onclick="window.location.href='music-review-archive.html'">Explore Music Reviews</button>
+            <button onclick="window.location.href='upcoming-events-calendar.html'">Upcoming Events</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="rotating-banner">
+            <div class="banner-slide">
+                <img src="../../../../placeholder/placeholder.png" alt="Event 1">
+                <div class="banner-caption">Upcoming Event: Artist A Live in Concert</div>
+            </div>
+            <div class="banner-slide">
+                <img src="../../../../placeholder/placeholder.png" alt="Album 1">
+                <div class="banner-caption">Featured Album: "Echoes of Silence"</div>
+            </div>
+            <!-- Additional slides -->
+            <button class="banner-arrow left" onclick="previousSlide()">&#10094;</button>
+            <button class="banner-arrow right" onclick="nextSlide()">&#10095;</button>
+            <div class="banner-dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <!-- Additional dots -->
+            </div>
+        </section>
+
+        <section class="featured-reviews">
+            <h2>Featured Reviews</h2>
+            <article>
+                <h3>Artist B - Album "Soundscapes"</h3>
+                <p>Genre: Rock</p>
+                <p>Excerpt of the review...</p>
+                <button onclick="window.location.href='music-review-archive.html#review1'">Read More</button>
+            </article>
+            <article>
+                <h3>Artist C - Album "Melodies"</h3>
+                <p>Genre: Jazz</p>
+                <p>Excerpt of the review...</p>
+                <button onclick="window.location.href='music-review-archive.html#review2'">Read More</button>
+            </article>
+            <article>
+                <h3>Artist D - Album "Harmonies"</h3>
+                <p>Genre: Pop</p>
+                <p>Excerpt of the review...</p>
+                <button onclick="window.location.href='music-review-archive.html#review3'">Read More</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="music-review-archive.html">Music Review Archive</a>
+            <a href="upcoming-events-calendar.html">Upcoming Events Calendar</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="social-media">
+            <a href="#" class="social-icon">FB</a>
+            <a href="#" class="social-icon">TW</a>
+            <a href="#" class="social-icon">IG</a>
+        </div>
+    </footer>
+</body>
+</html>

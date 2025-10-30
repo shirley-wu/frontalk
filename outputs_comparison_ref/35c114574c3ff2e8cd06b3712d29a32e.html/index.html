@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripoto - Your Travel Companion</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Tripoto</h1>
+        <nav>
+            <ul>
+                <li><a href="#carousel">Home</a></li>
+                <li><a href="planner.html">Plan Your Trip</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+                <li><a href="inspiration.html">Get Inspired</a></li>
+                <li><a href="bookmarks.html">Bookmarks</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="safety.html">Safety Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="carousel" class="carousel">
+            <div class="carousel-slide active">
+                <img src="../../../../placeholder/placeholder.png" alt="Destination 1">
+                <div class="carousel-caption">Explore the Wonders of Paris</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="../../../../placeholder/placeholder.png" alt="Destination 2">
+                <div class="carousel-caption">Discover the Beauty of Bali</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="../../../../placeholder/placeholder.png" alt="Destination 3">
+                <div class="carousel-caption">Adventure Awaits in New Zealand</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="../../../../placeholder/placeholder.png" alt="Destination 4">
+                <div class="carousel-caption">Relax in the Maldives</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="../../../../placeholder/placeholder.png" alt="Destination 5">
+                <div class="carousel-caption">Cultural Journey in Japan</div>
+            </div>
+            <button class="carousel-nav prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-nav next" onclick="nextSlide()">&#10095;</button>
+            <div class="carousel-dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

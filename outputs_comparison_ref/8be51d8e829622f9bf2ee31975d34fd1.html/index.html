@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quilter's Haven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <img src="../../../../placeholder/placeholder.png" alt="Quilt Pattern Banner" class="hero-img">
+            <div class="hero-text">
+                <h1>Welcome to Quilter's Haven</h1>
+                <p>Your journey into the art of quilting begins here</p>
+                <a href="gallery.html" class="cta-button">Explore the Gallery</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="blog">
+            <h2>Blog</h2>
+            <p>Explore our latest articles on quilting techniques and experiences.</p>
+            <a href="blog.html">Go to Blog</a>
+        </section>
+        <section id="calendar">
+            <h2>Workshops & Calendar</h2>
+            <p>View and sign up for upcoming quilting workshops.</p>
+            <a href="calendar.html">View Calendar</a>
+        </section>
+        <section id="newsletter">
+            <h2>Newsletter Subscription</h2>
+            <form id="subscription-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <div id="subscription-confirmation" style="display:none;">
+                <p>Thank you for subscribing! <a href="index.html">Return to Homepage</a></p>
+            </div>
+        </section>
+        <section id="quilt-of-the-month">
+            <h2>Quilt of the Month</h2>
+            <img src="../../../../placeholder/placeholder.png" alt="Quilt of the Month">
+            <p>This month's featured quilt comes with a unique story...</p>
+            <a href="quilt-of-the-month.html">Read More</a>
+            <button onclick="openNominateForm()">Nominate a Quilt</button>
+            <form id="nominate-form" style="display:none;">
+                <label for="nominate-name">Name:</label>
+                <input type="text" id="nominate-name" name="nominate-name" required>
+                <label for="nominate-email">Email:</label>
+                <input type="email" id="nominate-email" name="nominate-email" required>
+                <label for="quilt-details">Quilt Details:</label>
+                <textarea id="quilt-details" name="quilt-details" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="user-profile">
+            <h2>Your Profile</h2>
+            <a href="profile.html">Manage Your Profile</a>
+        </section>
+    </main>
+    <script>
+        document.getElementById('subscription-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('subscription-confirmation').style.display = 'block';
+        });
+
+        function openNominateForm() {
+            document.getElementById('nominate-form').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

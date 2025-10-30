@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Forum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Community Forum</h1>
+    </header>
+    <main>
+        <section class="forum-section">
+            <h2>Game Strategies & Discussions</h2>
+            <!-- Placeholder content for discussions -->
+        </section>
+
+        <section class="reviews-section">
+            <h2>User Reviews</h2>
+            <div class="review-controls">
+                <label for="sort-reviews">Sort by Rating:</label>
+                <select id="sort-reviews">
+                    <option value="asc">Ascending</option>
+                    <option value="desc">Descending</option>
+                </select>
+            </div>
+            <div class="review-list">
+                <div class="review-item">
+                    <img src="../../../../placeholder/placeholder.png" alt="User Avatar" class="avatar">
+                    <div class="review-content">
+                        <h3>Game Title</h3>
+                        <p>Rating: ★★★★☆</p>
+                        <p>Review: Great game!</p>
+                    </div>
+                </div>
+                <div class="review-item">
+                    <img src="../../../../placeholder/placeholder.png" alt="User Avatar" class="avatar">
+                    <div class="review-content">
+                        <h3>Game Title</h3>
+                        <p>Rating: ★★★☆☆</p>
+                        <p>Review: Good, but could be better.</p>
+                    </div>
+                </div>
+                <!-- Add more review items -->
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('sort-reviews').addEventListener('change', function() {
+            alert('Reviews sorted by ' + this.value);
+        });
+    </script>
+</body>
+</html>

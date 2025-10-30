@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genealogical Records</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="sticky-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="genealogical_records.html">Genealogical Records</a></li>
+                <li><a href="family_tree_builder.html">Family Tree Builder</a></li>
+                <li><a href="community_forum.html">Community Forum</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Genealogical Records</h1>
+        <div class="filter-sort">
+            <div class="filter">
+                <label for="document-type">Filter by Document Type:</label>
+                <select id="document-type">
+                    <option value="all">All</option>
+                    <option value="marriage">Marriage Certificates</option>
+                    <option value="wills">Wills</option>
+                    <option value="cemetery">Cemetery Listings</option>
+                </select>
+            </div>
+            <div class="sort">
+                <label for="sort-order">Sort By:</label>
+                <select id="sort-order">
+                    <option value="date">Date</option>
+                    <option value="alphabetical">Alphabetical</option>
+                </select>
+            </div>
+        </div>
+        <div class="records-list">
+            <div class="record-item">
+                <h3>Marriage Certificate: John Doe & Jane Smith</h3>
+                <p>Date: 01/01/1900</p>
+                <img src="../../../../placeholder/placeholder.png" alt="Marriage Certificate">
+            </div>
+            <div class="record-item">
+                <h3>Will of William Brown</h3>
+                <p>Date: 02/02/1920</p>
+                <img src="../../../../placeholder/placeholder.png" alt="Will Document">
+            </div>
+            <div class="record-item">
+                <h3>Cemetery Listing: Green Hill Cemetery</h3>
+                <p>Date: 03/03/1950</p>
+                <img src="../../../../placeholder/placeholder.png" alt="Cemetery Listing">
+            </div>
+            <div class="record-item">
+                <h3>Marriage Certificate: Mark Twain & Mary Johnson</h3>
+                <p>Date: 04/04/1880</p>
+                <img src="../../../../placeholder/placeholder.png" alt="Marriage Certificate">
+            </div>
+            <div class="record-item">
+                <h3>Will of Sarah White</h3>
+                <p>Date: 05/05/1930</p>
+                <img src="../../../../placeholder/placeholder.png" alt="Will Document">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESPN Sports Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ESPN Sports Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#live-scoreboard">Live Scoreboard</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="standings.html">Standings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="live-scoreboard">
+            <div class="marquee">
+                <marquee behavior="scroll" direction="left" scrollamount="5">
+                    <span class="headline">Breaking: Team A wins the championship! | Player X scores a hat-trick! | Major upset in League B!</span>
+                </marquee>
+            </div>
+            <h2>Live Scoreboard</h2>
+            <div class="scoreboard">
+                <!-- Example of a live match score -->
+                <div class="match">
+                    <p>Team A vs Team B</p>
+                    <p>Score: 2 - 1</p>
+                    <button onclick="window.location.href='highlights.html'">Highlights</button>
+                </div>
+                <!-- Repeat similar blocks for other live matches -->
+            </div>
+        </section>
+    </main>
+</body>
+</html>
