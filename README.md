@@ -105,7 +105,7 @@ To run ACECoder, run `python infer_acecoder_textual.py` or `python infer_acecode
 Please cite our paper if this repository inspires your work!
 
 ```
-@software{wu2025frontalk,
+@article{wu2025frontalk,
     title={FronTalk: Benchmarking Front-End Development as Conversational Code Generation with Multi-Modal Feedback},
     author={Wu, Xueqing and Xue, Zihan and Yin, Da and Zhou, Shuyan and Chang, Kai-Wei and Peng, Nanyun and Wen, Yeming},
     year={2025},
