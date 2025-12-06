@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - TechShop</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="support.html">Help & Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="product-detail">
+            <img src="../../../../placeholder/placeholder.png" alt="Product Image">
+            <h1>Product Name</h1>
+            <p>Price: $1000</p>
+            <button onclick="addToWishlist()">Add to Wishlist</button>
+            <button onclick="compareProduct()">Compare Products</button>
+        </section>
+
+        <section class="product-reviews">
+            <h2>Product Reviews</h2>
+            <div class="review">
+                <div class="star-rating">★★★★★</div>
+                <p>This product is amazing!</p>
+            </div>
+            <!-- Repeat for at least 5 reviews -->
+            <form id="reviewForm">
+                <textarea placeholder="Write your review here"></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 TechShop</p>
+    </footer>
+</body>
+</html>

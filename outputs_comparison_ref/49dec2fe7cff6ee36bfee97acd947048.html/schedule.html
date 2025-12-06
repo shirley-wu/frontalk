@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Conference Schedule & Program Viewer</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="filter-bar">
+            <label for="track">Track:</label>
+            <select id="track">
+                <option value="all">All</option>
+                <option value="keynote">Keynotes</option>
+                <option value="workshop">Workshops</option>
+                <option value="panel">Panels</option>
+            </select>
+            <label for="speaker">Speaker:</label>
+            <select id="speaker">
+                <option value="all">All</option>
+                <option value="speaker1">Speaker 1</option>
+                <option value="speaker2">Speaker 2</option>
+                <option value="speaker3">Speaker 3</option>
+            </select>
+            <button id="reset-filters">Reset Filters</button>
+        </div>
+        <div class="schedule">
+            <!-- Schedule entries with color-coding -->
+            <div class="session keynote">
+                <h3>Keynote: The Future of Network Security</h3>
+                <p>Speaker: <a href="speakers.html#speaker1">Speaker 1</a></p>
+                <p>Time: 10:00 AM - 11:00 AM</p>
+            </div>
+            <div class="session workshop">
+                <h3>Workshop: Advanced Cryptography</h3>
+                <p>Speaker: <a href="speakers.html#speaker2">Speaker 2</a></p>
+                <p>Time: 11:30 AM - 1:00 PM</p>
+            </div>
+            <!-- More sessions -->
+        </div>
+    </section>
+    <script>
+        document.getElementById('reset-filters').addEventListener('click', () => {
+            document.getElementById('track').value = 'all';
+            document.getElementById('speaker').value = 'all';
+            // Reset session display
+        });
+    </script>
+</body>
+</html>

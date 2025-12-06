@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+#featured-news {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.featured-story {
+    position: relative;
+}
+
+.featured-image {
+    width: 100%;
+    height: auto;
+    animation: zoomIn 10s infinite;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#trending-now .trending-carousel {
+    display: flex;
+    overflow-x: auto;
+}
+
+.trending-story {
+    flex: 0 0 20%;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#news-feed-form label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#notifications .notification {
+    background-color: #e3f2fd;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#weather-updates {
+    background-color: #e0f7fa;
+    padding: 20px;
+    text-align: center;
+}
+
+#search-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#advanced-filters {
+    margin-top: 10px;
+}
+
+#settings-form {
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.calendar-container {
+    display: flex;
+}
+
+.calendar-sidebar {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.calendar-main {
+    flex: 3;
+    padding: 10px;
+}
+
+.event-item {
+    margin: 5px 0;
+    position: relative;
+}
+
+.event-item:hover .event-popup {
+    display: block;
+}
+
+.event-popup {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    left: 100%;
+    top: 0;
+}
+
+#map {
+    height: 400px;
+    background-color: #ddd;
+}
+
+#event-submission {
+    background-color: #fff3e0;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#event-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#event-form button {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}

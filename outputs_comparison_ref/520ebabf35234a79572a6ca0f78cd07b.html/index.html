@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passion For Savings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Passion For Savings</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="coupon-stacking-guide.html">Coupon Stacking Guide</a></li>
+                <li><a href="deal-categories.html">Deal Categories</a></li>
+                <li><a href="#trending-coupons">Trending Coupons</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="../../../../placeholder/placeholder.png" alt="Savings Background" class="hero-image">
+        <div class="hero-content">
+            <h2>Save Big on Your Favorite Brands!</h2>
+            <input type="text" placeholder="Search for deals or coupons..." class="search-bar">
+            <button class="subscribe-btn">Subscribe for Daily Updates</button>
+        </div>
+    </section>
+
+    <section class="featured-deals">
+        <h3>Featured Deals</h3>
+        <div class="deals-container">
+            <!-- Example deal cards -->
+            <div class="deal-card">
+                <img src="../../../../placeholder/placeholder.png" alt="Deal Image">
+                <h4>Clothing Deal <span>👚</span></h4>
+                <p>Save 20% on select clothing items.</p>
+            </div>
+            <div class="deal-card">
+                <img src="../../../../placeholder/placeholder.png" alt="Deal Image">
+                <h4>Shoe Deal <span>👟</span></h4>
+                <p>Buy one get one free on shoes.</p>
+            </div>
+            <div class="deal-card">
+                <img src="../../../../placeholder/placeholder.png" alt="Deal Image">
+                <h4>Gadget Deal <span>📱</span></h4>
+                <p>Up to 50% off on gadgets.</p>
+            </div>
+            <div class="deal-card">
+                <img src="../../../../placeholder/placeholder.png" alt="Deal Image">
+                <h4>Home Goods <span>🏠</span></h4>
+                <p>30% off on home appliances.</p>
+            </div>
+            <div class="deal-card">
+                <img src="../../../../placeholder/placeholder.png" alt="Deal Image">
+                <h4>Beauty Products <span>💄</span></h4>
+                <p>Exclusive 25% discount on beauty products.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="trending-coupons">
+        <h3>Trending Coupons</h3>
+        <div class="coupons-container">
+            <!-- Example trending coupons -->
+            <div class="coupon">
+                <p>Coupon Code: SAVE20</p>
+                <p>Description: 20% off on all items</p>
+                <p>Expires: 10/31/2023</p>
+                <span class="badge new">New</span>
+            </div>
+            <div class="coupon">
+                <p>Coupon Code: FREESHIP</p>
+                <p>Description: Free shipping on orders over $50</p>
+                <p>Expires: 11/05/2023</p>
+                <span class="badge expiring-soon">Expiring Soon</span>
+            </div>
+            <div class="coupon">
+                <p>Coupon Code: BOGO</p>
+                <p>Description: Buy one, get one free</p>
+                <p>Expires: 11/10/2023</p>
+                <span class="badge new">New</span>
+            </div>
+            <div class="coupon">
+                <p>Coupon Code: BLACKFRIDAY</p>
+                <p>Description: 50% off sitewide</p>
+                <p>Expires: 11/30/2023</p>
+                <span class="badge">Trending</span>
+            </div>
+            <div class="coupon">
+                <p>Coupon Code: HOLIDAY10</p>
+                <p>Description: 10% off holiday items</p>
+                <p>Expires: 12/15/2023</p>
+                <span class="badge expiring-soon">Expiring Soon</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="deal-alerts">
+        <h3>Set Deal Alerts</h3>
+        <form>
+            <label for="categories">Choose categories or brands:</label>
+            <select id="categories" multiple>
+                <option value="clothing">Clothing</option>
+                <option value="shoes">Shoes</option>
+                <option value="consumer-goods">Consumer Goods</option>
+            </select>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Set Alert</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Passion For Savings</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

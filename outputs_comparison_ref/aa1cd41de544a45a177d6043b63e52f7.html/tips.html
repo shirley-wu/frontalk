@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Tips & Tutorials</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Photography Tips & Tutorials</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Photo Gallery</a></li>
+                <li><a href="shop.html">Online Shop</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="tips-tutorials">
+            <article class="tip">
+                <h2>Understanding Lighting</h2>
+                <p>Learn how to use natural and artificial lighting to enhance your photography.</p>
+            </article>
+            <article class="video">
+                <h2>Composition Basics</h2>
+                <video src="../../../../placeholder/placeholder.mp4" controls></video>
+                <p>A video tutorial on the fundamentals of composition.</p>
+            </article>
+            <article class="tip">
+                <h2>Editing Techniques</h2>
+                <p>Discover editing tricks that can take your photos to the next level.</p>
+            </article>
+            <article class="video">
+                <h2>Mastering Your Camera</h2>
+                <video src="../../../../placeholder/placeholder.mp4" controls></video>
+                <p>An in-depth look at camera settings and functionalities.</p>
+            </article>
+            <article class="tip">
+                <h2>Creative Photography Ideas</h2>
+                <p>Explore unique ideas to make your photography stand out.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Lifestyle Photography & Design</p>
+    </footer>
+
+    <style>
+        #tips-tutorials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        article {
+            width: calc(50% - 20px);
+            padding: 20px;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        article:hover h2 {
+            transform: scale(1.05);
+            color: #0044cc;
+        }
+
+        .tip {
+            background-color: #e0f7fa;
+        }
+
+        .video {
+            background-color: #fff3e0;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,35 @@
+body {
+    background-color: #e3f2fd;
+}
+
+.discussion-boards {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.discussion-board {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 30%;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.discussion-board h3 {
+    margin-top: 0;
+}
+
+.thread {
+    padding: 5px 0;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.thread:hover {
+    background-color: #bbdefb;
+}
+
+.icon {
+    margin-right: 5px;
+}

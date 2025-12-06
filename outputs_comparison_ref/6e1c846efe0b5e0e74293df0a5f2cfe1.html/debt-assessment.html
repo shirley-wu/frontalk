@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debt Assessment - DebtWise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DebtWise</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    <section class="assessment">
+        <h2>Interactive Debt Assessment Tool</h2>
+        <form id="assessment-form">
+            <label for="income">Monthly Income:</label>
+            <input type="number" id="income" required>
+            <label for="expenses">Monthly Expenses:</label>
+            <input type="number" id="expenses" required>
+            <label for="debt">Total Debt:</label>
+            <input type="number" id="debt" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="assessment-summary" style="display:none;">
+            <h3>Your Financial Health Summary</h3>
+            <p id="summary-text"></p>
+            <button onclick="location.href='debt-progress.html'">View Debt Progress Tracker</button>
+        </div>
+    </section>
+    <script>
+        document.getElementById('assessment-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('assessment-summary').style.display = 'block';
+            document.getElementById('summary-text').innerText = 'Based on your inputs, here are some personalized recommendations...';
+        });
+    </script>
+</body>
+</html>

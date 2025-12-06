@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer Portal - JobConnect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px;
+        }
+        .dashboard section {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .dashboard section h2 {
+            margin-top: 0;
+        }
+        .dashboard section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .dashboard section ul li {
+            margin-bottom: 10px;
+        }
+        .dashboard section ul li button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Employer Portal</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+    <section>
+        <h2>Create New Job Listing</h2>
+        <form>
+            <label>Job Title: <input type="text" name="title"></label><br><br>
+            <label>Description: <textarea name="description"></textarea></label><br><br>
+            <label>Requirements: <textarea name="requirements"></textarea></label><br><br>
+            <label>Location: <input type="text" name="location"></label><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section class="dashboard">
+        <section>
+            <h2>Active Listings</h2>
+            <ul>
+                <li>Job 1 <button>Edit</button><button>Delete</button></li>
+                <li>Job 2 <button>Edit</button><button>Delete</button></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Pending Approvals</h2>
+            <ul>
+                <li>Job 3 <button>Edit</button><button>Delete</button></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Expired Listings</h2>
+            <ul>
+                <li>Job 4 <button>Edit</button><button>Delete</button></li>
+            </ul>
+        </section>
+    </section>
+    <footer>
+        <p>&copy; 2023 JobConnect. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist - TechShop</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="support.html">Help & Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="wishlist">
+            <h2>Your Wishlist</h2>
+            <button onclick="shareWishlist()">Share Wishlist</button>
+            <div class="wishlist-items">
+                <!-- Placeholder for wishlist items -->
+                <div class="wishlist-item">
+                    <img src="../../../../placeholder/placeholder.png" alt="Product Image">
+                    <h3>Product Name</h3>
+                    <p>Price: $1000</p>
+                    <button onclick="removeFromWishlist()">Remove</button>
+                </div>
+                <!-- Repeat for at least 5 items -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 TechShop</p>
+    </footer>
+</body>
+</html>

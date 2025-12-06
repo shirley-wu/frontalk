@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Quilter's Haven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Quilt Gallery</h1>
+        <a href="index.html">Back to Homepage</a>
+    </header>
+    <main>
+        <div class="gallery-grid">
+            <div class="gallery-item" onclick="viewDetails(1)">
+                <img src="../../../../placeholder/placeholder.png" alt="Quilt 1" class="gallery-img">
+                <div class="hover-description">A beautiful floral quilt...</div>
+            </div>
+            <div class="gallery-item" onclick="viewDetails(2)">
+                <img src="../../../../placeholder/placeholder.png" alt="Quilt 2" class="gallery-img">
+                <div class="hover-description">A geometric pattern quilt...</div>
+            </div>
+            <div class="gallery-item" onclick="viewDetails(3)">
+                <img src="../../../../placeholder/placeholder.png" alt="Quilt 3" class="gallery-img">
+                <div class="hover-description">A classic patchwork quilt...</div>
+            </div>
+            <div class="gallery-item" onclick="viewDetails(4)">
+                <img src="../../../../placeholder/placeholder.png" alt="Quilt 4" class="gallery-img">
+                <div class="hover-description">A vibrant modern quilt...</div>
+            </div>
+            <div class="gallery-item" onclick="viewDetails(5)">
+                <img src="../../../../placeholder/placeholder.png" alt="Quilt 5" class="gallery-img">
+                <div class="hover-description">A traditional log cabin quilt...</div>
+            </div>
+        </div>
+    </main>
+    <script>
+        function viewDetails(quiltId) {
+            window.location.href = `quilt-details.html?id=${quiltId}`;
+        }
+    </script>
+</body>
+</html>

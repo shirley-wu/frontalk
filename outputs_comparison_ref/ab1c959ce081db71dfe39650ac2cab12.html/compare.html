@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Cars</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Compare Cars</h1>
+    </header>
+    <main>
+        <div class="tabs">
+            <button class="tab-button active" data-tab="car1">Car Model A</button>
+            <button class="tab-button" data-tab="car2">Car Model B</button>
+            <button class="tab-button" data-tab="car3">Car Model C</button>
+        </div>
+        <div class="tab-content active" id="car1">
+            <h2>Car Model A Specifications</h2>
+            <p>Engine: 2.0L Turbo</p>
+            <p>Power: 250 HP</p>
+            <p>Fuel Economy: 30 MPG</p>
+        </div>
+        <div class="tab-content" id="car2">
+            <h2>Car Model B Specifications</h2>
+            <p>Engine: 3.0L V6</p>
+            <p>Power: 300 HP</p>
+            <p>Fuel Economy: 25 MPG</p>
+        </div>
+        <div class="tab-content" id="car3">
+            <h2>Car Model C Specifications</h2>
+            <p>Engine: 1.8L Hybrid</p>
+            <p>Power: 200 HP</p>
+            <p>Fuel Economy: 40 MPG</p>
+        </div>
+        <button class="export-button">Export Comparison</button>
+    </main>
+    <footer>
+        <p>© 2023 Auto Insight</p>
+    </footer>
+
+    <script src="compare.js"></script>
+</body>
+</html>

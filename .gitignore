@@ -1,0 +1,4 @@
+.DS_Store
+__pycache__
+.idea
+outputs_comparison_ref/*/usability_compare_tmpdir/merged_screenshots.png

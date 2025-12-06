@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0077b6;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #ff7f50;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+#search input, #search button {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#search button {
+    background-color: #ff7f50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#search button:hover {
+    background-color: #e67300;
+}
+
+#recent-registrations {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+#recent-registrations ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#recent-registrations ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #0077b6;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+}

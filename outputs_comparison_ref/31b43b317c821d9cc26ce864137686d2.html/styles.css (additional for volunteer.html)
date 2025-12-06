@@ -1,0 +1,68 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, button {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+select {
+    position: relative;
+    display: inline-block;
+}
+
+select option {
+    padding-left: 25px;
+    position: relative;
+}
+
+select option[value="community_service"]:before {
+    content: '❤️';
+    position: absolute;
+    left: 5px;
+}
+
+select option[value="educational_activities"]:before {
+    content: '📚';
+    position: absolute;
+    left: 5px;
+}
+
+select option[value="event_planning"]:before {
+    content: '🎉';
+    position: absolute;
+    left: 5px;
+}
+
+select option[value="youth_programs"]:before {
+    content: '👦';
+    position: absolute;
+    left: 5px;
+}
+
+select option[value="music_team"]:before {
+    content: '🎵';
+    position: absolute;
+    left: 5px;
+}

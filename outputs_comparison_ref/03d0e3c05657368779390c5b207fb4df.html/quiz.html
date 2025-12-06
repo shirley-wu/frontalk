@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="sticky-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="quiz-section">
+            <h2>Comic Quiz</h2>
+            <form id="quiz-form">
+                <div class="quiz-question">
+                    <p>Question 1: What is the main theme of the webcomic?</p>
+                    <input type="radio" name="q1" value="a" required> A. Romance<br>
+                    <input type="radio" name="q1" value="b"> B. Engineering<br>
+                    <input type="radio" name="q1" value="c"> C. Cooking<br>
+                </div>
+                <div class="quiz-question">
+                    <p>Question 2: Who is the main character?</p>
+                    <input type="radio" name="q2" value="a" required> A. An artist<br>
+                    <input type="radio" name="q2" value="b"> B. An engineer<br>
+                    <input type="radio" name="q2" value="c"> C. A chef<br>
+                </div>
+                <button type="submit">Submit Quiz</button>
+            </form>
+            <div id="quiz-result"></div>
+        </section>
+    </main>
+    <script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+.featured-content, .carousel-item, .event {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.zodiac-symbol {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.read-more {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+}
+
+.carousel-item {
+    position: absolute;
+    transition: transform 0.5s ease;
+}
+
+.carousel-nav {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-nav:hover {
+    background-color: #0056b3;
+}
+
+.events {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: calc(33% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.event:hover img {
+    transform: scale(1.1);
+    border-color: #007BFF;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

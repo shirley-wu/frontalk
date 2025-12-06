@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.comparison-tool, .category-grid, .carousel, .comparison-timeline, .wishlist {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.software-card, .category-tile, .carousel-item, .timeline-entry, .wishlist-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.software-card:hover, .category-tile:hover, .carousel-item:hover, .timeline-entry:hover, .wishlist-item:hover {
+    transform: translateY(-5px);
+    border-color: #007BFF;
+}
+
+.carousel-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.carousel-prev, .carousel-next, .delete-comparison, .remove-wishlist {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.carousel-prev:hover, .carousel-next:hover, .delete-comparison:hover, .remove-wishlist:hover {
+    background-color: #0056b3;
+}
+
+.category-tile img, .carousel-item img, .software-card img, .wishlist-item img, .timeline-entry .software-icons img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.timeline-entry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.date {
+    font-weight: bold;
+}
+
+.software-icons {
+    display: flex;
+    gap: 10px;
+}

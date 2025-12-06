@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f0;
+    color: #333;
+}
+
+header {
+    background-color: #8c7b75;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #8c7b75;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.project, .tutorial-card, .forum-post, .idea, .featured-project, .seasonal-project {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project img, .tutorial-card img, .forum-post img, .idea img, .featured-project img, .seasonal-project img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project:hover, .tutorial-card:hover, .forum-post:hover, .idea:hover, .featured-project:hover, .seasonal-project:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tutorial-card {
+    background-color: #f0e6d6;
+}
+
+.tutorial-card h2 {
+    font-family: 'Georgia', serif;
+    font-size: 1.5em;
+}
+
+#notification {
+    background-color: #f0e6d6;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#top-voted-project {
+    background-color: #f0e6d6;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: glow 1s infinite alternate;
+}
+
+#top-voted-project h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px rgba(255, 153, 51, 0.5);
+    }
+    to {
+        box-shadow: 0 0 20px rgba(255, 153, 51, 1);
+    }
+}
+
+#featured-projects .featured-project::before {
+    content: 'New!';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff9933;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}

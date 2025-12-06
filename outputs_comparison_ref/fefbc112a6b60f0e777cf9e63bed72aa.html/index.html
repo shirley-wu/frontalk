@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeFinders</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <div class="overlay">
+                <h1>HomeFinders</h1>
+                <button class="cta" onclick="window.location.href='#listings'">Explore Property Listings</button>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#listings">Listings</a></li>
+            <li><a href="#map">Map</a></li>
+            <li><a href="#account">Account</a></li>
+        </ul>
+    </nav>
+
+    <section id="listings">
+        <h2>Property Listings</h2>
+        <div class="filter">
+            <input type="text" placeholder="Search by location">
+            <input type="number" placeholder="Min price">
+            <input type="number" placeholder="Max price">
+            <select>
+                <option value="">Property Type</option>
+                <option value="house">House</option>
+                <option value="apartment">Apartment</option>
+                <option value="condo">Condo</option>
+            </select>
+            <button>Search</button>
+        </div>
+        <div class="property-cards">
+            <!-- Sample Property Card -->
+            <div class="property-card" data-status="new">
+                <img src="../../../../placeholder/placeholder.png" alt="Property Image">
+                <span class="badge">New</span>
+                <h3>Beautiful Family Home</h3>
+                <p>$500,000 - 123 Main St, Anytown</p>
+                <div class="rating">Rating: ★★★★☆</div>
+                <button onclick="window.location.href='property-details.html'">View Details</button>
+                <input type="checkbox" class="compare-checkbox"> Compare
+                <div class="icons">
+                    <span class="virtual-tour-icon">360°</span>
+                    <span class="insights-icon">Insights</span>
+                </div>
+            </div>
+            <!-- Repeat similar structure for at least 5 properties -->
+        </div>
+        <button id="compare-now" disabled>Compare Now</button>
+    </section>
+
+    <section id="map">
+        <h2>Interactive Map</h2>
+        <div id="map-container">
+            <!-- Placeholder for map -->
+            <img src="../../../../placeholder/placeholder.png" alt="Map Image">
+        </div>
+    </section>
+
+    <section id="account">
+        <h2>User Account</h2>
+        <div class="dashboard">
+            <div class="saved-properties">Saved Properties</div>
+            <div class="alerts">Alerts</div>
+            <div class="contacts">Contact Agents</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 HomeFinders. All rights reserved.</p>
+    </footer>
+</body>
+</html>

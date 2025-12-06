@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    margin: 20px 0;
+}
+
+section {
+    padding: 20px;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item img {
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-nav.left {
+    left: 10px;
+}
+
+.carousel-nav.right {
+    right: 10px;
+}
+
+.editors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.editors-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.editors-item:hover {
+    transform: scale(1.05);
+}
+
+.editors-item img {
+    width: 100%;
+}
+
+.similar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.similar-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.similar-item:hover {
+    transform: scale(1.05);
+}
+
+.similar-item img {
+    width: 100%;
+}
+
+.notify-me {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    animation: pulse 1.5s infinite;
+}
+
+.notify-me:hover {
+    background-color: #e65b54;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.wishlist, .pre-order {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.share button {
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.progress {
+    background-color: #eee;
+    height: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.progress-fill {
+    background-color: #4caf50;
+    height: 100%;
+}
+
+.chart {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}

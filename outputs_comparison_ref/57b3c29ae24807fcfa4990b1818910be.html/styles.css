@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.marquee {
+    background-color: #111;
+    color: #fff;
+    padding: 10px;
+}
+
+.headline {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.headline:hover {
+    font-size: 1.3em;
+    color: #ffcc00;
+}
+
+.scoreboard, .performers, .player-list, .standings-table, .highlight {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.match, .performer-card, .player-card, .team-standing {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #eaeaea;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.player-image {
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    width: 100px;
+    height: 100px;
+}
+
+.badge {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.badge:hover {
+    transform: scale(1.1);
+}
+
+.timeline {
+    display: flex;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+.milestone {
+    margin-right: 20px;
+    text-align: center;
+}
+
+.icon {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.champion-banner {
+    background-color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #111;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}

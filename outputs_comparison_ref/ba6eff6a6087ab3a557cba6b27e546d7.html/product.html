@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artwork Title - Artistry Market</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Artwork Title</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="product-detail">
+            <img src="../../../../placeholder/placeholder.png" alt="Artwork Image">
+            <h2>Artwork Title</h2>
+            <p>by <a href="artist.html">Artist Name</a></p>
+            <div id="tabs">
+                <button class="tab-button active" onclick="showTab('info')">Info</button>
+                <button class="tab-button" onclick="showTab('customize')">Customize</button>
+                <button class="tab-button" onclick="showTab('reviews')">Reviews</button>
+            </div>
+            <div id="tab-content">
+                <div id="info" class="tab active">
+                    <p>Artwork details and description...</p>
+                </div>
+                <div id="customize" class="tab">
+                    <p>Choose frame type, size, material...</p>
+                </div>
+                <div id="reviews" class="tab">
+                    <div id="review-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <select>
+                            <option value="1">1 Star</option>
+                            <option value="2">2 Stars</option>
+                            <option value="3">3 Stars</option>
+                            <option value="4">4 Stars</option>
+                            <option value="5">5 Stars</option>
+                        </select>
+                        <textarea placeholder="Write your review..." required></textarea>
+                        <button>Submit Review</button>
+                    </div>
+                    <div id="review-list">
+                        <p>John Doe: ★★★★ Great artwork!</p>
+                        <!-- Add more reviews as needed -->
+                    </div>
+                </div>
+            </div>
+            <button onclick="addToWishlist()">Add to Wishlist</button>
+        </section>
+
+        <section id="related-artworks">
+            <h2>Related Artworks</h2>
+            <div class="related-carousel">
+                <div class="related-item">
+                    <img src="../../../../placeholder/placeholder.png" alt="Related Artwork 1">
+                    <p>Artwork Title 1 by Artist Name 1</p>
+                </div>
+                <!-- Add more related items as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Artistry Market</p>
+    </footer>
+
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.remove('active');
+            });
+            document.getElementById(tabId).classList.add('active');
+            document.querySelector(`.tab-button[onclick="showTab('${tabId}')"]`).classList.add('active');
+        }
+    </script>
+</body>
+</html>

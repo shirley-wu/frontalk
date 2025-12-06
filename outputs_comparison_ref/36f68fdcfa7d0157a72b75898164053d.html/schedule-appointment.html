@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Appointment - Aesthetic Dental Spa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="schedule-appointment.html">Schedule Appointment</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="virtual-office-tour.html">Virtual Office Tour</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Schedule Appointment</h1>
+        <form id="appointment-form">
+            <label for="service">Select Service:</label>
+            <select id="service" name="service">
+                <option value="teeth-whitening">Teeth Whitening</option>
+                <option value="dental-implants">Dental Implants</option>
+                <option value="orthodontics">Orthodontics</option>
+                <option value="root-canal-treatment">Root Canal Treatment</option>
+                <option value="dental-cleaning">Dental Cleaning</option>
+            </select>
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date">
+            <label for="email">Enter Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit" class="submit-button">Submit</button>
+            <p id="confirmation-message"></p>
+        </form>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

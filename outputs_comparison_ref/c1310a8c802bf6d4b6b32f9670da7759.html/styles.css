@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+#carousel {
+    background-color: #f4f4f4;
+    padding: 20px;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    min-width: 100%;
+    transition: 0.5s;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-controls button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.author {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.author-portrait {
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: transform 0.3s;
+}
+
+.author-portrait:hover {
+    transform: scale(1.1);
+}
+
+.author-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.author-info a {
+    text-decoration: none;
+    color: #004080;
+    transition: color 0.3s;
+}
+
+.author-info a:hover {
+    color: #0066cc;
+}
+
+.collection {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.collection img {
+    margin-right: 20px;
+}
+
+footer {
+    background-color: #00264d;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

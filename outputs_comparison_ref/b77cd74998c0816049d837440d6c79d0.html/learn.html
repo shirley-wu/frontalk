@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn - CryptoInfoHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Learn About Cryptocurrencies</h1>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html" class="nav-link"><img src="icon-home.png" alt="Home icon"> Home</a></li>
+            <li><a href="news.html" class="nav-link"><img src="icon-news.png" alt="News icon"> News</a></li>
+            <li><a href="index.html#watchlist" class="nav-link"><img src="icon-watchlist.png" alt="Watchlist icon"> Watchlist</a></li>
+        </ul>
+    </nav>
+
+    <section class="learn-section">
+        <h2>Articles</h2>
+        <ul class="article-list">
+            <li>Understanding Bitcoin - <a href="../../../../placeholder/placeholder.pdf">Read More</a></li>
+            <li>The Rise of Ethereum - <a href="../../../../placeholder/placeholder.pdf">Read More</a></li>
+            <li>Blockchain Basics - <a href="../../../../placeholder/placeholder.pdf">Read More</a></li>
+            <li>Trading Strategies - <a href="../../../../placeholder/placeholder.pdf">Read More</a></li>
+            <li>Market Trends - <a href="../../../../placeholder/placeholder.pdf">Read More</a></li>
+        </ul>
+
+        <h2>Video Library</h2>
+        <div class="video-filter">
+            <label for="filter">Filter by:</label>
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="basics">Basics</option>
+                <option value="trends">Trends</option>
+                <option value="strategies">Strategies</option>
+            </select>
+        </div>
+
+        <ul class="video-list">
+            <li>
+                <h3>Cryptocurrency Basics</h3>
+                <p>Learn the fundamentals of cryptocurrencies.</p>
+                <button onclick="playVideo('../../../../placeholder/placeholder.mp4')">Play</button>
+            </li>
+            <li>
+                <h3>Market Trends</h3>
+                <p>Understand current market trends.</p>
+                <button onclick="playVideo('../../../../placeholder/placeholder.mp4')">Play</button>
+            </li>
+            <li>
+                <h3>Trading Strategies</h3>
+                <p>Explore effective trading strategies.</p>
+                <button onclick="playVideo('../../../../placeholder/placeholder.mp4')">Play</button>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 CryptoInfoHub</p>
+    </footer>
+
+    <script>
+        function playVideo(videoFile) {
+            alert(`Playing video: ${videoFile}`);
+        }
+    </script>
+</body>
+</html>

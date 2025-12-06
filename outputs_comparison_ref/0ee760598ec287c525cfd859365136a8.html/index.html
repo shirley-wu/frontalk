@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Port St. Lucie Vet Care</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #a0d6b4;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #4c9a76;
+        }
+        .button {
+            background-color: #4c9a76;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #3b7a5b;
+        }
+        .section {
+            margin: 40px;
+            padding: 20px;
+            background-color: #eaf4f4;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .team-member {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .testimonial-carousel {
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .testimonial {
+            display: none;
+            text-align: center;
+            background: linear-gradient(to right, #f0e4d7, #f9f7f1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .testimonial.active {
+            display: block;
+        }
+        .testimonial-controls {
+            display: flex;
+            justify-content: center;
+        }
+        .testimonial-controls button {
+            background-color: #4c9a76;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+        .testimonial-controls button:hover {
+            background-color: #3b7a5b;
+        }
+        .faq {
+            cursor: pointer;
+            background-color: #eaf4f4;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .faq-content {
+            display: none;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Port St. Lucie Vet Care</h1>
+</header>
+
+<nav>
+    <a href="#schedule-appointment" class="button">Schedule Appointment</a>
+    <a href="pet-health-library.html" class="button">Pet Health Library</a>
+    <a href="virtual-tour.html" class="button">Virtual Tour</a>
+    <a href="#live-chat" class="button">Chat with Us</a>
+    <a href="#testimonials" class="button">Client Testimonials</a>
+    <a href="#faq" class="button">FAQ</a>
+    <a href="pet-care-tips.html" class="button">Pet Care Tips</a>
+</nav>
+
+<section id="schedule-appointment" class="section">
+    <h2>Schedule Appointment</h2>
+    <form>
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date"><br><br>
+        <label for="time">Select Time:</label>
+        <input type="time" id="time" name="time"><br><br>
+        <label for="pet-details">Pet Details:</label><br>
+        <textarea id="pet-details" name="pet-details" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Submit" class="button">
+    </form>
+</section>
+
+<section id="live-chat" class="section">
+    <h2>Live Chat</h2>
+    <div id="chat-box" style="border: 1px solid #ccc; padding: 10px; height: 200px; overflow-y: scroll;">
+        <p><strong>Bot:</strong> Welcome to Port St. Lucie Vet Care! How can I assist you today?</p>
+    </div>
+    <input type="text" id="chat-input" placeholder="Type your message here..." style="width: 80%;">
+    <button onclick="sendMessage()" class="button">Send</button>
+</section>
+
+<section id="testimonials" class="section">
+    <h2>Client Testimonials</h2>
+    <div class="testimonial-carousel">
+        <div class="testimonial active">
+            <p><strong>John Doe & Bella:</strong> Amazing service, Bella loves the staff!</p>
+        </div>
+        <div class="testimonial">
+            <p><strong>Jane Smith & Max:</strong> Professional and caring team.</p>
+        </div>
+        <div class="testimonial">
+            <p><strong>Emily Johnson & Coco:</strong> Highly recommend for all pet needs!</p>
+        </div>
+        <div class="testimonial">
+            <p><strong>Michael Brown & Rocky:</strong> Best vet care in the area.</p>
+        </div>
+        <div class="testimonial">
+            <p><strong>Susan Davis & Luna:</strong> Exceptional care and attention.</p>
+        </div>
+    </div>
+    <div class="testimonial-controls">
+        <button onclick="prevTestimonial()">Previous</button>
+        <button onclick="nextTestimonial()">Next</button>
+    </div>
+</section>
+
+<section id="meet-our-team" class="section">
+    <h2>Meet Our Team</h2>
+    <div class="team-member">
+        <img src="../../../../placeholder/placeholder.png" alt="Dr. Smith">
+        <p><strong>Dr. Smith</strong><br>Veterinarian</p>
+    </div>
+    <div class="team-member">
+        <img src="../../../../placeholder/placeholder.png" alt="Dr. Brown">
+        <p><strong>Dr. Brown</strong><br>Veterinarian</p>
+    </div>
+    <div class="team-member">
+        <img src="../../../../placeholder/placeholder.png" alt="Nurse Lily">
+        <p><strong>Nurse Lily</strong><br>Vet Nurse</p>
+    </div>
+    <div class="team-member">
+        <img src="../../../../placeholder/placeholder.png" alt="Receptionist Amy">
+        <p><strong>Receptionist Amy</strong><br>Front Desk</p>
+    </div>
+</section>
+
+<section id="faq" class="section">
+    <h2>Frequently Asked Questions (FAQ)</h2>
+    <div class="faq">
+        <h3>General Care</h3>
+        <div class="faq-content">
+            <p>How often should I bring my pet for a check-up?</p>
+            <p>Your pet should visit the vet at least once a year for a general check-up.</p>
+        </div>
+    </div>
+    <div class="faq">
+        <h3>Appointments</h3>
+        <div class="faq-content">
+            <p>How do I schedule an appointment?</p>
+            <p>You can schedule an appointment using our online form or by calling us.</p>
+        </div>
+    </div>
+    <div class="faq">
+        <h3>Emergency Services</h3>
+        <div class="faq-content">
+            <p>What should I do in case of an emergency?</p>
+            <p>In an emergency, contact our 24-hour hotline immediately.</p>
+        </div>
+    </div>
+</section>
+
+<script>
+    let currentTestimonial = 0;
+    const testimonials = document.querySelectorAll('.testimonial');
+
+    function showTestimonial(index) {
+        testimonials.forEach((testimonial, i) => {
+            testimonial.classList.toggle('active', i === index);
+        });
+    }
+
+    function nextTestimonial() {
+        currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+        showTestimonial(currentTestimonial);
+    }
+
+    function prevTestimonial() {
+        currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+        showTestimonial(currentTestimonial);
+    }
+
+    document.querySelectorAll('.faq').forEach(faq => {
+        faq.addEventListener('click', () => {
+            const content = faq.querySelector('.faq-content');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+
+    function sendMessage() {
+        const chatBox = document.getElementById('chat-box');
+        const chatInput = document.getElementById('chat-input');
+        const userMessage = chatInput.value;
+        if (userMessage) {
+            chatBox.innerHTML += `<p><strong>You:</strong> ${userMessage}</p>`;
+            chatBox.innerHTML += `<p><strong>Bot:</strong> Thank you for your message. A representative will be with you shortly.</p>`;
+            chatInput.value = '';
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUO Reports - Politics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="politics.html">Politics</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="entertainment.html">Entertainment</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li>
+                    <form action="search.html" method="GET">
+                        <input type="text" name="query" placeholder="Search articles...">
+                        <button type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <section class="articles-list">
+                <article>
+                    <h3><a href="article1.html">Political Update</a></h3>
+                    <p>Summary of the political update...</p>
+                </article>
+                <article>
+                    <h3><a href="article2.html">Election News</a></h3>
+                    <p>Summary of the election news...</p>
+                </article>
+                <article>
+                    <h3><a href="article3.html">Government Policy</a></h3>
+                    <p>Summary of the government policy...</p>
+                </article>
+                <article>
+                    <h3><a href="article4.html">International Relations</a></h3>
+                    <p>Summary of the international relations...</p>
+                </article>
+                <article>
+                    <h3><a href="article5.html">Political Scandal</a></h3>
+                    <p>Summary of the political scandal...</p>
+                </article>
+            </section>
+            <aside class="sidebar">
+                <h2>Trending Topics</h2>
+                <ul>
+                    <li><a href="#">Trending Topic 1</a></li>
+                    <li><a href="#">Trending Topic 2</a></li>
+                    <li><a href="#">Trending Topic 3</a></li>
+                </ul>
+                <h2>Recent Articles</h2>
+                <ul>
+                    <li><a href="#">Recent Article 1</a></li>
+                    <li><a href="#">Recent Article 2</a></li>
+                    <li><a href="#">Recent Article 3</a></li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <form action="subscribe.html" method="POST">
+            <label for="email">
+                <span>📧</span>
+                <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+            </label>
+            <button type="submit" class="subscribe-button">Subscribe</button>
+        </form>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Gleam Jewels</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="customize.html">Customize Your Jewelry</a></li>
+                <li><a href="virtual-try-on.html">Virtual Try-On</a></li>
+                <li><a href="education.html">Jewelry Education</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="gift-guide.html">Gift Guide</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Shop Our Collection</h1>
+        <div class="filters">
+            <label for="price-range">Price Range:</label>
+            <select id="price-range">
+                <option>All</option>
+                <option>$0 - $100</option>
+                <option>$100 - $500</option>
+                <option>$500 - $1000</option>
+            </select>
+            <label for="jewelry-type">Type:</label>
+            <select id="jewelry-type">
+                <option>All</option>
+                <option>Rings</option>
+                <option>Necklaces</option>
+                <option>Bracelets</option>
+            </select>
+            <label for="metal-type">Metal:</label>
+            <select id="metal-type">
+                <option>All</option>
+                <option>Gold</option>
+                <option>Silver</option>
+                <option>Platinum</option>
+            </select>
+            <button onclick="resetFilters()">Reset Filters</button>
+        </div>
+        <div class="product-list">
+            <div class="product">
+                <img src="../../../../placeholder/placeholder.png" alt="Product Image">
+                <h2>Gold Ring</h2>
+                <p>$500</p>
+                <span class="wishlist-icon">♡</span>
+            </div>
+            <div class="product">
+                <img src="../../../../placeholder/placeholder.png" alt="Product Image">
+                <h2>Silver Necklace</h2>
+                <p>$150</p>
+                <span class="wishlist-icon">♡</span>
+            </div>
+            <div class="product">
+                <img src="../../../../placeholder/placeholder.png" alt="Product Image">
+                <h2>Platinum Bracelet</h2>
+                <p>$700</p>
+                <span class="wishlist-icon">♡</span>
+            </div>
+            <div class="product">
+                <img src="../../../../placeholder/placeholder.png" alt="Product Image">
+                <h2>Diamond Earrings</h2>
+                <p>$300</p>
+                <span class="wishlist-icon">♡</span>
+            </div>
+            <div class="product">
+                <img src="../../../../placeholder/placeholder.png" alt="Product Image">
+                <h2>Emerald Ring</h2>
+                <p>$400</p>
+                <span class="wishlist-icon">♡</span>
+            </div>
+        </div>
+        <section class="customer-reviews">
+            <h2>Customer Reviews</h2>
+            <button>Write a Review</button>
+            <div class="review-list">
+                <div class="review">
+                    <p><strong>Jane Doe</strong></p>
+                    <p>★★★★★</p>
+                    <p>Beautiful ring, loved it!</p>
+                </div>
+                <div class="review">
+                    <p><strong>John Smith</strong></p>
+                    <p>★★★★☆</p>
+                    <p>Great quality, but a bit expensive.</p>
+                </div>
+                <div class="review">
+                    <p><strong>Emily Johnson</strong></p>
+                    <p>★★★★★</p>
+                    <p>Absolutely stunning necklace!</p>
+                </div>
+                <div class="review">
+                    <p><strong>Michael Brown</strong></p>
+                    <p>★★★☆☆</p>
+                    <p>Good, but expected more.</p>
+                </div>
+                <div class="review">
+                    <p><strong>Linda Davis</strong></p>
+                    <p>★★★★★</p>
+                    <p>Perfect gift for my anniversary!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function resetFilters() {
+            document.getElementById('price-range').selectedIndex = 0;
+            document.getElementById('jewelry-type').selectedIndex = 0;
+            document.getElementById('metal-type').selectedIndex = 0;
+            // Add logic to refresh product list here
+        }
+    </script>
+</body>
+</html>

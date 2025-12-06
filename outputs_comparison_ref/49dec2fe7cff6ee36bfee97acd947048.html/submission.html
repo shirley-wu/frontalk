@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Paper Submission</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Paper Submission Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <form id="submission-form">
+            <div class="form-group">
+                <label for="title"><span class="icon">📄</span> Paper Title</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="authors"><span class="icon">👥</span> Authors</label>
+                <input type="text" id="authors" name="authors" required>
+            </div>
+            <div class="form-group">
+                <label for="email"><span class="icon">📧</span> Contact Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="file"><span class="icon">📂</span> Upload Paper</label>
+                <input type="file" id="file" name="file" required>
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <button type="submit" class="upload-btn">Submit Paper</button>
+        </form>
+    </section>
+    <script>
+        document.getElementById('submission-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const progressBar = document.getElementById('progress-bar');
+            progressBar.style.width = '0%';
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += 10;
+                progressBar.style.width = progress + '%';
+                if (progress >= 100) clearInterval(interval);
+            }, 100);
+        });
+    </script>
+</body>
+</html>

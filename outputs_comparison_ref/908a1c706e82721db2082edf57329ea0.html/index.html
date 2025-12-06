@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUO Reports - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="breaking-news">
+            <marquee behavior="scroll" direction="left">
+                <a href="article1.html">Breaking: Nigerian elections to be held next month.</a>
+                <a href="article2.html">Update: New policies introduced in education sector.</a>
+                <a href="article3.html">Sports: Nigerian team wins international championship.</a>
+            </marquee>
+            <button onclick="toggleTicker()">Pause</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="politics.html">Politics</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="entertainment.html">Entertainment</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li>
+                    <form action="search.html" method="GET">
+                        <input type="text" name="query" placeholder="Search articles...">
+                        <button type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <img src="../../../../placeholder/placeholder.png" alt="Hero Image">
+            <div class="overlay">
+                <h1>Latest Major Political News Headline</h1>
+            </div>
+        </section>
+        <section id="featured-articles">
+            <h2>Featured Articles</h2>
+            <div class="articles">
+                <article>
+                    <h3>Political Update</h3>
+                    <p>Summary of the political update...</p>
+                    <span>Politics</span>
+                    <a href="article1.html">Read More</a>
+                </article>
+                <article>
+                    <h3>Sports Highlight</h3>
+                    <p>Summary of the sports highlight...</p>
+                    <span>Sports</span>
+                    <a href="article2.html">Read More</a>
+                </article>
+                <article>
+                    <h3>Entertainment Gossip</h3>
+                    <p>Summary of the entertainment gossip...</p>
+                    <span>Entertainment</span>
+                    <a href="article3.html">Read More</a>
+                </article>
+                <article>
+                    <h3>Education Reform</h3>
+                    <p>Summary of the education reform...</p>
+                    <span>Education</span>
+                    <a href="article4.html">Read More</a>
+                </article>
+                <article>
+                    <h3>Economic News</h3>
+                    <p>Summary of the economic news...</p>
+                    <span>Economics</span>
+                    <a href="article5.html">Read More</a>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <form action="subscribe.html" method="POST">
+            <label for="email">
+                <span>📧</span>
+                <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+            </label>
+            <button type="submit" class="subscribe-button">Subscribe</button>
+        </form>
+    </footer>
+    <script>
+        function toggleTicker() {
+            const marquee = document.querySelector('marquee');
+            if (marquee.getAttribute('behavior') === 'scroll') {
+                marquee.setAttribute('behavior', 'pause');
+            } else {
+                marquee.setAttribute('behavior', 'scroll');
+            }
+        }
+    </script>
+</body>
+</html>

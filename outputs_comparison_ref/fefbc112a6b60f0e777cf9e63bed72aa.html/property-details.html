@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details - HomeFinders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Property Details</h1>
+        <button onclick="window.location.href='index.html'">Back to Listings</button>
+    </header>
+
+    <section>
+        <div class="property-details">
+            <img src="../../../../placeholder/placeholder.png" alt="Property Image">
+            <h2>Beautiful Family Home</h2>
+            <p>$500,000 - 123 Main St, Anytown</p>
+            <p>Property Type: House</p>
+            <p>Description: A beautiful family home located in a serene neighborhood...</p>
+            <button onclick="openVirtualTour()">Take a Virtual Tour</button>
+            <button onclick="openInsights()">View Insights</button>
+            <button onclick="writeReview()">Write a Review</button>
+        </div>
+    </section>
+
+    <div id="virtual-tour" style="display:none;">
+        <h2>Virtual Tour</h2>
+        <img src="../../../../placeholder/placeholder.png" alt="360 View">
+        <button onclick="closeVirtualTour()">Close</button>
+    </div>
+
+    <div id="insights" style="display:none;">
+        <h2>Property Insights</h2>
+        <p>Average Property Values: $450,000</p>
+        <p>Crime Rates: Low</p>
+        <p>School Ratings: 8/10</p>
+        <p>Demographics: Family-friendly</p>
+        <button onclick="closeInsights()">Close</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 HomeFinders. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function openVirtualTour() {
+            document.getElementById('virtual-tour').style.display = 'block';
+        }
+
+        function closeVirtualTour() {
+            document.getElementById('virtual-tour').style.display = 'none';
+        }
+
+        function openInsights() {
+            document.getElementById('insights').style.display = 'block';
+        }
+
+        function closeInsights() {
+            document.getElementById('insights').style.display = 'none';
+        }
+
+        function writeReview() {
+            alert('Write a review for this property.');
+            // Navigate to review form or open review modal
+        }
+    </script>
+</body>
+</html>

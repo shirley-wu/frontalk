@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    <main>
+        <input type="text" id="search-bar" placeholder="Search FAQs">
+        <div class="faq">
+            <div class="faq-item">
+                <h3 onclick="toggleAnswer(0)">What services do you offer?</h3>
+                <p id="answer-0" style="display:none;">We offer a range of services including home health care, assisted living, and respite care.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleAnswer(1)">How can I customize my care plan?</h3>
+                <p id="answer-1" style="display:none;">Use our Care Plan Customization Tool to tailor your plan to your specific needs and preferences.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleAnswer(2)">Where are your locations?</h3>
+                <p id="answer-2" style="display:none;">Our locations are spread across the Denver area. Use our Location Finder to find the nearest one.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleAnswer(3)">How can I contact you?</h3>
+                <p id="answer-3" style="display:none;">Visit our Contact Us page for various methods to reach us, including a contact form, phone number, and email address.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleAnswer(4)">Can I save my care plan?</h3>
+                <p id="answer-4" style="display:none;">Yes, after customizing your care plan, you can save it for future reference.</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        function toggleAnswer(index) {
+            const answer = document.getElementById(`answer-${index}`);
+            answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

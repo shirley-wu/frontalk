@@ -1,0 +1,17 @@
+document.getElementById('appointment-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    document.getElementById('confirmation-message').textContent = 'Thank you for scheduling your appointment. A confirmation email has been sent.';
+});
+
+document.getElementById('testimonial-search').addEventListener('input', function() {
+    const searchQuery = this.value.toLowerCase();
+    document.querySelectorAll('.testimonial-card').forEach(card => {
+        const name = card.querySelector('h2').textContent.toLowerCase();
+        const text = card.querySelector('p').textContent.toLowerCase();
+        if (name.includes(searchQuery) || text.includes(searchQuery)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+});

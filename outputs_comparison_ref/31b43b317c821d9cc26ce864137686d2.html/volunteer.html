@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Signup - Alpine Lutheran Church</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Volunteer Signup</h1>
+    </header>
+    <main>
+        <form id="volunteer-form" action="confirmation.html" method="get">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="opportunity">Volunteer Opportunity:</label>
+            <select id="opportunity" name="opportunity">
+                <option value="community_service">❤️ Community Service</option>
+                <option value="educational_activities">📚 Educational Activities</option>
+                <option value="event_planning">🎉 Event Planning</option>
+                <option value="youth_programs">👦 Youth Programs</option>
+                <option value="music_team">🎵 Music Team</option>
+            </select>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+    </main>
+</body>
+</html>

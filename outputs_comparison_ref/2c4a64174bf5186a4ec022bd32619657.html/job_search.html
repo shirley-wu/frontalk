@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search - JobConnect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .header-section {
+            background-image: url('../../../../placeholder/placeholder.png');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            position: relative;
+        }
+        .header-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+        .header-content h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .header-content p {
+            font-style: italic;
+            margin: 10px 0 0;
+        }
+        .search-section {
+            margin: 20px;
+            text-align: center;
+        }
+        .search-section input, .search-section select, .search-section button {
+            margin: 5px;
+            padding: 10px;
+        }
+        .job-list {
+            margin: 20px;
+        }
+        .job-list div {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            position: relative;
+        }
+        .job-list button {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Job Search</h1>
+    </header>
+    <section class="header-section">
+        <div class="header-content">
+            <h1>Find Your Dream Job</h1>
+            <p>Search and apply for jobs that match your skills and interests.</p>
+        </div>
+    </section>
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+    <section class="search-section">
+        <input type="text" placeholder="Search jobs...">
+        <select>
+            <option>Location</option>
+            <option>Remote</option>
+            <option>New York</option>
+            <option>San Francisco</option>
+        </select>
+        <select>
+            <option>Industry</option>
+            <option>Technology</option>
+            <option>Finance</option>
+            <option>Healthcare</option>
+        </select>
+        <select>
+            <option>Job Type</option>
+            <option>Full-time</option>
+            <option>Part-time</option>
+            <option>Contract</option>
+        </select>
+        <button>Search</button>
+    </section>
+    <section class="job-list">
+        <div>
+            <h3>Software Engineer</h3>
+            <p>Location: Remote</p>
+            <button>Save</button>
+        </div>
+        <div>
+            <h3>Data Analyst</h3>
+            <p>Location: New York</p>
+            <button>Save</button>
+        </div>
+        <div>
+            <h3>Project Manager</h3>
+            <p>Location: San Francisco</p>
+            <button>Save</button>
+        </div>
+    </section>
+    <footer>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+    </footer>
+</body>
+</html>

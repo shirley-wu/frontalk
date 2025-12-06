@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickets - Granary Theatre</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="booking.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Book Tickets</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events Calendar</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="news.html">News & Updates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Select Event</h2>
+            <select id="event-selection">
+                <option value="macbeth">Macbeth - October 31, 2023</option>
+                <option value="hamlet">Hamlet - November 15, 2023</option>
+                <option value="dream">A Midsummer Night's Dream - November 10, 2023</option>
+            </select>
+        </section>
+
+        <section>
+            <h2>Select Seats</h2>
+            <div class="seat-chart">
+                <!-- Pseudo seat chart -->
+                <div class="seat available" data-seat="A1" data-price="€20">A1</div>
+                <div class="seat available" data-seat="A2" data-price="€20">A2</div>
+                <div class="seat unavailable" data-seat="A3" data-price="€20">A3</div>
+                <div class="seat available" data-seat="A4" data-price="€20">A4</div>
+                <div class="seat available" data-seat="A5" data-price="€20">A5</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Purchase Confirmation</h2>
+            <button id="confirm-purchase">Confirm Purchase</button>
+            <p id="confirmation-message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Granary Theatre, University College Cork</p>
+    </footer>
+</body>
+</html>

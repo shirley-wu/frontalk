@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc; /* Warm beige background */
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-nav ul {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sticky-nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.sticky-nav ul li a:hover {
+    color: #0056b3;
+}
+
+main {
+    padding: 20px;
+}
+
+.card-container, .tree-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card, .tree-card {
+    background: linear-gradient(135deg, #e0f7fa, #e0f7fa);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover, .tree-card:hover {
+    transform: scale(1.05);
+    background: linear-gradient(225deg, #e0f7fa, #e0f7fa);
+}
+
+.tree-builder-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tools-column, .tree-column, .collaborators-column {
+    width: 30%;
+    background-color: #e0f2f1; /* Soft green background */
+    padding: 15px;
+}
+
+.forum-layout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column, .right-column {
+    width: 45%;
+    background-color: #f5f5f5; /* Soft neutral background */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-sort {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter, .sort {
+    width: 45%;
+}
+
+.records-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.record-item {
+    width: 45%;
+    background-color: #e3f2fd; /* Calming blue background */
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #003d7a;
+}

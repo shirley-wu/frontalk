@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Photo Gallery</a></li>
+                <li><a href="tips.html">Photography Tips & Tutorials</a></li>
+                <li><a href="shop.html">Online Shop</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="contact-form">
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="contactConfirmation" class="hidden">Thank you for your message! We'll get back to you soon.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Lifestyle Photography & Design</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('contactConfirmation').classList.remove('hidden');
+        });
+    </script>
+
+    <style>
+        #contact-form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px;
+        }
+
+        #contactForm input,
+        #contactForm textarea,
+        #contactForm button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #contactForm button:hover {
+            background-color: #0044cc;
+            color: #fff;
+        }
+    </style>
+</body>
+</html>

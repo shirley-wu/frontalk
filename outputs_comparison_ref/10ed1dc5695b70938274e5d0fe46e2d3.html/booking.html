@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Surrey Plumbing Solutions</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="booking-form">
+            <h2>Book a Service</h2>
+            <form id="bookingForm">
+                <label for="serviceType">Service Type:</label>
+                <select id="serviceType" name="serviceType">
+                    <option value="drainage">Drainage</option>
+                    <option value="plumbing">Plumbing</option>
+                    <option value="maintenance">Maintenance</option>
+                </select>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="contactInfo">Contact Information:</label>
+                <input type="text" id="contactInfo" name="contactInfo" placeholder="Your Email" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <img src="../../../../placeholder/placeholder.png" alt="Company Logo">
+        <p>Contact us: 123-456-7890 | info@surreyplumbing.com</p>
+    </footer>
+
+    <script src="booking.js"></script>
+</body>
+</html>

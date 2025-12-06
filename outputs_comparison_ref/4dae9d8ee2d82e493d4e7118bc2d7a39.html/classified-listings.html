@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classified Listings - Sailor's Haven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Classified Listings</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="event-calendar.html">Event Calendar</a></li>
+                <li><a href="user-forums.html">User Forums</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="filter-options">
+            <h2>Filter Listings</h2>
+            <button onclick="filterListings('All')">All</button>
+            <button onclick="filterListings('Boats')">Boats</button>
+            <button onclick="filterListings('Equipment')">Equipment</button>
+            <button onclick="filterListings('Services')">Services</button>
+        </section>
+        <section class="listings">
+            <div class="listing-card featured">
+                <h3>Sailboat for Sale</h3>
+                <img src="../../../../placeholder/placeholder.png" alt="Sailboat Image">
+                <p>Price: $20,000</p>
+                <p>Contact: sailor@example.com</p>
+                <span class="badge">Featured</span>
+            </div>
+            <div class="listing-card new">
+                <h3>Navigation Equipment</h3>
+                <img src="../../../../placeholder/placeholder.png" alt="Equipment Image">
+                <p>Price: $500</p>
+                <p>Contact: navigator@example.com</p>
+                <span class="badge">New</span>
+            </div>
+            <div class="listing-card">
+                <h3>Boat Cleaning Service</h3>
+                <img src="../../../../placeholder/placeholder.png" alt="Service Image">
+                <p>Price: $150</p>
+                <p>Contact: cleaner@example.com</p>
+            </div>
+            <div class="listing-card">
+                <h3>Fishing Gear</h3>
+                <img src="../../../../placeholder/placeholder.png" alt="Gear Image">
+                <p>Price: $300</p>
+                <p>Contact: fisher@example.com</p>
+            </div>
+            <div class="listing-card">
+                <h3>Life Jackets</h3>
+                <img src="../../../../placeholder/placeholder.png" alt="Life Jackets Image">
+                <p>Price: $100</p>
+                <p>Contact: safety@example.com</p>
+            </div>
+        </section>
+        <section class="add-listing">
+            <h2>Post New Listing</h2>
+            <form id="listingForm">
+                <label for="listingTitle">Title:</label>
+                <input type="text" id="listingTitle" name="listingTitle" required>
+                <label for="listingCategory">Category:</label>
+                <select id="listingCategory" name="listingCategory" required>
+                    <option value="Boats">Boats</option>
+                    <option value="Equipment">Equipment</option>
+                    <option value="Services">Services</option>
+                </select>
+                <label for="listingPrice">Price:</label>
+                <input type="text" id="listingPrice" name="listingPrice" required>
+                <label for="listingContact">Contact Information:</label>
+                <input type="email" id="listingContact" name="listingContact" required>
+                <button type="submit">Post Listing</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="event-calendar.html">Event Calendar</a></li>
+                    <li><a href="user-forums.html">User Forums</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href="#"><img src="../../../../placeholder/placeholder.png" alt="Facebook"></a>
+                <a href="#"><img src="../../../../placeholder/placeholder.png" alt="Twitter"></a>
+                <a href="#"><img src="../../../../placeholder/placeholder.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function filterListings(category) {
+            alert(`Filtering listings by category: ${category}`);
+        }
+
+        document.getElementById('listingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('New listing posted successfully!');
+        });
+    </script>
+</body>
+</html>

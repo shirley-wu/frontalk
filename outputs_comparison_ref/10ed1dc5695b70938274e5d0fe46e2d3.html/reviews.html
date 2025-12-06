@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Surrey Plumbing Solutions</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html" class="active">Reviews</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="customer-reviews">
+            <h2>Customer Reviews</h2>
+            <div class="filter-panel">
+                <label for="filterRating">Filter by Rating:</label>
+                <select id="filterRating">
+                    <option value="all">All</option>
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="2">2 Stars</option>
+                    <option value="1">1 Star</option>
+                </select>
+            </div>
+
+            <div class="reviews">
+                <div class="review-card">
+                    <h3>John Doe</h3>
+                    <p>Excellent service and friendly staff!</p>
+                    <p>Rating: ★★★★★</p>
+                </div>
+                <div class="review-card">
+                    <h3>Jane Smith</h3>
+                    <p>Quick response and great work.</p>
+                    <p>Rating: ★★★★☆</p>
+                </div>
+                <div class="review-card">
+                    <h3>Emily Johnson</h3>
+                    <p>Very professional and affordable.</p>
+                    <p>Rating: ★★★☆☆</p>
+                </div>
+                <div class="review-card">
+                    <h3>Michael Brown</h3>
+                    <p>Good service but a bit pricey.</p>
+                    <p>Rating: ★★☆☆☆</p>
+                </div>
+                <div class="review-card">
+                    <h3>Sarah Davis</h3>
+                    <p>Not satisfied with the service.</p>
+                    <p>Rating: ★☆☆☆☆</p>
+                </div>
+            </div>
+
+            <a href="index.html">Back to Home</a>
+        </section>
+    </main>
+
+    <footer>
+        <img src="../../../../placeholder/placeholder.png" alt="Company Logo">
+        <p>Contact us: 123-456-7890 | info@surreyplumbing.com</p>
+    </footer>
+
+    <script>
+        document.getElementById('filterRating').addEventListener('change', function() {
+            const rating = this.value;
+            const reviews = document.querySelectorAll('.review-card');
+            reviews.forEach(review => {
+                const reviewRating = review.querySelector('p:nth-child(3)').textContent.slice(-5);
+                review.style.display = (rating === 'all' || reviewRating.includes(rating)) ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>

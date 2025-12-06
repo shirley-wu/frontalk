@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Golf Ireland Directory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Upcoming Events</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="membership.html">Membership & Booking</a></li>
+            <li><a href="directory.html">Club Directory</a></li>
+            <li><a href="news.html">News & Updates</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="filter">
+            <h2>Filter Events</h2>
+            <form id="filterForm">
+                <label for="dateRange">Date Range:</label>
+                <input type="date" id="startDate" name="startDate">
+                <input type="date" id="endDate" name="endDate">
+                <label for="eventType">Event Type:</label>
+                <select id="eventType" name="eventType">
+                    <option value="all">All</option>
+                    <option value="tournament">Tournament</option>
+                    <option value="open-day">Open Day</option>
+                    <option value="special-event">Special Event</option>
+                </select>
+                <button type="button" onclick="resetFilters()">Reset Filters</button>
+            </form>
+        </section>
+        <section class="events-list">
+            <!-- Example events -->
+            <div class="event-card" style="background-color: #ffcccc;">
+                <h3>Tournament: Irish Open</h3>
+                <p>Date: 2023-12-01</p>
+                <button class="add-calendar">Add to Calendar</button>
+            </div>
+            <div class="event-card" style="background-color: #ccffcc;">
+                <h3>Open Day: Galway Golf Club</h3>
+                <p>Date: 2023-11-15</p>
+                <button class="add-calendar">Add to Calendar</button>
+            </div>
+            <div class="event-card" style="background-color: #ccccff;">
+                <h3>Special Event: Charity Golf Gala</h3>
+                <p>Date: 2023-10-20</p>
+                <button class="add-calendar">Add to Calendar</button>
+            </div>
+            <!-- Add more event cards as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 Golf Ireland Directory. All rights reserved.</p>
+    </footer>
+    <script>
+        function resetFilters() {
+            document.getElementById('filterForm').reset();
+        }
+    </script>
+</body>
+</html>

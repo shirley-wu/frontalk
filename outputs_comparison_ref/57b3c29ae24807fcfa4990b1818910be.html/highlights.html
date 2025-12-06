@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Highlights</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Match Highlights</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="match-highlights">
+            <h2>Highlights</h2>
+            <div class="highlight">
+                <video controls>
+                    <source src="../../../../placeholder/placeholder.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Match Summary: Team A vs Team B - Key moments and highlights.</p>
+                <div class="commentary-section">
+                    <h3>User Commentary</h3>
+                    <div class="comment-input">
+                        <input type="text" placeholder="Add a comment..." id="comment-text">
+                        <button onclick="postComment()">Post</button>
+                    </div>
+                    <div class="comments-list">
+                        <!-- Example of a user comment -->
+                        <p><strong>User1</strong> (10:15 AM): Great match!</p>
+                        <!-- Repeat similar blocks for other comments -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function postComment() {
+            const commentText = document.getElementById('comment-text').value;
+            const commentsList = document.querySelector('.comments-list');
+            const newComment = document.createElement('p');
+            newComment.innerHTML = `<strong>You</strong> (${new Date().toLocaleTimeString()}): ${commentText}`;
+            commentsList.appendChild(newComment);
+            document.getElementById('comment-text').value = '';
+        }
+    </script>
+</body>
+</html>

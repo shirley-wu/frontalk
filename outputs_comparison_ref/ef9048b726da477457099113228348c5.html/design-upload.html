@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Upload - Printing Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="../../../../placeholder/placeholder.png" alt="Home Icon"> Home</a></li>
+                <li><a href="services.html"><img src="../../../../placeholder/placeholder.png" alt="Services Icon"> Services</a></li>
+                <li><a href="request-quote.html"><img src="../../../../placeholder/placeholder.png" alt="Quote Icon"> Request a Quote</a></li>
+                <li><a href="design-upload.html" class="active"><img src="../../../../placeholder/placeholder.png" alt="Upload Icon"> Design Upload</a></li>
+                <li><a href="testimonials.html"><img src="../../../../placeholder/placeholder.png" alt="Testimonials Icon"> Testimonials</a></li>
+                <li><a href="contact.html"><img src="../../../../placeholder/placeholder.png" alt="Contact Icon"> Contact Us</a></li>
+                <li><a href="faq.html"><img src="../../../../placeholder/placeholder.png" alt="FAQ Icon"> FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Upload Your Design</h1>
+        <div class="upload-container">
+            <div class="upload-form">
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <label for="design-file">Choose your design file:</label>
+                    <input type="file" id="design-file" name="design-file" accept=".png, .jpg, .jpeg, .pdf" required>
+
+                    <button type="submit">Upload</button>
+                </form>
+            </div>
+            <div class="design-preview">
+                <h2>Design Preview</h2>
+                <img src="../../../../placeholder/placeholder.png" alt="Design Preview" id="design-preview-image">
+                <div class="zoom-controls">
+                    <button id="zoom-in">+</button>
+                    <button id="zoom-out">-</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Printing Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>

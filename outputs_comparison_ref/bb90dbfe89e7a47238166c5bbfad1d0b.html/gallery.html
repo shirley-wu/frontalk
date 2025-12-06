@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Multimedia Gallery</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    <main>
+        <div class="tabs">
+            <button class="tab-link" onclick="openTab('images')">Images</button>
+            <button class="tab-link" onclick="openTab('videos')">Videos</button>
+            <button class="tab-link" onclick="openTab('audio')">Audio</button>
+        </div>
+        
+        <div id="images" class="tab-content">
+            <div class="featured-media">
+                <img src="../../../../placeholder/placeholder.png" alt="Featured Image">
+                <p>Featured Image: Signing of the Declaration</p>
+                <button>View</button>
+            </div>
+            <!-- More images here -->
+        </div>
+        
+        <div id="videos" class="tab-content">
+            <div class="featured-media">
+                <video src="../../../../placeholder/placeholder.mp4" controls></video>
+                <p>Featured Video: The Revolutionary War</p>
+                <button>Play</button>
+            </div>
+            <!-- More videos here -->
+        </div>
+        
+        <div id="audio" class="tab-content">
+            <div class="featured-media">
+                <audio src="../../../../placeholder/placeholder.mp3" controls></audio>
+                <p>Featured Audio: Gettysburg Address</p>
+                <button>Play</button>
+            </div>
+            <!-- More audio clips here -->
+        </div>
+    </main>
+</body>
+</html>

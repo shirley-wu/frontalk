@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Thread</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Community Forum</h1>
+    </header>
+
+    <main>
+        <h2>Create New Thread</h2>
+        <div class="thread-layout">
+            <div class="thread-inputs">
+                <form action="#" method="post">
+                    <label for="title">Thread Title:</label>
+                    <input type="text" id="title" name="title" required>
+                    
+                    <label for="content">Content:</label>
+                    <textarea id="content" name="content" required></textarea>
+                    
+                    <label for="tags">Tags (comma-separated):</label>
+                    <input type="text" id="tags" name="tags">
+
+                    <button type="submit" class="post-thread-button">Post Thread</button>
+                </form>
+            </div>
+            <div class="thread-action">
+                <button class="post-thread-button" onclick="submitThread()">Post Thread</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Community Forum</p>
+    </footer>
+
+    <script>
+        function submitThread() {
+            // Simulate posting thread
+            alert("Thread posted!");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiteCraft - Website Builder Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .toolbar {
+            display: flex;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            padding: 10px;
+            justify-content: space-around;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .toolbar img {
+            width: 32px;
+            height: 32px;
+            transition: transform 0.3s, color 0.3s;
+            cursor: pointer;
+        }
+        .toolbar img:hover {
+            transform: scale(1.1);
+            filter: brightness(1.2);
+        }
+        .builder-content {
+            margin-top: 60px;
+            display: flex;
+        }
+        .drag-drop-area {
+            width: 70%;
+            padding: 20px;
+        }
+        .preview-pane {
+            width: 30%;
+            padding: 20px;
+            border-left: 2px solid #ddd;
+        }
+        .preview-pane .highlight {
+            background-color: rgba(255, 255, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+        <img src="../../../../placeholder/placeholder.png" alt="Template Icon" title="Templates">
+        <img src="../../../../placeholder/placeholder.png" alt="Text Icon" title="Add Text">
+        <img src="../../../../placeholder/placeholder.png" alt="Image Icon" title="Add Image">
+        <img src="../../../../placeholder/placeholder.png" alt="Video Icon" title="Add Video">
+        <img src="../../../../placeholder/placeholder.png" alt="Audio Icon" title="Add Audio">
+    </div>
+    <div class="builder-content">
+        <div class="drag-drop-area">
+            <h2>Drag and Drop Interface</h2>
+            <p>Use the tools above to customize your site.</p>
+        </div>
+        <div class="preview-pane">
+            <h2>Real-time Preview</h2>
+            <p>Hover over sections to see highlights.</p>
+            <div class="highlight">Sample Section</div>
+        </div>
+    </div>
+</body>
+</html>

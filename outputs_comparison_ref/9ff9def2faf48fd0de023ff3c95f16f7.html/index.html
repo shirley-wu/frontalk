@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Haven - Your Home Furniture Destination</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="fixed-nav">
+            <ul>
+                <li><a href="index.html"><img src="home-icon.png" alt="Home"> Home</a></li>
+                <li><a href="#search"><img src="search-icon.png" alt="Search"> Search</a></li>
+                <li><a href="wishlist.html"><img src="wishlist-icon.png" alt="Wishlist"> Wishlist</a></li>
+                <li><a href="comparison.html"><img src="compare-icon.png" alt="Compare"> Compare</a></li>
+                <li><a href="#planner"><img src="planner-icon.png" alt="Room Planner"> Room Planner</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Banner Carousel -->
+        <section class="carousel">
+            <div class="slide">
+                <img src="../../../../placeholder/placeholder.png" alt="Featured Collection">
+                <div class="overlay">
+                    <h2>Modern Living Room Set</h2>
+                    <p>Transform your space with our latest collection.</p>
+                    <a href="product1.html" class="cta-button">Shop Now</a>
+                </div>
+            </div>
+            <!-- Add more slides as needed -->
+        </section>
+
+        <!-- Search and Filter -->
+        <section id="search" class="search-filter">
+            <h2>Find Your Perfect Furniture</h2>
+            <form>
+                <input type="text" placeholder="Search by name...">
+                <select>
+                    <option>Category</option>
+                    <option>Living Room</option>
+                    <option>Bedroom</option>
+                    <option>Office</option>
+                </select>
+                <select>
+                    <option>Style</option>
+                    <option>Modern</option>
+                    <option>Classic</option>
+                    <option>Rustic</option>
+                </select>
+                <input type="range" min="0" max="5000" step="100">
+                <button type="submit">Search</button>
+            </form>
+            <ul class="product-list">
+                <li><a href="product1.html"><img src="../../../../placeholder/placeholder.png" alt="Product 1">Product 1</a></li>
+                <li><a href="product2.html"><img src="../../../../placeholder/placeholder.png" alt="Product 2">Product 2</a></li>
+                <li><a href="product3.html"><img src="../../../../placeholder/placeholder.png" alt="Product 3">Product 3</a></li>
+                <li><a href="product4.html"><img src="../../../../placeholder/placeholder.png" alt="Product 4">Product 4</a></li>
+                <li><a href="product5.html"><img src="../../../../placeholder/placeholder.png" alt="Product 5">Product 5</a></li>
+            </ul>
+        </section>
+
+        <!-- Virtual Room Planner -->
+        <section id="planner" class="room-planner">
+            <h2>Visualize Your Space</h2>
+            <div class="planner-toolbar">
+                <button><img src="chair-icon.png" alt="Chairs"></button>
+                <button><img src="table-icon.png" alt="Tables"></button>
+                <button><img src="sofa-icon.png" alt="Sofas"></button>
+                <!-- Add more toolbar items as needed -->
+            </div>
+            <div class="room-layout">
+                <img src="../../../../placeholder/placeholder.png" alt="Room Layout">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Home Haven. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

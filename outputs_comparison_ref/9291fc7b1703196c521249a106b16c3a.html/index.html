@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeShare</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>CodeShare</h1>
+        <nav>
+            <ul>
+                <li><a href="#featured-gists">Featured Gists</a></li>
+                <li><a href="#collaborative-gists">Collaborative Gists</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="profile.html"><img src="../../../../placeholder/placeholder.png" alt="Profile Icon" class="profile-icon"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Share & Collaborate on Code with Ease</h2>
+            <button class="cta-button">Sign Up Now</button>
+        </div>
+    </section>
+
+    <section id="search">
+        <input type="text" placeholder="Search Gists..." id="search-bar">
+        <button onclick="searchGists()">Search</button>
+        <div id="filters">
+            <label><input type="checkbox"> Creation Date</label>
+            <label><input type="checkbox"> Update Date</label>
+            <label><input type="checkbox"> Popularity</label>
+        </div>
+    </section>
+
+    <section id="featured-gists">
+        <h3>Featured Gists</h3>
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="../../../../placeholder/placeholder.png" alt="Gist Thumbnail">
+                <p>Gist Description 1</p>
+            </div>
+            <div class="carousel-item">
+                <img src="../../../../placeholder/placeholder.png" alt="Gist Thumbnail">
+                <p>Gist Description 2</p>
+            </div>
+            <div class="carousel-item">
+                <img src="../../../../placeholder/placeholder.png" alt="Gist Thumbnail">
+                <p>Gist Description 3</p>
+            </div>
+            <div class="carousel-item">
+                <img src="../../../../placeholder/placeholder.png" alt="Gist Thumbnail">
+                <p>Gist Description 4</p>
+            </div>
+            <div class="carousel-item">
+                <img src="../../../../placeholder/placeholder.png" alt="Gist Thumbnail">
+                <p>Gist Description 5</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="collaborative-gists">
+        <h3>Collaborative Gists</h3>
+        <button onclick="createProject()">Create Project</button>
+        <ul>
+            <li>Project 1 - A brief description</li>
+            <li>Project 2 - A brief description</li>
+            <li>Project 3 - A brief description</li>
+            <li>Project 4 - A brief description</li>
+            <li>Project 5 - A brief description</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 CodeShare</p>
+    </footer>
+</body>
+</html>

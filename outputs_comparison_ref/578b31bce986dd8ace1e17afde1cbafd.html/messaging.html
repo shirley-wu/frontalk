@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messaging - ActiveMatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ActiveMatch</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile_creation.html">Create Profile</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="messaging-interface">
+            <h2>Messaging</h2>
+            <div class="message-list">
+                <div class="message-card">
+                    <p>John Doe: Hey, how are you?</p>
+                    <button class="archive">Archive</button>
+                </div>
+                <div class="message-card">
+                    <p>Jane Smith: Let's go hiking this weekend!</p>
+                    <button class="archive">Archive</button>
+                </div>
+                <div class="message-card">
+                    <p>Mike Johnson: Yoga class was great!</p>
+                    <button class="archive">Archive</button>
+                </div>
+            </div>
+            <h3>Archived Messages</h3>
+            <div class="archived-messages">
+                <div class="archived-card">
+                    <p>Emily Davis: Can't wait for our next run!</p>
+                    <button class="unarchive">Unarchive</button>
+                </div>
+                <div class="archived-card">
+                    <p>Chris Brown: Swimming was fun!</p>
+                    <button class="unarchive">Unarchive</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <style>
+        .message-card, .archived-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .archived-card {
+            background-color: #f0f0f0;
+        }
+
+        .message-card:hover, .archived-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .archive, .unarchive {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .archive:hover, .unarchive:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</body>
+</html>

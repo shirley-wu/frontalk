@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Itinerary Planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Plan Your Trip</h1>
+        <form id="planner-form">
+            <label for="destination">Select Destination:</label>
+            <select id="destination" name="destination">
+                <option value="paris">Paris</option>
+                <option value="new-york">New York</option>
+                <option value="tokyo">Tokyo</option>
+                <option value="sydney">Sydney</option>
+                <option value="cape-town">Cape Town</option>
+            </select>
+            <label for="activities">Select Activities:</label>
+            <input type="text" id="activities" name="activities">
+            <label for="accommodation">Select Accommodation:</label>
+            <input type="text" id="accommodation" name="accommodation">
+            <button type="button" id="save-plan">Save Plan</button>
+            <button type="button" id="estimate-budget">Estimate Budget</button>
+            <button type="button" id="share-trip">Share Your Trip</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 The59Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>

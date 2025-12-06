@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast - Wrestling Insights</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Podcast</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="featured-podcast.html">Featured Podcast</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Latest Episodes</h2>
+        <ul>
+            <li>
+                <h3>Episode 1: The Rise of Champions</h3>
+                <audio controls>
+                    <source src="../../../../placeholder/placeholder.mp3" type="audio/mpeg">
+                </audio>
+                <a href="../../../../placeholder/placeholder.mp3" download>Download</a>
+            </li>
+            <li>
+                <h3>Episode 2: Behind the Scenes</h3>
+                <audio controls>
+                    <source src="../../../../placeholder/placeholder.mp3" type="audio/mpeg">
+                </audio>
+                <a href="../../../../placeholder/placeholder.mp3" download>Download</a>
+            </li>
+            <!-- Add more episodes as needed -->
+        </ul>
+    </section>
+
+    <section id="listener-reviews">
+        <h2>Listener Reviews</h2>
+        <div class="reviews">
+            <div class="review">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>Great insights and entertaining!</p>
+            </div>
+            <div class="review">
+                <div class="stars">⭐⭐⭐⭐</div>
+                <p>Very informative, but could be shorter.</p>
+            </div>
+            <!-- Add more reviews as needed -->
+        </div>
+        <form>
+            <h3>Submit Your Review</h3>
+            <label for="rating">Rating:</label>
+            <select id="rating">
+                <option value="5">5 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="2">2 Stars</option>
+                <option value="1">1 Star</option>
+            </select>
+            <br>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" rows="4"></textarea>
+            <br>
+            <button type="submit">Submit Review</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

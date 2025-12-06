@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="review-banner">
+        <div class="carousel">
+            <img src="../../../../placeholder/placeholder.png" alt="Movie Poster 1">
+            <img src="../../../../placeholder/placeholder.png" alt="Movie Poster 2">
+            <img src="../../../../placeholder/placeholder.png" alt="Movie Poster 3">
+        </div>
+        <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </header>
+
+    <main class="review-main">
+        <aside class="review-sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#">Similar Movies</a></li>
+                    <li><a href="#">User Reviews</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <article class="movie-review">
+            <h1>Movie Title</h1>
+            <button class="share-button">Share</button>
+            <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec varius velit, at fringilla nulla.</p>
+        </article>
+
+        <section class="rating-comments">
+            <h2>User Ratings & Comments</h2>
+            <div class="rating">
+                <span>Rate this movie:</span>
+                <select>
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+            </div>
+            <div class="comments">
+                <div class="comment">
+                    <span class="badge new-reviewer" title="New Reviewer">New Reviewer</span>
+                    <p>User comment 1</p>
+                </div>
+                <div class="comment">
+                    <span class="badge top-contributor" title="Top Contributor">Top Contributor</span>
+                    <p>User comment 2</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Carousel functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel img');
+        const dots = document.querySelectorAll('.dot');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = i === index ? 'block' : 'none';
+                dots[i].classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 3000);
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>
