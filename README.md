@@ -2,7 +2,7 @@
 
 **Benchmarking Front-End Development as Conversational Code Generation with Multi-Modal Feedback**
 
-[🌐 Project](https://frontalk-benchmark.github.io/) | [🤗 Dataset](https://huggingface.co/datasets/xqwu/FronTalk) | [📖 Paper](https://frontalk-benchmark.github.io/static/preprint.pdf)
+[🌐 Project](https://frontalk-benchmark.github.io/) | [🤗 Dataset](https://huggingface.co/datasets/xqwu/FronTalk) | [📖 Paper](https://arxiv.org/abs/2601.04203)
 
 <br/>
 
