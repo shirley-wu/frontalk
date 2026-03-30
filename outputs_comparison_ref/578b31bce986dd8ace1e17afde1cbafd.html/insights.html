@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Insights - ActiveMatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ActiveMatch</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile_creation.html">Create Profile</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="profile-insights">
+            <h2>Profile Insights</h2>
+            <div class="insights-dashboard">
+                <div class="insights-panel strengths">
+                    <h3>Strengths</h3>
+                    <p>Strong interest in hiking and cycling.</p>
+                    <p>Active in yoga and swimming.</p>
+                </div>
+                <div class="insights-panel improvements">
+                    <h3>Areas for Improvement</h3>
+                    <p>Consider adding more photos.</p>
+                    <p>Enhance your personal description.</p>
+                </div>
+                <div class="insights-panel suggestions">
+                    <h3>Suggested Interests</h3>
+                    <p>Explore running and meditation.</p>
+                    <p>Consider joining a cycling club.</p>
+                </div>
+            </div>
+            <button onclick="window.history.back()">Back</button>
+        </section>
+    </main>
+    <style>
+        .insights-dashboard {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .insights-panel {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .strengths {
+            background-color: #e0ffe0;
+        }
+
+        .improvements {
+            background-color: #ffe0e0;
+        }
+
+        .suggestions {
+            background-color: #e0e0ff;
+        }
+
+        .insights-panel h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</body>
+</html>

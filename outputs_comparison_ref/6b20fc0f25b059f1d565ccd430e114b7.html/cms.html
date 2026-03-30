@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiteCraft - Content Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 15px;
+            transition: color 0.3s;
+        }
+        .sidebar a:hover {
+            color: #ff9800;
+        }
+        .main-content {
+            padding: 20px;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#">Create Post</a>
+        <a href="#">Edit Post</a>
+        <a href="#">Schedule Post</a>
+        <a href="#">Media Files</a>
+    </div>
+    <div class="main-content">
+        <h2>Content Management System</h2>
+        <p>Manage your blog posts and media files efficiently.</p>
+        <ul>
+            <li>Post 1: Scheduled for tomorrow</li>
+            <li>Post 2: Draft</li>
+            <li>Post 3: Published</li>
+            <li>Post 4: Scheduled for next week</li>
+            <li>Post 5: Published</li>
+        </ul>
+    </div>
+</body>
+</html>

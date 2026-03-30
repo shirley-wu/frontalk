@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VNC Local News</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>VNC Local News</h1>
+        <nav>
+            <ul>
+                <li><a href="#featured-news">Featured News</a></li>
+                <li><a href="#trending-now">Trending Now</a></li>
+                <li><a href="calendar.html">Community Events Calendar</a></li>
+                <li><a href="weather.html">Weather Updates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="featured-news">
+        <h2>Featured News</h2>
+        <div class="featured-story">
+            <img src="../../../../placeholder/placeholder.png" alt="Featured Story Image" class="featured-image">
+            <h3>Local Hero Saves the Day</h3>
+            <p>A local firefighter rescued a family from a burning building...</p>
+        </div>
+    </section>
+
+    <section id="trending-now">
+        <h2>Trending Now</h2>
+        <div class="trending-carousel">
+            <div class="trending-story">
+                <img src="../../../../placeholder/placeholder.png" alt="Trending Story Image">
+                <h4>Community Garden Project</h4>
+                <p>Residents come together to beautify their neighborhood...</p>
+            </div>
+            <!-- Add four more trending stories here -->
+        </div>
+    </section>
+
+    <section id="news-feed">
+        <h2>Customize Your News Feed</h2>
+        <form id="news-feed-form">
+            <label><input type="checkbox" name="category" value="sports"> Sports</label>
+            <label><input type="checkbox" name="category" value="arts"> Arts</label>
+            <label><input type="checkbox" name="category" value="education"> Education</label>
+            <label><input type="checkbox" name="category" value="community"> Community</label>
+        </form>
+    </section>
+
+    <section id="notifications">
+        <h2>Notifications</h2>
+        <div id="notification-list">
+            <div class="notification">
+                <h4>New Event: Local Art Exhibit</h4>
+                <p>Join us for an evening of creativity and inspiration...</p>
+            </div>
+            <!-- Add more notifications here -->
+        </div>
+    </section>
+
+    <section id="weather-updates">
+        <h2>Weather Updates</h2>
+        <div class="weather-summary">
+            <p>Today: Sunny, High 25°C, Low 15°C</p>
+            <a href="weather.html">View Detailed Forecast</a>
+        </div>
+    </section>
+
+    <section id="search">
+        <h2>Search News Articles</h2>
+        <form id="search-form">
+            <input type="text" placeholder="Enter keywords...">
+            <button type="submit">Search</button>
+            <div id="advanced-filters">
+                <label>Date: <input type="date"></label>
+                <label>Category:
+                    <select>
+                        <option value="all">All</option>
+                        <option value="sports">Sports</option>
+                        <option value="arts">Arts</option>
+                        <option value="education">Education</option>
+                        <option value="community">Community</option>
+                    </select>
+                </label>
+                <button type="button" id="clear-filters">Clear Filters</button>
+            </div>
+        </form>
+    </section>
+
+    <section id="settings">
+        <h2>Settings</h2>
+        <form id="settings-form">
+            <label><input type="checkbox" name="notifications" checked> Enable Notifications</label>
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Granary Theatre</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="contact.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events Calendar</a></li>
+                <li><a href="booking.html">Book Tickets</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="news.html">News & Updates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Form</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <p id="submission-message"></p>
+        </section>
+
+        <section>
+            <h2>Address</h2>
+            <p>Granary Theatre, University College Cork, Ireland</p>
+            <p>Phone: +353 21 123 4567</p>
+            <div id="map">
+                <img src="../../../../placeholder/placeholder.png" alt="Map Placeholder">
+            </div>
+        </section>
+
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What are the theatre's opening hours?</h3>
+                <p>The theatre is open from 10 AM to 10 PM, Monday to Sunday.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I book tickets for performances?</h3>
+                <p>Tickets can be booked online via our Book Tickets page.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is there parking available?</h3>
+                <p>Yes, there is a parking lot adjacent to the theatre.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Are refreshments available at the theatre?</h3>
+                <p>Yes, we offer a variety of snacks and beverages at our concession stand.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I volunteer at the theatre?</h3>
+                <p>Yes, we welcome volunteers. Please contact us for more information.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Granary Theatre, University College Cork</p>
+    </footer>
+</body>
+</html>

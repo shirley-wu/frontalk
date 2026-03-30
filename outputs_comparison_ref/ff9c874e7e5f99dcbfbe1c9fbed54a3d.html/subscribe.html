@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe to Kiwi News Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="sticky-header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="world.html">World</a></li>
+                <li><a href="politics.html">Politics</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Subscribe to Our Newsletter</h1>
+        <div id="subscription-form" style="background: url('../../../../placeholder/placeholder.png'); padding: 20px; border-radius: 8px;">
+            <form id="subscribeForm">
+                <label for="email" style="font-family: 'Arial', sans-serif;">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit" style="font-family: 'Arial', sans-serif;">Subscribe</button>
+            </form>
+        </div>
+        <div id="confirmation-message" style="display: none;">
+            <p>Thank you for subscribing! Please check your email for further instructions.</p>
+            <a href="index.html">Back to Homepage</a>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('subscribeForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('subscription-form').style.display = 'none';
+            document.getElementById('confirmation-message').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

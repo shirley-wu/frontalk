@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Directory - Golf Ireland Directory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Club Directory</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="membership.html">Membership & Booking</a></li>
+            <li><a href="news.html">News & Updates</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search by county...">
+        </section>
+        <section class="club-list">
+            <!-- Example clubs -->
+            <div class="club-card">
+                <h3>Galway Golf Club <span class="badge">Member</span></h3>
+                <p>Located in the heart of Galway, offering stunning views and challenging courses.</p>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="club-card">
+                <h3>Dublin Golf Club <span class="badge">Certified</span></h3>
+                <p>Premier golfing experience in Dublin with top-notch facilities.</p>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="club-card">
+                <h3>Cork Golf Club <span class="badge">Member</span></h3>
+                <p>A historic golf club in Cork, known for its rich heritage and excellent courses.</p>
+                <button class="view-details">View Details</button>
+            </div>
+            <!-- Add more club cards as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 Golf Ireland Directory. All rights reserved.</p>
+    </footer>
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', function() {
+            // Implement search functionality here
+        });
+    </script>
+</body>
+</html>

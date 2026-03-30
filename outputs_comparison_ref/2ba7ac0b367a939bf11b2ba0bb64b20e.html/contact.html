@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Washington Business Insights</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Washington Business Insights</h1>
+    </header>
+    <main>
+        <section id="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="contact-info">
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: info@washingtonbusinessinsights.com</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Washington Business Insights</p>
+    </footer>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your message!');
+        });
+    </script>
+</body>
+</html>

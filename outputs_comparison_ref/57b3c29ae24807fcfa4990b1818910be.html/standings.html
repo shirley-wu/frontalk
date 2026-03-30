@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team and League Standings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Team and League Standings</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="current-champion">
+            <div class="champion-banner">
+                <h2>Current Champion: Team A</h2>
+            </div>
+        </section>
+
+        <section id="standings">
+            <h2>League Standings</h2>
+            <label for="league-select">Select League:</label>
+            <select id="league-select">
+                <option value="league1">League 1</option>
+                <option value="league2">League 2</option>
+                <option value="league3">League 3</option>
+            </select>
+
+            <div class="standings-table">
+                <!-- Example of a standings entry -->
+                <div class="team-standing">
+                    <p>Team A - Wins: 10, Losses: 2</p>
+                </div>
+                <!-- Repeat similar blocks for other teams -->
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('league-select').addEventListener('change', function() {
+            // Simulate filtering logic here
+            alert('Standings updated for selected league!');
+        });
+    </script>
+</body>
+</html>

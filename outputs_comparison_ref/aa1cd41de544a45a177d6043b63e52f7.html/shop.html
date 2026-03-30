@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Online Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Photo Gallery</a></li>
+                <li><a href="tips.html">Photography Tips & Tutorials</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="shop">
+            <label for="product-filter">Filter by Product Type:</label>
+            <select id="product-filter">
+                <option value="all">All</option>
+                <option value="scrapbooking">Scrapbooking Kits</option>
+                <option value="overlays">Photography Overlays</option>
+            </select>
+            <button id="clear-filter">Clear Filter</button>
+            
+            <div id="product-list">
+                <div class="product scrapbooking">
+                    <h2>Vintage Scrapbooking Kit</h2>
+                    <p>Price: $15.00</p>
+                </div>
+                <div class="product scrapbooking">
+                    <h2>Floral Scrapbooking Kit</h2>
+                    <p>Price: $18.00</p>
+                </div>
+                <div class="product overlays">
+                    <h2>Light Leak Overlay</h2>
+                    <p>Price: $10.00</p>
+                </div>
+                <div class="product overlays">
+                    <h2>Bokeh Overlay</h2>
+                    <p>Price: $12.00</p>
+                </div>
+                <div class="product scrapbooking">
+                    <h2>Travel Scrapbooking Kit</h2>
+                    <p>Price: $20.00</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Lifestyle Photography & Design</p>
+    </footer>
+
+    <script>
+        document.getElementById('product-filter').addEventListener('change', function() {
+            const filterValue = this.value;
+            const products = document.querySelectorAll('.product');
+            products.forEach(product => {
+                if (filterValue === 'all' || product.classList.contains(filterValue)) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        });
+
+        document.getElementById('clear-filter').addEventListener('click', function() {
+            document.getElementById('product-filter').value = 'all';
+            const products = document.querySelectorAll('.product');
+            products.forEach(product => {
+                product.style.display = 'block';
+            });
+        });
+    </script>
+
+    <style>
+        #shop {
+            padding: 20px;
+        }
+
+        #product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product {
+            width: calc(33.333% - 20px);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            border: 2px solid #0044cc;
+        }
+    </style>
+</body>
+</html>

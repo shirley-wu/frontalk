@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Trip - Tripoto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Plan Your Trip</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="trip-planner">
+            <h2>Interactive Itinerary Planner</h2>
+            <form>
+                <label for="destination">Select Destination:</label>
+                <select id="destination" name="destination">
+                    <option value="paris">Paris</option>
+                    <option value="bali">Bali</option>
+                    <option value="new-zealand">New Zealand</option>
+                    <option value="maldives">Maldives</option>
+                    <option value="japan">Japan</option>
+                </select>
+
+                <label for="activities">Select Activities:</label>
+                <select id="activities" name="activities" multiple>
+                    <option value="sightseeing">Sightseeing</option>
+                    <option value="hiking">Hiking</option>
+                    <option value="relaxation">Relaxation</option>
+                    <option value="cultural-tours">Cultural Tours</option>
+                </select>
+
+                <label for="accommodation">Select Accommodation:</label>
+                <select id="accommodation" name="accommodation">
+                    <option value="hotel">Hotel</option>
+                    <option value="hostel">Hostel</option>
+                    <option value="bnb">Bed & Breakfast</option>
+                </select>
+
+                <button type="submit">Generate Itinerary</button>
+            </form>
+
+            <button id="share-itinerary">Share Itinerary</button>
+        </section>
+    </main>
+</body>
+</html>

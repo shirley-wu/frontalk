@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Astro Store</h1>
+        <a href="index.html" class="back-home">Back to Homepage</a>
+    </header>
+    <main>
+        <section class="astro-readings">
+            <h2>Personalized Astrological Readings</h2>
+            <div class="reading-grid">
+                <div class="reading-card">
+                    <img src="../../../../placeholder/placeholder.png" alt="Reading Image">
+                    <h3>Love Compatibility</h3>
+                    <p>Discover how compatible you are with your partner.</p>
+                    <button class="learn-more">Learn More</button>
+                </div>
+                <div class="reading-card">
+                    <img src="../../../../placeholder/placeholder.png" alt="Reading Image">
+                    <h3>Career Insights</h3>
+                    <p>Get personalized advice on your career path.</p>
+                    <button class="learn-more">Learn More</button>
+                </div>
+                <!-- Add more reading cards -->
+            </div>
+        </section>
+
+        <section class="customer-reviews">
+            <h2>Customer Reviews</h2>
+            <div class="reviews">
+                <div class="review">
+                    <p><strong>John Doe</strong></p>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>The love compatibility reading was spot on!</p>
+                </div>
+                <div class="review">
+                    <p><strong>Jane Smith</strong></p>
+                    <p>⭐⭐⭐⭐</p>
+                    <p>Very insightful career advice.</p>
+                </div>
+                <!-- Add more reviews -->
+            </div>
+            <button class="write-review">Write a Review</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Everyday Horoscopes</p>
+    </footer>
+    <style>
+        .astro-readings {
+            margin: 20px;
+        }
+
+        .reading-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .reading-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .reading-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .reading-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .reading-card h3 {
+            margin: 10px;
+            font-size: 1.2em;
+        }
+
+        .reading-card p {
+            margin: 10px;
+            font-size: 0.9em;
+        }
+
+        .learn-more {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .learn-more:hover {
+            background-color: #0056b3;
+        }
+
+        .customer-reviews {
+            margin: 40px 20px;
+        }
+
+        .reviews {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .review {
+            background-color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .write-review {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</body>
+</html>

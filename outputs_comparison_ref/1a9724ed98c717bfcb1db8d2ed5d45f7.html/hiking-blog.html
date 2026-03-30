@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiking Blog & Guides</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .sidebar {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 20%;
+            background-color: #e0e0e0;
+            padding: 10px;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        .sidebar h3 {
+            font-size: 1.2em;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .sidebar ul li a img {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hiking Blog & Guides</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <article>
+                <h2>Discovering Hidden Trails</h2>
+                <p>Join us as we uncover some of the lesser-known trails in the Pacific Northwest...</p>
+            </article>
+            <article>
+                <h2>Essential Gear for Hikers</h2>
+                <p>What you need to bring for a successful hike in the Pacific Northwest...</p>
+            </article>
+            <article>
+                <h2>Seasonal Hiking Tips</h2>
+                <p>How to prepare for hiking in different seasons...</p>
+            </article>
+            <article>
+                <h2>Trail Safety Guidelines</h2>
+                <p>Important safety tips to ensure a safe hiking experience...</p>
+            </article>
+            <article>
+                <h2>Top 5 Scenic Trails</h2>
+                <p>Explore the most scenic trails the region has to offer...</p>
+            </article>
+        </section>
+
+        <aside class="sidebar">
+            <h3>Featured Posts</h3>
+            <ul>
+                <li><a href="#"><img src="../../../../placeholder/placeholder.png" alt="Icon"> Discovering Hidden Trails</a></li>
+                <li><a href="#"><img src="../../../../placeholder/placeholder.png" alt="Icon"> Essential Gear for Hikers</a></li>
+                <li><a href="#"><img src="../../../../placeholder/placeholder.png" alt="Icon"> Seasonal Hiking Tips</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Pacific Northwest Snapshot. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.hero-banner {
+    background: url('../../../../placeholder/placeholder.png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero-banner .banner-content {
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 20px;
+}
+
+.main-nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav ul li {
+    position: relative;
+}
+
+.main-nav ul li a {
+    color: white;
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.main-nav ul li a:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.carousel {
+    position: relative;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.carousel-content {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-control {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.carousel-control.prev {
+    left: 0;
+}
+
+.carousel-control.next {
+    right: 0;
+}
+
+#bird-of-the-month {
+    padding: 20px;
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+.bird-month-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bird-month-img {
+    border: 5px solid #ccc;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    margin-right: 20px;
+}
+
+.bird-name {
+    font-family: 'Georgia', serif;
+    font-size: 1.5em;
+}
+
+.bird-overview {
+    font-family: 'Arial', sans-serif;
+}
+
+#bird-watching-events {
+    padding: 20px;
+    background-color: #d3d3d3;
+}
+
+.event-filters {
+    margin-bottom: 10px;
+}
+
+.event-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

@@ -1,0 +1,143 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image {
+    width: 100%;
+    filter: brightness(50%);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cta-button {
+    background-color: #FF5733;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #333;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-bar {
+    width: 80%;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.search-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+.gallery-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thumbnail-strip {
+    display: flex;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.featured-car {
+    display: flex;
+    align-items: center;
+}
+
+.featured-info {
+    margin-left: 20px;
+}
+
+.learn-more-button, .vote-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    transition: background-color 0.2s;
+}
+
+.learn-more-button:hover, .vote-button:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: #ccc;
+    transition: color 0.2s;
+}
+
+.social-icon:hover {
+    color: white;
+}

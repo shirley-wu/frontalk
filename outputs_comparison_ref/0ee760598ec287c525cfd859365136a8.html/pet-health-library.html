@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Health Library</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #a0d6b4;
+            padding: 20px;
+            text-align: center;
+        }
+        .search-bar {
+            margin: 20px;
+            text-align: center;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 80%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .article-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .article-card {
+            background-color: #eaf4f4;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .article-card:hover {
+            transform: scale(1.05);
+            border-color: #4c9a76;
+        }
+        .article-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Pet Health Library</h1>
+</header>
+
+<div class="search-bar">
+    <input type="text" placeholder="Search for articles...">
+</div>
+
+<div class="article-grid">
+    <div class="article-card">
+        <img src="../../../../placeholder/placeholder.png" alt="Article 1">
+        <h3>Nutrition for Dogs</h3>
+        <p>Learn about balanced diets for dogs.</p>
+    </div>
+    <div class="article-card">
+        <img src="../../../../placeholder/placeholder.png" alt="Article 2">
+        <h3>Cat Behavior Tips</h3>
+        <p>Understand your cat's behavior better.</p>
+    </div>
+    <div class="article-card">
+        <img src="../../../../placeholder/placeholder.png" alt="Article 3">
+        <h3>Common Pet Diseases</h3>
+        <p>Recognize symptoms and prevention methods.</p>
+    </div>
+    <div class="article-card">
+        <img src="../../../../placeholder/placeholder.png" alt="Article 4">
+        <h3>Vaccination Schedule</h3>
+        <p>Keep your pet's vaccinations up-to-date.</p>
+    </div>
+    <div class="article-card">
+        <img src="../../../../placeholder/placeholder.png" alt="Article 5">
+        <h3>Emergency First Aid</h3>
+        <p>Learn basic first aid for pets.</p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Account Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .account-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid #3498db;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-right: 20px;
+        }
+
+        .notification-preferences, .comparison-history {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .notification-preferences h2, .comparison-history h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .timeline {
+            border-left: 2px solid #ddd;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .timeline-entry {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .timeline-entry:before {
+            content: '';
+            position: absolute;
+            left: -12px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            background-color: #3498db;
+            border-radius: 50%;
+        }
+
+        .clear-history {
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function toggleNotificationPreferences() {
+            alert("Notification preferences updated successfully!");
+        }
+
+        function clearHistory() {
+            if (confirm("Are you sure you want to clear your comparison history?")) {
+                document.querySelector(".timeline").innerHTML = "<p>No history available.</p>";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>User Account Management</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="insurance-comparison.html">Insurance Comparison Tool</a></li>
+                <li><a href="guides-calculators.html">Guides and Calculators</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="account-header">
+            <img src="../../../../placeholder/placeholder.png" alt="User Avatar" class="avatar">
+            <h2>Welcome, User!</h2>
+        </section>
+
+        <section class="notification-preferences">
+            <h2>Notification Preferences</h2>
+            <form onsubmit="toggleNotificationPreferences(); return false;">
+                <label>
+                    <input type="checkbox" checked> Car Insurance
+                </label><br>
+                <label>
+                    <input type="checkbox"> Home Insurance
+                </label><br>
+                <label>
+                    <input type="checkbox" checked> Travel Insurance
+                </label><br>
+                <label>
+                    <input type="checkbox"> Pet Insurance
+                </label><br>
+                <button type="submit">Save Preferences</button>
+            </form>
+        </section>
+
+        <section class="comparison-history">
+            <h2>Product Comparison History</h2>
+            <div class="timeline">
+                <div class="timeline-entry">
+                    <strong>Car Insurance - Provider A</strong> <span>(01/01/2023)</span>
+                </div>
+                <div class="timeline-entry">
+                    <strong>Home Insurance - Provider C</strong> <span>(15/02/2023)</span>
+                </div>
+                <div class="timeline-entry">
+                    <strong>Travel Insurance - Provider E</strong> <span>(10/03/2023)</span>
+                </div>
+            </div>
+            <button class="clear-history" onclick="clearHistory()">Clear History</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 SmartChoice</p>
+    </footer>
+</body>
+</html>

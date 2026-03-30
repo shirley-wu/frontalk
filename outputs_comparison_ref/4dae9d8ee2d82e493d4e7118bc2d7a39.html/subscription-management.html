@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Management - Sailor's Haven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Subscription Management</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="event-calendar.html">Event Calendar</a></li>
+                <li><a href="user-forums.html">User Forums</a></li>
+                <li><a href="classified-listings.html">Classified Listings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="subscriptions">
+            <h2>Your Subscribed Events</h2>
+            <ul>
+                <li>Global Sailing Championship <button>Unsubscribe</button></li>
+                <li>Annual Regatta <button>Unsubscribe</button></li>
+                <li>Sailing Expo <button>Unsubscribe</button></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="event-calendar.html">Event Calendar</a></li>
+                    <li><a href="user-forums.html">User Forums</a></li>
+                    <li><a href="classified-listings.html">Classified Listings</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href="#"><img src="../../../../placeholder/placeholder.png" alt="Facebook"></a>
+                <a href="#"><img src="../../../../placeholder/placeholder.png" alt="Twitter"></a>
+                <a href="#"><img src="../../../../placeholder/placeholder.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.subscriptions button').forEach(button => {
+            button.addEventListener('click', function() {
+                alert('Unsubscribed successfully!');
+            });
+        });
+    </script>
+</body>
+</html>

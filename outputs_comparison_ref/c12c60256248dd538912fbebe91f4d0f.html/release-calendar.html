@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Release Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Upcoming Game Releases</h1>
+    </header>
+    <main>
+        <section class="filter-controls">
+            <label for="platform">Platform:</label>
+            <select id="platform">
+                <option value="">All</option>
+                <option value="pc">PC</option>
+                <option value="console">Console</option>
+            </select>
+            <label for="genre">Genre:</label>
+            <select id="genre">
+                <option value="">All</option>
+                <option value="action">Action</option>
+                <option value="adventure">Adventure</option>
+            </select>
+        </section>
+
+        <section class="release-list">
+            <div class="release-item pc">
+                <h3>Game Title 1</h3>
+                <p>Platform: PC</p>
+                <p>Release Date: 2023-11-01</p>
+                <button class="set-reminder">Set Reminder</button>
+            </div>
+            <div class="release-item console">
+                <h3>Game Title 2</h3>
+                <p>Platform: Console</p>
+                <p>Release Date: 2023-12-15</p>
+                <button class="set-reminder">Set Reminder</button>
+            </div>
+            <!-- Add more release items -->
+        </section>
+    </main>
+
+    <script>
+        document.querySelectorAll('.set-reminder').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Reminder set for this release!');
+            });
+        });
+    </script>
+</body>
+</html>

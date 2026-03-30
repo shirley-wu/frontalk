@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership & Booking - Golf Ireland Directory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Membership & Booking</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="directory.html">Club Directory</a></li>
+            <li><a href="news.html">News & Updates</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="membership-form">
+            <h2>Apply for Membership</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+        <section class="booking-form">
+            <h2>Book Tee Time</h2>
+            <form>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time">
+                <button type="submit">Book Tee Time</button>
+            </form>
+        </section>
+        <section class="equipment-reservation">
+            <h2>Reserve Equipment</h2>
+            <form>
+                <label for="equipment">Equipment:</label>
+                <select id="equipment" name="equipment">
+                    <option value="clubs">Clubs</option>
+                    <option value="buggies">Buggies</option>
+                </select>
+                <button type="submit">Reserve Equipment</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 Golf Ireland Directory. All rights reserved.</p>
+    </footer>
+</body>
+</html>

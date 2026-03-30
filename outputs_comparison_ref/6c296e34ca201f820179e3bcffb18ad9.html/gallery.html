@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Gallery</h1>
+        <div class="gallery">
+            <div class="photo" onclick="openLightbox(0)">
+                <img src="../../../../placeholder/placeholder.png" alt="Travel Photo">
+                <p>Comment: Beautiful view!</p>
+            </div>
+            <div class="photo" onclick="openLightbox(1)">
+                <img src="../../../../placeholder/placeholder.png" alt="Travel Photo">
+                <p>Comment: Stunning architecture.</p>
+            </div>
+            <div class="photo" onclick="openLightbox(2)">
+                <img src="../../../../placeholder/placeholder.png" alt="Travel Photo">
+                <p>Comment: Amazing colors!</p>
+            </div>
+            <div class="photo" onclick="openLightbox(3)">
+                <img src="../../../../placeholder/placeholder.png" alt="Travel Photo">
+                <p>Comment: Captivating landscape.</p>
+            </div>
+            <div class="photo" onclick="openLightbox(4)">
+                <img src="../../../../placeholder/placeholder.png" alt="Travel Photo">
+                <p>Comment: Perfect shot!</p>
+            </div>
+        </div>
+        <div id="lightbox" class="lightbox">
+            <span class="close" onclick="closeLightbox()">X</span>
+            <img src="../../../../placeholder/placeholder.png" id="lightbox-img" alt="Lightbox Image">
+            <div class="lightbox-nav">
+                <span class="prev" onclick="prevImage()">&#10094;</span>
+                <span class="next" onclick="nextImage()">&#10095;</span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 The59Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>

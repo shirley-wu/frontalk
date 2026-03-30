@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guides and Calculators</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .guide-calculator {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .guide-calculator h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .guide-calculator img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        .faq, .glossary {
+            margin-top: 40px;
+        }
+
+        .faq-item, .glossary-item {
+            margin-bottom: 10px;
+        }
+
+        .faq-item h3, .glossary-item h3 {
+            cursor: pointer;
+        }
+
+        .faq-item p, .glossary-item p {
+            display: none;
+            margin-top: 5px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const faqItems = document.querySelectorAll(".faq-item h3");
+            faqItems.forEach(item => {
+                item.addEventListener("click", function() {
+                    this.nextElementSibling.style.display = this.nextElementSibling.style.display === "block" ? "none" : "block";
+                });
+            });
+
+            const glossaryItems = document.querySelectorAll(".glossary-item h3");
+            glossaryItems.forEach(item => {
+                item.addEventListener("click", function() {
+                    this.nextElementSibling.style.display = this.nextElementSibling.style.display === "block" ? "none" : "block";
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Guides and Calculators</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="insurance-comparison.html">Insurance Comparison Tool</a></li>
+                <li><a href="user-account.html">User Account Management</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="guides">
+            <div class="guide-calculator">
+                <img src="../../../../placeholder/placeholder.png" alt="Guide Icon">
+                <h2>Understanding Car Insurance</h2>
+                <p>Learn about different car insurance policies, coverage, and what suits your needs.</p>
+            </div>
+            <div class="guide-calculator">
+                <img src="../../../../placeholder/placeholder.png" alt="Guide Icon">
+                <h2>Home Insurance Basics</h2>
+                <p>Explore the fundamentals of home insurance and how to protect your property.</p>
+            </div>
+            <div class="guide-calculator">
+                <img src="../../../../placeholder/placeholder.png" alt="Calculator Icon">
+                <h2>Travel Insurance Cost Estimator</h2>
+                <p>Estimate the cost of travel insurance for your next trip with our simple calculator.</p>
+            </div>
+            <div class="guide-calculator">
+                <img src="../../../../placeholder/placeholder.png" alt="Calculator Icon">
+                <h2>Pet Insurance Calculator</h2>
+                <p>Calculate potential costs for insuring your pet and find the best coverage.</p>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What is car insurance?</h3>
+                <p>Car insurance provides financial protection against physical damage or bodily injury resulting from traffic collisions.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How does home insurance work?</h3>
+                <p>Home insurance covers losses and damages to an individual's house and to assets in the home.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Why do I need travel insurance?</h3>
+                <p>Travel insurance protects you from unforeseen events such as trip cancellations, medical emergencies, and more during your travels.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What does pet insurance cover?</h3>
+                <p>Pet insurance covers veterinary expenses for illness or injury, and some policies include preventative care.</p>
+            </div>
+        </section>
+
+        <section class="glossary">
+            <h2>Glossary of Insurance Terms</h2>
+            <div class="glossary-item">
+                <h3>Premium</h3>
+                <p>A premium is the amount paid periodically to the insurer by the insured for covering risk.</p>
+            </div>
+            <div class="glossary-item">
+                <h3>Deductible</h3>
+                <p>A deductible is the amount you pay out of pocket before your insurance covers the remaining costs.</p>
+            </div>
+            <div class="glossary-item">
+                <h3>Coverage</h3>
+                <p>Coverage refers to the amount of protection you have through your insurance policy.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 SmartChoice</p>
+    </footer>
+</body>
+</html>

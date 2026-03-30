@@ -1,0 +1,125 @@
+.review-banner {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #ff5733;
+}
+
+.review-main {
+    display: flex;
+}
+
+.review-sidebar {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.review-sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.review-sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.review-sidebar nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.review-sidebar nav ul li a:hover {
+    color: #ff5733;
+}
+
+.movie-review {
+    width: 60%;
+    padding: 20px;
+}
+
+.movie-review h1 {
+    font-family: 'Georgia', serif;
+}
+
+.review-text {
+    font-family: 'Georgia', serif;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.share-button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.share-button:hover {
+    background-color: #0056b3;
+}
+
+.rating-comments {
+    width: 20%;
+    padding: 10px;
+}
+
+.rating {
+    margin-bottom: 20px;
+}
+
+.comments .comment {
+    margin-bottom: 10px;
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.new-reviewer {
+    background-color: #6c757d;
+}
+
+.top-contributor {
+    background-color: #28a745;
+}

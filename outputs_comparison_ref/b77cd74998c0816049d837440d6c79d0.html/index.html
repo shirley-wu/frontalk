@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoInfoHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <img src="../../../../placeholder/placeholder.png" alt="Cryptocurrency banner" class="hero-image">
+        <div class="hero-content">
+            <h1>Welcome to CryptoInfoHub</h1>
+            <p>Your source for real-time cryptocurrency data and insights</p>
+            <button class="cta-button">Explore Now</button>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#search" class="nav-link"><img src="icon-search.png" alt="Search icon"> Search</a></li>
+            <li><a href="learn.html" class="nav-link"><img src="icon-learn.png" alt="Learn icon"> Learn</a></li>
+            <li><a href="news.html" class="nav-link"><img src="icon-news.png" alt="News icon"> News</a></li>
+            <li><a href="#watchlist" class="nav-link"><img src="icon-watchlist.png" alt="Watchlist icon"> Watchlist</a></li>
+        </ul>
+    </nav>
+
+    <section id="search" class="search-section">
+        <input type="text" placeholder="Search for a cryptocurrency..." class="search-bar">
+        <button class="search-button">Go</button>
+    </section>
+
+    <section id="watchlist" class="watchlist-section">
+        <h2>Your Watchlist</h2>
+        <ul class="watchlist">
+            <li class="crypto-item">Bitcoin - $50,000 (+5%)</li>
+            <li class="crypto-item">Ethereum - $3,500 (-2%)</li>
+            <li class="crypto-item">Ripple - $1.00 (+10%)</li>
+            <li class="crypto-item">Litecoin - $150 (+1%)</li>
+            <li class="crypto-item">Cardano - $2.20 (-3%)</li>
+        </ul>
+        <button class="notification-button">Notifications</button>
+        <div class="graph-container">
+            <canvas id="priceGraph"></canvas>
+            <div class="graph-summary">
+                <p>Average Price: $XXX</p>
+                <p>Highest Price: $XXX</p>
+                <p>Lowest Price: $XXX</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 CryptoInfoHub</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

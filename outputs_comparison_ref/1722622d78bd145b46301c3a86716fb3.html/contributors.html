@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contributors - X-R-A-Y Literary Magazine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="contributors-header">
+        <h1>Contributors</h1>
+    </header>
+
+    <aside class="sidebar">
+        <ul>
+            <li><a href="#featuredAuthors">Featured Authors</a></li>
+            <li><a href="#allContributors">All Contributors</a></li>
+            <li>
+                <select id="filterOptions">
+                    <option value="all">Filter by Genre</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="nonfiction">Creative Nonfiction</option>
+                    <option value="poetry">Poetry</option>
+                </select>
+            </li>
+        </ul>
+    </aside>
+
+    <section id="featuredAuthors">
+        <h2>Featured Authors</h2>
+        <div class="author-profile">
+            <img src="../../../../placeholder/placeholder.png" alt="Author L">
+            <h3>Author L</h3>
+            <p>Brief bio about Author L...</p>
+            <p>Notable works: <a href="#">Work 1</a>, <a href="#">Work 2</a></p>
+            <a href="#">Personal Blog</a>
+        </div>
+        <div class="author-profile">
+            <img src="../../../../placeholder/placeholder.png" alt="Author M">
+            <h3>Author M</h3>
+            <p>Brief bio about Author M...</p>
+            <p>Notable works: <a href="#">Work 3</a>, <a href="#">Work 4</a></p>
+            <a href="#">Personal Blog</a>
+        </div>
+    </section>
+
+    <section id="allContributors">
+        <h2>All Contributors</h2>
+        <div class="author-profile">
+            <h3>Author N <span class="badge" data-genre="Fiction">F</span></h3>
+            <a href="#">Published Works</a> | <a href="#">Personal Blog</a>
+        </div>
+        <div class="author-profile">
+            <h3>Author O <span class="badge" data-genre="Creative Nonfiction">CN</span></h3>
+            <a href="#">Published Works</a> | <a href="#">Personal Blog</a>
+        </div>
+        <div class="author-profile">
+            <h3>Author P <span class="badge" data-genre="Poetry">P</span></h3>
+            <a href="#">Published Works</a> | <a href="#">Personal Blog</a>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

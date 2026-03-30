@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Your Gift Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Design Your Gift Card</h1>
+    </header>
+    <main>
+        <form id="giftCardForm">
+            <label for="businessName">Business Name:</label>
+            <input type="text" id="businessName" name="businessName" oninput="updatePreview()" required>
+
+            <label for="cardTemplate">Select Card Template:</label>
+            <select id="cardTemplate" name="cardTemplate" onchange="updatePreview()">
+                <option value="template1">Template 1</option>
+                <option value="template2">Template 2</option>
+                <option value="template3">Template 3</option>
+            </select>
+
+            <label for="logoUpload">Upload Logo:</label>
+            <input type="file" id="logoUpload" name="logoUpload" accept="image/*" onchange="updatePreview()">
+
+            <button type="submit">Submit Design</button>
+        </form>
+
+        <section id="previewSection">
+            <h2>Card Preview</h2>
+            <div id="cardPreview">
+                <img src="../../../../placeholder/placeholder.png" alt="Card Template Preview" id="templateImage">
+                <div id="businessNamePreview"></div>
+                <img src="../../../../placeholder/placeholder.png" alt="Logo Preview" id="logoPreview">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="loyalty-dashboard.html">Loyalty Dashboard</a></li>
+                <li><a href="support-and-resources.html">Support & Resources</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

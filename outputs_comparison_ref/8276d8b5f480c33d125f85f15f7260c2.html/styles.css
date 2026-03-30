@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero-carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.carousel-slide {
+    flex: 1;
+    position: relative;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.news-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.feature-article img {
+    width: 100%;
+    height: auto;
+}
+
+.feature-article h3, .other-articles h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffcc00;
+}
+
+.other-articles article {
+    margin-bottom: 20px;
+}
+
+.login-register {
+    background-image: url('../../../../placeholder/placeholder.png');
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.login-register form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    display: inline-block;
+}
+
+.login-register input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+}
+
+.login-register button {
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.match-info {
+    background-color: #555;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #ffcc00;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+.hidden {
+    display: none;
+}
+
+#video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-overlay-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+}

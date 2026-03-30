@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+#hero {
+    background-image: url('../../../../placeholder/placeholder.png');
+    background-size: cover;
+    padding: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+}
+
+.carousel-item {
+    min-width: 300px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#searchable-database {
+    margin-top: 40px;
+}
+
+.resource-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resource-item {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#community-forum {
+    display: flex;
+    margin-top: 40px;
+}
+
+.trending-discussions {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.forum-main {
+    flex: 3;
+}
+
+.forum-main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.forum-main li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.forum-main li:hover {
+    text-decoration: underline;
+}
+
+#events-calendar {
+    margin-top: 40px;
+}
+
+.event-card {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+}
+
+#daily-devotional {
+    margin-top: 40px;
+    background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.devotional-content {
+    text-align: center;
+}
+
+.devotional-content p {
+    font-family: 'Georgia', serif;
+    margin: 10px 0;
+}
+
+.share-icons img:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

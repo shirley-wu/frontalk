@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Calendar - Alpine Lutheran Church</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Event Calendar</h1>
+    </header>
+    <main>
+        <select id="event-filter">
+            <option value="all">All Events</option>
+            <option value="worship">Worship Services</option>
+            <option value="community">Community Events</option>
+            <option value="workshop">Workshops</option>
+        </select>
+        <div id="event-list">
+            <div class="event-card" data-category="worship">
+                <h2>Sunday Worship Service</h2>
+                <p>Date: October 15, 2023</p>
+                <p>Join us for a morning of worship and community.</p>
+            </div>
+            <div class="event-card" data-category="community">
+                <h2>Community BBQ</h2>
+                <p>Date: October 22, 2023</p>
+                <p>Enjoy food and fellowship with the community.</p>
+            </div>
+            <div class="event-card" data-category="workshop">
+                <h2>Bible Study Workshop</h2>
+                <p>Date: October 29, 2023</p>
+                <p>Deepen your understanding of the scriptures.</p>
+            </div>
+            <div class="event-card" data-category="worship">
+                <h2>Evening Prayer Service</h2>
+                <p>Date: November 5, 2023</p>
+                <p>Reflect and pray in a peaceful setting.</p>
+            </div>
+            <div class="event-card" data-category="community">
+                <h2>Charity Run</h2>
+                <p>Date: November 12, 2023</p>
+                <p>Participate in our annual charity run.</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.getElementById('event-filter').addEventListener('change', function() {
+            const category = this.value;
+            document.querySelectorAll('.event-card').forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

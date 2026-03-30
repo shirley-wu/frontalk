@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Photo Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tips.html">Photography Tips & Tutorials</a></li>
+                <li><a href="shop.html">Online Shop</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="photo-gallery">
+            <div class="gallery-item">
+                <img src="../../../../placeholder/placeholder.png" alt="Lifestyle Photo 1">
+                <div class="overlay">
+                    <p>Beautiful sunset over the mountains</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="../../../../placeholder/placeholder.png" alt="Lifestyle Photo 2">
+                <div class="overlay">
+                    <p>A serene beach scene</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="../../../../placeholder/placeholder.png" alt="Lifestyle Photo 3">
+                <div class="overlay">
+                    <p>Urban cityscape at night</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="../../../../placeholder/placeholder.png" alt="Lifestyle Photo 4">
+                <div class="overlay">
+                    <p>Forest trail with autumn leaves</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="../../../../placeholder/placeholder.png" alt="Lifestyle Photo 5">
+                <div class="overlay">
+                    <p>Captivating portrait in natural light</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Lifestyle Photography & Design</p>
+    </footer>
+
+    <style>
+        #photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .gallery-item {
+            position: relative;
+            width: calc(33.333% - 10px);
+            border: 2px solid #0044cc;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 68, 204, 0.7);
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay p {
+            font-size: 1.2em;
+            margin: 0;
+        }
+    </style>
+</body>
+</html>

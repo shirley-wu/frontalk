@@ -1,0 +1,51 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: #4CAF50;
+    padding: 10px;
+    color: white;
+}
+
+.plant-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.plant {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.plant img {
+    width: 100%;
+    height: auto;
+}
+
+.plant:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flower {
+    border-color: #ffeb3b;
+}
+
+.shrub {
+    border-color: #8bc34a;
+}
+
+.tree {
+    border-color: #2196F3;
+}

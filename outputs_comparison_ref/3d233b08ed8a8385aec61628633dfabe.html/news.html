@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Global Economics Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Global Economics Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="news-feed">
+            <h2>News Feed</h2>
+            <select id="news-category" onchange="filterNews()">
+                <option value="all">All Categories</option>
+                <option value="global-trends">Global Trends</option>
+                <option value="regional-updates">Regional Updates</option>
+                <option value="expert-opinions">Expert Opinions</option>
+            </select>
+            <div id="news-timeline">
+                <div class="news-item" data-category="global-trends">
+                    <h3>Global Economic Growth in 2023</h3>
+                    <p>Summary: An overview of the global economic growth trends for 2023...</p>
+                </div>
+                <div class="news-item" data-category="regional-updates">
+                    <h3>Regional Trade Developments</h3>
+                    <p>Summary: Key trade developments in various regions...</p>
+                </div>
+                <div class="news-item" data-category="expert-opinions">
+                    <h3>Expert Opinions on Inflation</h3>
+                    <p>Summary: Experts share their views on the current inflation trends...</p>
+                </div>
+                <div class="news-item" data-category="global-trends">
+                    <h3>Technological Impact on Global Markets</h3>
+                    <p>Summary: How technology is reshaping global markets...</p>
+                </div>
+                <div class="news-item" data-category="regional-updates">
+                    <h3>Economic Challenges in Europe</h3>
+                    <p>Summary: An analysis of the economic challenges facing Europe...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Global Economics Hub</p>
+    </footer>
+</body>
+</html>

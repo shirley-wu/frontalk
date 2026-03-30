@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Recommendations - ActiveMatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ActiveMatch</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile_creation.html">Create Profile</a></li>
+                <li><a href="search.html">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="match-recommendations">
+            <h2>Recommended Matches</h2>
+            <div class="recommendation-grid">
+                <div class="profile-card">
+                    <img src="../../../../placeholder/placeholder.png" alt="Profile Picture">
+                    <h3>John Doe</h3>
+                    <p>Age: 29</p>
+                    <p>Location: New York</p>
+                    <p>Interests: Hiking, Cycling</p>
+                    <button>Message</button>
+                </div>
+                <div class="profile-card">
+                    <img src="../../../../placeholder/placeholder.png" alt="Profile Picture">
+                    <h3>Jane Smith</h3>
+                    <p>Age: 25</p>
+                    <p>Location: Los Angeles</p>
+                    <p>Interests: Yoga, Running</p>
+                    <button>Message</button>
+                </div>
+                <div class="profile-card">
+                    <img src="../../../../placeholder/placeholder.png" alt="Profile Picture">
+                    <h3>Mike Johnson</h3>
+                    <p>Age: 32</p>
+                    <p>Location: Chicago</p>
+                    <p>Interests: Swimming, Yoga</p>
+                    <button>Message</button>
+                </div>
+                <div class="profile-card">
+                    <img src="../../../../placeholder/placeholder.png" alt="Profile Picture">
+                    <h3>Emily Davis</h3>
+                    <p>Age: 27</p>
+                    <p>Location: Miami</p>
+                    <p>Interests: Running, Cycling</p>
+                    <button>Message</button>
+                </div>
+                <div class="profile-card">
+                    <img src="../../../../placeholder/placeholder.png" alt="Profile Picture">
+                    <h3>Chris Brown</h3>
+                    <p>Age: 30</p>
+                    <p>Location: Seattle</p>
+                    <p>Interests: Hiking, Swimming</p>
+                    <button>Message</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <style>
+        .recommendation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .profile-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .profile-card:hover {
+            transform: scale(1.05);
+            border-color: #007BFF;
+        }
+
+        .profile-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .profile-card h3 {
+            margin: 10px 0;
+        }
+
+        .profile-card p {
+            margin: 5px 0;
+        }
+
+        .profile-card button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .profile-card button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</body>
+</html>

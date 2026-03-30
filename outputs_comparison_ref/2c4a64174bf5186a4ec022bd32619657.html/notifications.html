@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications - JobConnect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        section {
+            margin: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        .notification-history, .application-status {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .progress-bar {
+            height: 20px;
+            background-color: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+        .progress {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .tooltip {
+            display: none;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            border-radius: 3px;
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .progress-bar:hover .tooltip {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Notifications</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+    <section>
+        <h2>Subscribe to Job Alerts</h2>
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <select>
+                <option>Job Type</option>
+                <option>Full-time</option>
+                <option>Part-time</option>
+                <option>Contract</option>
+            </select>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+    <section class="notification-history">
+        <h2>Notification History</h2>
+        <ul>
+            <li>10/01/2023 - New job listing for Software Engineer</li>
+            <li>09/29/2023 - New job listing for Data Analyst</li>
+        </ul>
+        <button onclick="clearHistory()">Clear History</button>
+    </section>
+    <section class="application-status">
+        <h2>Job Application Status</h2>
+        <div>
+            <p>Software Engineer</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 50%; background-color: yellow;">
+                    <div class="tooltip">Pending</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>Data Analyst</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 100%; background-color: red;">
+                    <div class="tooltip">Closed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 JobConnect. All rights reserved.</p>
+    </footer>
+    <script>
+        function clearHistory() {
+            if (confirm('Are you sure you want to clear all notifications?')) {
+                document.querySelector('.notification-history ul').innerHTML = '';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events Calendar - Doubtful Sounds</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Upcoming Events Calendar</h1>
+    </header>
+
+    <main>
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <article>
+                <h3>Artist A Live in Concert</h3>
+                <p>Location: Venue 1</p>
+                <button onclick="window.location.href='event-details.html'">Learn More</button>
+            </article>
+            <article>
+                <h3>Festival X</h3>
+                <p>Location: Venue 2</p>
+                <button onclick="window.location.href='event-details.html'">Learn More</button>
+            </article>
+            <!-- Additional events -->
+        </section>
+
+        <section class="popular-events">
+            <h2>Popular Events</h2>
+            <article>
+                <h3>Artist B Tour</h3>
+                <p>Location: Venue 3</p>
+                <p>Subscribers: 150</p>
+                <button onclick="window.location.href='event-details.html'">Learn More</button>
+            </article>
+            <!-- Additional popular events -->
+        </section>
+
+        <section class="subscription-form">
+            <h2>Subscribe to Event Updates</h2>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="artist">Preferred Artist:</label>
+                <input type="text" id="artist">
+                <label for="location">Preferred Location:</label>
+                <input type="text" id="location">
+                <button type="submit">Subscribe</button>
+            </form>
+            <div id="subscription-confirmation" style="display:none;">Subscription successful!</div>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="music-review-archive.html">Music Review Archive</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="social-media">
+            <a href="#" class="social-icon">FB</a>
+            <a href="#" class="social-icon">TW</a>
+            <a href="#" class="social-icon">IG</a>
+        </div>
+    </footer>
+</body>
+</html>

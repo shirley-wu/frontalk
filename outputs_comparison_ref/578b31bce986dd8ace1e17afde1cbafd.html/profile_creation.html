@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Profile - ActiveMatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ActiveMatch</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="profile-creation">
+            <div class="personal-info">
+                <h2>Personal Information</h2>
+                <form id="profileForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" required>
+                    <label for="interests">Interests:</label>
+                    <select id="interests" name="interests" multiple>
+                        <option value="hiking">Hiking</option>
+                        <option value="cycling">Cycling</option>
+                        <option value="yoga">Yoga</option>
+                        <option value="running">Running</option>
+                        <option value="swimming">Swimming</option>
+                    </select>
+                </form>
+            </div>
+            <div class="photo-upload">
+                <h2>Upload Photos</h2>
+                <form id="photoForm">
+                    <input type="file" name="photo1" accept="image/*">
+                    <input type="file" name="photo2" accept="image/*">
+                    <input type="file" name="photo3" accept="image/*">
+                    <span class="tooltip-icon">?</span>
+                </form>
+                <button id="previewProfile">Preview Profile</button>
+            </div>
+            <div class="profile-customization">
+                <h2>Profile Customization</h2>
+                <label for="theme">Select Theme:</label>
+                <select id="theme" name="theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="colorful">Colorful</option>
+                </select>
+                <label for="description">Personal Description:</label>
+                <textarea id="description" name="description"></textarea>
+                <button id="insights">Profile Insights</button>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.querySelector('.tooltip-icon').addEventListener('mouseover', () => {
+            alert('Optimal photo dimensions: 800x800 pixels. Formats: JPEG, PNG.');
+        });
+    </script>
+</body>
+</html>

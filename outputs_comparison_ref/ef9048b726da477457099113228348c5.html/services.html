@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Printing Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="../../../../placeholder/placeholder.png" alt="Home Icon"> Home</a></li>
+                <li><a href="services.html" class="active"><img src="../../../../placeholder/placeholder.png" alt="Services Icon"> Services</a></li>
+                <li><a href="request-quote.html"><img src="../../../../placeholder/placeholder.png" alt="Quote Icon"> Request a Quote</a></li>
+                <li><a href="design-upload.html"><img src="../../../../placeholder/placeholder.png" alt="Upload Icon"> Design Upload</a></li>
+                <li><a href="testimonials.html"><img src="../../../../placeholder/placeholder.png" alt="Testimonials Icon"> Testimonials</a></li>
+                <li><a href="contact.html"><img src="../../../../placeholder/placeholder.png" alt="Contact Icon"> Contact Us</a></li>
+                <li><a href="faq.html"><img src="../../../../placeholder/placeholder.png" alt="FAQ Icon"> FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Our Services</h1>
+        <label for="service-filter">Filter by Category:</label>
+        <select id="service-filter">
+            <option value="all">All</option>
+            <option value="business-cards">Business Cards</option>
+            <option value="brochures">Brochures</option>
+            <option value="posters">Posters</option>
+        </select>
+
+        <div id="services-grid">
+            <div class="service-card" data-category="business-cards">
+                <img src="../../../../placeholder/placeholder.png" alt="Business Cards">
+                <h3>Business Cards</h3>
+                <p>Professional business cards to make a great first impression.</p>
+                <p><strong>Price: $50 per 100 cards</strong></p>
+            </div>
+            <div class="service-card" data-category="brochures">
+                <img src="../../../../placeholder/placeholder.png" alt="Brochures">
+                <h3>Brochures</h3>
+                <p>Eye-catching brochures to showcase your products and services.</p>
+                <p><strong>Price: $100 per 100 brochures</strong></p>
+            </div>
+            <div class="service-card" data-category="posters">
+                <img src="../../../../placeholder/placeholder.png" alt="Posters">
+                <h3>Posters</h3>
+                <p>High-quality posters for events and promotions.</p>
+                <p><strong>Price: $30 per poster</strong></p>
+            </div>
+            <div class="service-card" data-category="business-cards">
+                <img src="../../../../placeholder/placeholder.png" alt="Premium Business Cards">
+                <h3>Premium Business Cards</h3>
+                <p>Luxurious business cards for a lasting impression.</p>
+                <p><strong>Price: $100 per 100 cards</strong></p>
+            </div>
+            <div class="service-card" data-category="brochures">
+                <img src="../../../../placeholder/placeholder.png" alt="Tri-fold Brochures">
+                <h3>Tri-fold Brochures</h3>
+                <p>Compact and informative tri-fold brochures.</p>
+                <p><strong>Price: $120 per 100 brochures</strong></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Printing Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>

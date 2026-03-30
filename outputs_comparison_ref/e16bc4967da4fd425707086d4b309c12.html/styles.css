@@ -1,0 +1,173 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+header {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: #fff;
+}
+
+nav input[type="text"] {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+nav img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s;
+}
+
+nav img:hover {
+    transform: scale(1.2);
+}
+
+nav select {
+    margin-left: 1em;
+    padding: 0.5em;
+    border-radius: 4px;
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.posts article,
+.carousel-item,
+.author,
+.tip,
+.testimonial {
+    background: linear-gradient(135deg, #e0e4e8, #f0f4f8);
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 1em;
+}
+
+.posts article:hover,
+.carousel-item:hover,
+.author:hover,
+.tip:hover,
+.testimonial:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.posts a,
+.carousel-item a,
+.tip a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.posts a:hover,
+.carousel-item a:hover,
+.tip a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+}
+
+.carousel-item {
+    min-width: 200px;
+    margin-right: 1em;
+}
+
+.authors {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.author {
+    flex: 1;
+    margin-right: 1em;
+}
+
+.accordion .tip {
+    cursor: pointer;
+    transition: max-height 0.3s ease;
+}
+
+.testimonial-carousel {
+    display: flex;
+    overflow-x: auto;
+}
+
+.testimonial {
+    min-width: 200px;
+    margin-right: 1em;
+}
+
+footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer input[type="email"] {
+    padding: 0.5em;
+    border: none;
+    border-radius: 4px;
+}
+
+footer button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 0.5em;
+    transition: background-color 0.3s;
+}
+
+footer button:hover {
+    background-color: #0056b3;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+    margin-left: 0.5em;
+}

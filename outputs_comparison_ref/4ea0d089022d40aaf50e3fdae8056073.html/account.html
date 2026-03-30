@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Account</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="login-section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="button" onclick="login()">Login</button>
+            </form>
+        </section>
+        <section id="dashboard-section" style="display: none;">
+            <h2>Dashboard</h2>
+            <button onclick="logout()">Logout</button>
+            <div id="saved-resources">
+                <h3>Saved Resources</h3>
+                <ul>
+                    <li>Article: The Future of Energy</li>
+                    <li>Video: Waste-to-Energy Explained</li>
+                </ul>
+            </div>
+            <div id="energy-calculations">
+                <h3>Energy Savings Calculations</h3>
+                <p>Last calculated savings: 100 kWh</p>
+            </div>
+            <div id="explored-plants">
+                <h3>Explored Plant Locations</h3>
+                <p>New York Plant</p>
+            </div>
+            <div id="notifications">
+                <h3>Notifications</h3>
+                <p>New article available: Benefits of Biomass</p>
+            </div>
+            <div id="theme-selection">
+                <h3>Select Dashboard Theme</h3>
+                <button onclick="selectTheme('solar')">Solar</button>
+                <button onclick="selectTheme('wind')">Wind</button>
+                <button onclick="selectTheme('biomass')">Biomass</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Alternative Energy Solutions</p>
+    </footer>
+    <script src="account.js"></script>
+</body>
+</html>

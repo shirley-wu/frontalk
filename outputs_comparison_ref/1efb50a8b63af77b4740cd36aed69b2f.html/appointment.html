@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Isaacs & Associates</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="fixed-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="#" id="liveChat">Live Chat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="appointment-container">
+        <h2>Book an Appointment</h2>
+        <div class="progress-tracker">
+            <div class="step completed">Select Therapist</div>
+            <div class="step">Choose Time Slot</div>
+            <div class="step">Enter Details</div>
+        </div>
+        
+        <form id="appointment-form">
+            <div class="step-content">
+                <label for="therapist">Choose a Therapist:</label>
+                <select id="therapist">
+                    <option>Dr. Lisa Smith</option>
+                    <option>Dr. John Doe</option>
+                    <option>Dr. Emily White</option>
+                    <option>Dr. Michael Brown</option>
+                    <option>Dr. Sarah Green</option>
+                </select>
+            </div>
+
+            <div class="step-content hidden">
+                <label for="time-slot">Select Time Slot:</label>
+                <select id="time-slot">
+                    <option>10:00 AM - 11:00 AM</option>
+                    <option>11:00 AM - 12:00 PM</option>
+                    <option>1:00 PM - 2:00 PM</option>
+                    <option>2:00 PM - 3:00 PM</option>
+                    <option>3:00 PM - 4:00 PM</option>
+                </select>
+            </div>
+
+            <div class="step-content hidden">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" required>
+                <button type="submit">Confirm Appointment</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Review Archive - Doubtful Sounds</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Music Review Archive</h1>
+        <input type="text" placeholder="Search reviews by artist, album, genre, or date">
+    </header>
+
+    <aside class="sidebar">
+        <h2>Filter Reviews</h2>
+        <div>
+            <label>Artist</label>
+            <input type="text" placeholder="Enter artist name">
+        </div>
+        <div>
+            <label>Album</label>
+            <input type="text" placeholder="Enter album title">
+        </div>
+        <div>
+            <label>Genre</label>
+            <input type="text" placeholder="Enter genre">
+        </div>
+        <div>
+            <label>Publication Date</label>
+            <input type="date">
+        </div>
+    </aside>
+
+    <main>
+        <section class="reviews">
+            <article id="review1">
+                <h3>Artist B - Album "Soundscapes"</h3>
+                <div class="rating">
+                    ★★★★☆
+                </div>
+                <p>Full review content...</p>
+            </article>
+            <article id="review2">
+                <h3>Artist C - Album "Melodies"</h3>
+                <div class="rating">
+                    ★★★☆☆
+                </div>
+                <p>Full review content...</p>
+            </article>
+            <article id="review3">
+                <h3>Artist D - Album "Harmonies"</h3>
+                <div class="rating">
+                    ★★★★★
+                </div>
+                <p>Full review content...</p>
+            </article>
+            <!-- Additional reviews -->
+        </section>
+
+        <section class="featured-interviews">
+            <h2>Featured Interviews</h2>
+            <article>
+                <h3>Interview with Artist E</h3>
+                <p>Exclusive insights into their creative process...</p>
+                <button onclick="window.location.href='interview-artist-e.html'">Read Interview</button>
+            </article>
+            <!-- Additional interviews -->
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="upcoming-events-calendar.html">Upcoming Events Calendar</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="social-media">
+            <a href="#" class="social-icon">FB</a>
+            <a href="#" class="social-icon">TW</a>
+            <a href="#" class="social-icon">IG</a>
+        </div>
+    </footer>
+</body>
+</html>

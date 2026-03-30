@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Timeline</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="../../../../placeholder/placeholder.png" alt="Dickinson College Emblem" class="emblem">
+        <h1>Interactive Timeline</h1>
+    </header>
+    <main>
+        <section class="timeline">
+            <h2>Explore Our History</h2>
+            <div class="event" onclick="showEventDetails()">
+                <h3>Founding of Dickinson College</h3>
+                <p>1783</p>
+            </div>
+            <div class="event" onclick="showEventDetails()">
+                <h3>First Graduating Class</h3>
+                <p>1787</p>
+            </div>
+            <div class="event" onclick="showEventDetails()">
+                <h3>Establishment of the Law School</h3>
+                <p>1834</p>
+            </div>
+            <div class="event" onclick="showEventDetails()">
+                <h3>Introduction of Coeducation</h3>
+                <p>1884</p>
+            </div>
+            <div class="event" onclick="showEventDetails()">
+                <h3>200th Anniversary Celebration</h3>
+                <p>1983</p>
+            </div>
+        </section>
+        <div id="event-details" class="event-details" style="display:none;">
+            <h3>Event Details</h3>
+            <p>Details about the event.</p>
+            <div class="carousel">
+                <img src="../../../../placeholder/placeholder.png" alt="Document Image">
+                <img src="../../../../placeholder/placeholder.png" alt="Photo Image">
+                <img src="../../../../placeholder/placeholder.png" alt="Newspaper Image">
+            </div>
+            <button onclick="hideEventDetails()">Close</button>
+        </div>
+        <section class="share-your-story">
+            <h2>Share Your Story</h2>
+            <textarea placeholder="Share your story..." rows="4"></textarea>
+            <button class="button">Submit</button>
+        </section>
+    </main>
+    <script>
+        function showEventDetails() {
+            document.getElementById('event-details').style.display = 'block';
+        }
+        function hideEventDetails() {
+            document.getElementById('event-details').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

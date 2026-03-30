@@ -1,0 +1,164 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.primary-action {
+    background-color: #ffd700;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.primary-action:hover {
+    background-color: #e6b800;
+}
+
+.progress-indicator {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.progress-indicator .step {
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    flex: 1;
+    text-align: center;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.progress-indicator .completed {
+    background-color: #4caf50;
+    color: white;
+}
+
+.treatment-card {
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.treatment-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.treatment-card .category {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.image-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-card img {
+    width: 100%;
+    display: block;
+}
+
+.image-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-item h3 {
+    cursor: pointer;
+    margin: 0;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 5px;
+}
+
+.testimonials {
+    margin-top: 20px;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+}
+
+.submit-testimonial {
+    margin-top: 40px;
+}
+
+.submit-testimonial form {
+    display: grid;
+    gap: 10px;
+}

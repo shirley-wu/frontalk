@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Confirmation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Subscription Confirmation</h1>
+        <a href="index.html" class="back-home">Back to Homepage</a>
+    </header>
+    <main>
+        <p>Thank you for subscribing to our daily horoscopes! You will start receiving them soon.</p>
+        <h2>Manage Your Subscription</h2>
+        <form>
+            <label for="frequency">Choose frequency:</label>
+            <select id="frequency">
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+            </select>
+            <button type="submit">Update Preferences</button>
+        </form>
+
+        <h2>Share Your Horoscope</h2>
+        <div class="social-share">
+            <button class="share-button" id="facebook">Share on Facebook</button>
+            <button class="share-button" id="twitter">Share on Twitter</button>
+            <button class="share-button" id="instagram">Share on Instagram</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Everyday Horoscopes</p>
+    </footer>
+    <style>
+        .social-share {
+            margin-top: 20px;
+        }
+
+        .share-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .share-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</body>
+</html>

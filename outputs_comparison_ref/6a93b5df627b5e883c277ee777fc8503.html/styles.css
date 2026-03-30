@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-bg {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-overlay h1 {
+    font-family: 'Georgia', serif;
+    font-size: 3em;
+}
+
+.book-appointment-btn {
+    background-color: #ff7f50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.book-appointment-btn:hover {
+    background-color: #ff6347;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #333;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.welcome {
+    padding: 20px;
+    text-align: center;
+}

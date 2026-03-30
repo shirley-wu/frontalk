@@ -1,0 +1,38 @@
+body {
+    background-color: #f7f3e9;
+}
+
+.journal-entries {
+    padding: 20px;
+}
+
+.journal-entry {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.journal-entry img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.upload-image {
+    animation: placeImage 1s ease-in-out;
+}
+
+@keyframes placeImage {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

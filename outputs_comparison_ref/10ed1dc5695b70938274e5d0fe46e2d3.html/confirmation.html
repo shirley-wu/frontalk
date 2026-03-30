@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Surrey Plumbing Solutions</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="confirmation">
+            <h2>Booking Confirmation</h2>
+            <p>Your booking has been confirmed. We look forward to serving you!</p>
+            <button onclick="modifyBooking()">Modify Booking</button>
+            <a href="index.html">Back to Home</a>
+        </section>
+    </main>
+
+    <footer>
+        <img src="../../../../placeholder/placeholder.png" alt="Company Logo">
+        <p>Contact us: 123-456-7890 | info@surreyplumbing.com</p>
+    </footer>
+
+    <script>
+        function modifyBooking() {
+            window.location.href = 'booking.html';
+        }
+    </script>
+</body>
+</html>

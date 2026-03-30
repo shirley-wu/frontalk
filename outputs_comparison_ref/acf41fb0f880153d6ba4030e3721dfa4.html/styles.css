@@ -1,0 +1,260 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-arrows span {
+    cursor: pointer;
+    color: #fff;
+    font-size: 30px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #e0f7fa;
+    padding: 20px;
+}
+
+.card {
+    width: 200px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.description {
+    padding: 10px;
+    text-align: center;
+}
+
+.filter-toolbar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.filter-btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+    background-color: #b2ebf2;
+}
+
+.filter-btn.active {
+    background-color: #4dd0e1;
+    color: #fff;
+}
+
+.shopping-items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(to bottom, #f0f4c3, #ffffff);
+}
+
+.item-card {
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.item-card:hover {
+    transform: translateY(-10px);
+}
+
+.item-card img {
+    width: 100%;
+}
+
+.item-description {
+    font-family: 'Georgia', serif;
+    margin-top: 10px;
+}
+
+.featured-brands-carousel {
+    display: flex;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.brand-logo {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.trending-topics-sidebar {
+    float: right;
+    width: 25%;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.trending-topics-sidebar h2 {
+    margin-top: 0;
+}
+
+.trending-topics-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.trending-topics-sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.trending-topics-sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.timestamp {
+    font-size: 12px;
+    color: #777;
+}
+
+.forum-discussions {
+    width: 70%;
+    float: left;
+    padding: 10px;
+}
+
+.forum-discussions article {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.badge {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.badge:hover::after {
+    content: attr(title);
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    top: 20px;
+    left: 0;
+    white-space: nowrap;
+}
+
+.quiz-question {
+    margin-bottom: 20px;
+}
+
+.quiz-question h2 {
+    margin: 0 0 10px;
+}
+
+.quiz-question label {
+    display: block;
+}
+
+#quiz-results {
+    margin-top: 20px;
+}
+
+#quiz-results h2 {
+    margin-bottom: 10px;
+}
+
+#email {
+    margin-top: 10px;
+}
+
+#send-recommendations {
+    margin-top: 10px;
+}

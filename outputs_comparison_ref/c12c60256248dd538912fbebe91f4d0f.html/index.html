@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamesGnome - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <div class="banner-slide">
+                <img src="../../../../placeholder/placeholder.png" alt="Featured Game 1">
+                <div class="banner-description">
+                    <h2>Game Title 1</h2>
+                    <p>Release Date: 2023-11-01</p>
+                </div>
+            </div>
+            <div class="banner-slide">
+                <img src="../../../../placeholder/placeholder.png" alt="Featured Game 2">
+                <div class="banner-description">
+                    <h2>Game Title 2</h2>
+                    <p>Release Date: 2023-12-15</p>
+                </div>
+            </div>
+            <div class="banner-slide">
+                <img src="../../../../placeholder/placeholder.png" alt="Featured Game 3">
+                <div class="banner-description">
+                    <h2>Game Title 3</h2>
+                    <p>Release Date: 2023-10-20</p>
+                </div>
+            </div>
+            <!-- Navigation dots/arrows -->
+            <div class="banner-navigation">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-bar">
+            <input type="text" placeholder="Search for games, platforms, genres..." class="search-input">
+            <span class="search-icon">&#128269;</span>
+        </section>
+
+        <section class="featured-games">
+            <h2>Featured Games</h2>
+            <div class="filter-controls">
+                <label for="genre">Genre:</label>
+                <select id="genre">
+                    <option value="">All</option>
+                    <option value="action">Action</option>
+                    <option value="adventure">Adventure</option>
+                </select>
+                <label for="platform">Platform:</label>
+                <select id="platform">
+                    <option value="">All</option>
+                    <option value="pc">PC</option>
+                    <option value="console">Console</option>
+                </select>
+                <label for="release-date">Release Date:</label>
+                <select id="release-date">
+                    <option value="">All</option>
+                    <option value="2023">2023</option>
+                </select>
+            </div>
+            <div class="games-list">
+                <div class="game-item">
+                    <img src="../../../../placeholder/placeholder.png" alt="Game 1">
+                    <h3>Game 1</h3>
+                    <p>Release Date: 2023-11-01</p>
+                    <a href="game1.html">More Info</a>
+                </div>
+                <div class="game-item">
+                    <img src="../../../../placeholder/placeholder.png" alt="Game 2">
+                    <h3>Game 2</h3>
+                    <p>Release Date: 2023-12-15</p>
+                    <a href="game2.html">More Info</a>
+                </div>
+                <!-- Add more game items -->
+            </div>
+        </section>
+
+        <nav>
+            <ul>
+                <li><a href="release-calendar.html">Release Calendar</a></li>
+                <li><a href="community-forum.html">Community Forum</a></li>
+            </ul>
+        </nav>
+    </main>
+</body>
+</html>

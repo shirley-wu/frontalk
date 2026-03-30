@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+}
+
+header input[type="text"] {
+    width: 80%;
+    padding: 0.5em;
+    margin-top: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a, #subscribeButton {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#subscribeButton {
+    background-color: #ff6347;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#subscribeButton:hover {
+    transform: scale(1.1);
+}
+
+#carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 1em;
+}
+
+.carousel-slide {
+    display: none;
+    position: relative;
+}
+
+.carousel-slide img {
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 1em;
+}
+
+.carousel-prev {
+    left: 0;
+}
+
+.carousel-next {
+    right: 0;
+}
+
+#recentArticles, #topPicks {
+    padding: 2em;
+    background-color: #f4f4f4;
+}
+
+#recentArticles h2, #topPicks h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+article {
+    margin-bottom: 1em;
+}
+
+.contributors-header {
+    background-image: url('../../../../placeholder/placeholder.png');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 2em;
+    position: relative;
+}
+
+.contributors-header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    height: 100%;
+    width: 200px;
+    padding: 1em;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 1em;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar ul li select {
+    width: 100%;
+    padding: 0.5em;
+}
+
+.author-profile {
+    margin-bottom: 2em;
+}
+
+.author-profile h3 {
+    margin: 0.5em 0;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #ff6347;
+    color: #fff;
+    padding: 0.2em 0.5em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.badge:hover {
+    transform: scale(1.2);
+}
+
+[data-genre="Fiction"] {
+    background-color: #6a5acd;
+}
+
+[data-genre="Creative Nonfiction"] {
+    background-color: #ff4500;
+}
+
+[data-genre="Poetry"] {
+    background-color: #32cd32;
+}

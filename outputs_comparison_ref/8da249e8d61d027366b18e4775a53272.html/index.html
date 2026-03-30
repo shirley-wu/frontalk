@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eHeritage Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="hero-banner">
+            <img src="../../../../placeholder/placeholder.png" alt="Cultural Heritage">
+            <div class="hero-text">
+                <h1 class="fade-in">Preserving the Past, Embracing the Future</h1>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#virtual-tours">Interactive Virtual Tours</a></li>
+            <li><a href="#research-portal">Research and Collaboration Portal</a></li>
+            <li><a href="#event-calendar">Event Calendar</a></li>
+            <li><a href="#testimonials">User Testimonials</a></li>
+            <li><a href="#bookmarks">My Bookmarks</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="virtual-tours">
+            <h2>Interactive Virtual Tours</h2>
+            <select id="site-select">
+                <option value="site1">Historical Site 1</option>
+                <option value="site2">Historical Site 2</option>
+                <option value="site3">Historical Site 3</option>
+                <option value="site4">Historical Site 4</option>
+                <option value="site5">Historical Site 5</option>
+            </select>
+            <div id="site-description">
+                <p>Select a site to learn more about its historical significance.</p>
+            </div>
+            <button onclick="startTour()">Start Virtual Tour</button>
+        </section>
+
+        <section id="research-portal">
+            <h2>Research and Collaboration Portal</h2>
+            <div>
+                <a href="research.html">View Research Articles</a>
+            </div>
+            <div>
+                <a href="discussion-forum.html">Discussion Forum</a>
+            </div>
+            <div>
+                <a href="resources.html">Resources Library</a>
+            </div>
+            <form id="contact-form">
+                <h3>Contact for Collaboration</h3>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="event-calendar">
+            <h2>Event Calendar</h2>
+            <div class="calendar">
+                <!-- Pseudo-data for events -->
+                <div class="event-card">
+                    <img src="../../../../placeholder/placeholder.png" alt="Event Icon">
+                    <div class="event-info">
+                        <h3>Event 1</h3>
+                        <p>Date: October 15, 2023</p>
+                        <button>Register</button>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="../../../../placeholder/placeholder.png" alt="Event Icon">
+                    <div class="event-info">
+                        <h3>Event 2</h3>
+                        <p>Date: October 20, 2023</p>
+                        <button>Register</button>
+                    </div>
+                </div>
+                <!-- Add more event cards as needed -->
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>User Testimonials</h2>
+            <div class="testimonial-carousel">
+                <button class="carousel-button left-button">&lt;</button>
+                <div class="testimonial-cards">
+                    <div class="testimonial-card">
+                        <img src="../../../../placeholder/placeholder.png" alt="User Photo">
+                        <p>"Amazing experience!" - John Doe</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="../../../../placeholder/placeholder.png" alt="User Photo">
+                        <p>"Informative and engaging." - Jane Smith</p>
+                    </div>
+                    <!-- Add more testimonials as needed -->
+                </div>
+                <button class="carousel-button right-button">&gt;</button>
+            </div>
+        </section>
+
+        <section id="bookmarks">
+            <h2>My Bookmarks</h2>
+            <div class="bookmark-list">
+                <div class="bookmark-item">
+                    <p>Historical Site 1</p>
+                    <button>Start Tour</button>
+                </div>
+                <div class="bookmark-item">
+                    <p>Historical Site 2</p>
+                    <button>Start Tour</button>
+                </div>
+                <!-- Add more bookmarks as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#virtual-tours">Virtual Tours</a></li>
+                    <li><a href="#research-portal">Research Portal</a></li>
+                    <li><a href="#event-calendar">Events</a></li>
+                </ul>
+            </div>
+            <div class="contact-us">
+                <h3>Contact Us</h3>
+                <p>Email: contact@eheritage.org</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+            <div class="follow-us">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="../../../../placeholder/placeholder.png" alt="Facebook"></a>
+                    <a href="#"><img src="../../../../placeholder/placeholder.png" alt="Twitter"></a>
+                    <a href="#"><img src="../../../../placeholder/placeholder.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wasted Talent</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Wasted Talent</h1>
+        <img src="../../../../placeholder/placeholder.png" alt="Wasted Talent Banner" class="banner">
+    </header>
+    <nav class="sticky-nav">
+        <ul>
+            <li><a href="#featured-comic">Featured Comic</a></li>
+            <li><a href="#comic-of-the-day">Comic of the Day</a></li>
+            <li><a href="#comic-archive">Comic Archive</a></li>
+            <li><a href="#subscribe">Subscribe</a></li>
+            <li><a href="#quiz">Comic Quiz</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="featured-comic">
+            <h2>Featured Comic</h2>
+            <img src="../../../../placeholder/placeholder.png" alt="Featured Comic">
+            <p>A brief description of the featured comic. <a href="comic.html">Read More</a></p>
+        </section>
+
+        <section id="comic-of-the-day">
+            <h2>Comic of the Day</h2>
+            <div class="comic-container">
+                <img src="../../../../placeholder/placeholder.png" alt="Comic of the Day">
+                <p class="comic-description">A brief description of the comic of the day.</p>
+                <button id="view-archive">View Archive</button>
+            </div>
+        </section>
+
+        <section id="comic-archive">
+            <h2>Comic Archive</h2>
+            <input type="text" id="search-bar" placeholder="Search comics...">
+            <div class="comic-grid">
+                <!-- Example comic entries -->
+                <div class="comic-thumbnail">
+                    <img src="../../../../placeholder/placeholder.png" alt="Comic 1">
+                    <p>Title: Comic 1</p>
+                    <p>Date: 2023-01-01</p>
+                </div>
+                <div class="comic-thumbnail">
+                    <img src="../../../../placeholder/placeholder.png" alt="Comic 2">
+                    <p>Title: Comic 2</p>
+                    <p>Date: 2023-01-02</p>
+                </div>
+                <div class="comic-thumbnail">
+                    <img src="../../../../placeholder/placeholder.png" alt="Comic 3">
+                    <p>Title: Comic 3</p>
+                    <p>Date: 2023-01-03</p>
+                </div>
+                <div class="comic-thumbnail">
+                    <img src="../../../../placeholder/placeholder.png" alt="Comic 4">
+                    <p>Title: Comic 4</p>
+                    <p>Date: 2023-01-04</p>
+                </div>
+                <div class="comic-thumbnail">
+                    <img src="../../../../placeholder/placeholder.png" alt="Comic 5">
+                    <p>Title: Comic 5</p>
+                    <p>Date: 2023-01-05</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="subscribe">
+            <h2>Subscribe</h2>
+            <form action="#" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <section id="quiz">
+            <h2>Comic Quiz</h2>
+            <button onclick="location.href='quiz.html'">Take Quiz</button>
+        </section>
+    </main>
+    <footer>
+        <div class="social-media">
+            <a href="#"><img src="../../../../placeholder/placeholder.png" alt="Facebook"></a>
+            <a href="#"><img src="../../../../placeholder/placeholder.png" alt="Twitter"></a>
+            <a href="#"><img src="../../../../placeholder/placeholder.png" alt="Instagram"></a>
+        </div>
+        <div class="contact-info">
+            <p>Contact: info@wastedtalent.com</p>
+            <p>About: A humorous webcomic about the life of an engineering student.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

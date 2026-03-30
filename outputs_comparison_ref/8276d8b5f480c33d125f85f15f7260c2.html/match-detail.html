@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Details - Football Central</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Football Central</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="live-scores.html">Live Scores</a></li>
+                <li><a href="news-articles.html">News Articles</a></li>
+                <li><a href="login.html">Login/Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Match Details: Team A vs Team B</h2>
+        <section class="match-info">
+            <h3>Team Line-ups</h3>
+            <p>Team A: Player 1, Player 2, Player 3...</p>
+            <p>Team B: Player 4, Player 5, Player 6...</p>
+            <h3>Key Events</h3>
+            <ul>
+                <li>Goal by Player 1 (Team A)</li>
+                <li>Yellow Card to Player 5 (Team B)</li>
+            </ul>
+            <h3>Timeline</h3>
+            <p>1st Half: 0 - 0</p>
+            <p>2nd Half: 1 - 0</p>
+        </section>
+        <button onclick="showHighlights()">Watch Highlights</button>
+        <button onclick="predictMatch()">Predict Match Outcome</button>
+    </main>
+    <div id="video-overlay" class="hidden">
+        <video controls>
+            <source src="../../../../placeholder/placeholder.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay-content">
+            <h3>Match Statistics</h3>
+            <p>Shots: 10 - 5</p>
+            <p>Possession: 60% - 40%</p>
+            <p>Summary: Team A dominated the match...</p>
+        </div>
+    </div>
+    <div id="prediction-panel" class="hidden">
+        <div class="prediction-interface">
+            <h3>Predict Match Outcome</h3>
+            <!-- Prediction form here -->
+        </div>
+        <div class="community-predictions">
+            <h3>Community Predictions</h3>
+            <!-- Predictions summary here -->
+        </div>
+        <div class="leaderboard">
+            <h3>Top Predictors</h3>
+            <!-- Leaderboard here -->
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

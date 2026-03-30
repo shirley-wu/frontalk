@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texas Gun Talk</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Texas Gun Talk</h1>
+        <nav>
+            <ul>
+                <li><a href="#classifieds">Classifieds</a></li>
+                <li><a href="#events">Event Calendar</a></li>
+                <li><a href="#range-map">Range Map</a></li>
+                <li><a href="#forum">Discussion Forum</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="classifieds">
+            <h2>Classifieds Section</h2>
+            <div id="filters">
+                <button onclick="filterListings('all')">All</button>
+                <button onclick="filterListings('firearms')">Firearms</button>
+                <button onclick="filterListings('accessories')">Accessories</button>
+                <button onclick="filterListings('services')">Services</button>
+            </div>
+            <div id="listings">
+                <!-- Pseudo-data for demonstration -->
+                <div class="listing" data-category="firearms">
+                    <img src="../../../../placeholder/placeholder.png" alt="Firearm">
+                    <h3>Firearm Listing 1</h3>
+                    <button onclick="toggleFavorite(this)">♡</button>
+                </div>
+                <div class="listing" data-category="accessories">
+                    <img src="../../../../placeholder/placeholder.png" alt="Accessory">
+                    <h3>Accessory Listing 1</h3>
+                    <button onclick="toggleFavorite(this)">♡</button>
+                </div>
+                <!-- More listings -->
+            </div>
+            <div id="favorites">
+                <h3>Favorites</h3>
+                <div id="favorites-list">
+                    <!-- Favorited items will appear here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="events">
+            <h2>Event Calendar</h2>
+            <button onclick="toggleCalendarView()">Toggle View</button>
+            <div id="calendar">
+                <!-- Monthly/Weekly view -->
+            </div>
+            <form id="subscription-form">
+                <h3>Subscribe to Event Notifications</h3>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <section id="range-map">
+            <h2>Range Map</h2>
+            <div id="map">
+                <!-- Map with interactive markers -->
+            </div>
+            <div id="legend">
+                <!-- Legend for map -->
+            </div>
+        </section>
+
+        <section id="forum">
+            <h2>Discussion Forum</h2>
+            <div id="forum-navigation">
+                <!-- Breadcrumb trail -->
+            </div>
+            <div id="threads">
+                <!-- Forum threads -->
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

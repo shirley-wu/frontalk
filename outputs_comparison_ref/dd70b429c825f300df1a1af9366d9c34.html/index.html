@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin & Win</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1>Welcome to Spin & Win!</h1>
+            <p>Explore the latest promotions and featured games</p>
+            <a href="promotions.html" class="banner-button">View Promotions</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="promotions.html">Promotions</a></li>
+                <li><a href="responsible.html">Responsible Gaming</a></li>
+                <li><a href="#" id="supportButton">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-filter">
+            <h2>Find Your Game</h2>
+            <form id="gameSearchForm">
+                <label for="gameType">Game Type:</label>
+                <select id="gameType">
+                    <option value="slots">Slots</option>
+                    <option value="poker">Poker</option>
+                    <option value="live-casino">Live Casino</option>
+                </select>
+                <label for="gameTheme">Theme:</label>
+                <select id="gameTheme">
+                    <option value="adventure">Adventure</option>
+                    <option value="fantasy">Fantasy</option>
+                </select>
+                <button type="submit">Search</button>
+            </form>
+            <div id="gameResults">
+                <!-- Pseudo-entries for games -->
+                <div class="game-card" data-type="slots" data-theme="adventure">
+                    <img src="../../../../placeholder/placeholder.png" alt="Game Image">
+                    <h3>Adventure Slots</h3>
+                    <a href="game-details.html">View Details</a>
+                </div>
+                <div class="game-card" data-type="poker" data-theme="fantasy">
+                    <img src="../../../../placeholder/placeholder.png" alt="Game Image">
+                    <h3>Fantasy Poker</h3>
+                    <a href="game-details.html">View Details</a>
+                </div>
+                <!-- More game cards... -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Spin & Win. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

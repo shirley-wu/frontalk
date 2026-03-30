@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Location Finder</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <h2>Find Nearby Locations</h2>
+            <label for="zipcode">Enter Zip Code:</label>
+            <input type="text" id="zipcode" name="zipcode" required>
+
+            <button type="submit">Find</button>
+        </form>
+
+        <button id="filter-button">Filter</button>
+        <div id="filter-options" style="display:none;">
+            <label><input type="checkbox" name="service-type" value="Home Health Care"> Home Health Care</label>
+            <label><input type="checkbox" name="service-type" value="Assisted Living"> Assisted Living</label>
+            <label><input type="checkbox" name="service-type" value="Respite Care"> Respite Care</label>
+            <button onclick="applyFilters()">Apply Filters</button>
+        </div>
+
+        <div id="location-results">
+            <!-- Example locations -->
+            <div class="location">
+                <h3>123 Health St, Denver</h3>
+                <p>Home Health Care</p>
+            </div>
+            <div class="location">
+                <h3>456 Care Ave, Denver</h3>
+                <p>Assisted Living</p>
+            </div>
+            <div class="location">
+                <h3>789 Senior Blvd, Denver</h3>
+                <p>Respite Care</p>
+            </div>
+            <div class="location">
+                <h3>101 Elder Rd, Denver</h3>
+                <p>Home Health Care</p>
+            </div>
+            <div class="location">
+                <h3>202 Comfort Ln, Denver</h3>
+                <p>Assisted Living</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.getElementById('filter-button').onclick = function() {
+            document.getElementById('filter-options').style.display = 'block';
+        };
+
+        function applyFilters() {
+            // Implement filtering logic
+        }
+    </script>
+</body>
+</html>

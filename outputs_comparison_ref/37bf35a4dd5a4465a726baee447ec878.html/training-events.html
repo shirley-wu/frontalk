@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training & Events Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Training & Events Calendar</h1>
+    </header>
+    <div class="calendar-container">
+        <div class="calendar">
+            <!-- Placeholder for a calendar UI -->
+            <p>Calendar Widget Placeholder</p>
+        </div>
+        <div class="event-list">
+            <h2>Upcoming Events</h2>
+            <div class="event-card">
+                <h3>Cybersecurity Workshop</h3>
+                <p>Date: October 20, 2023</p>
+                <span class="badge upcoming">Upcoming</span>
+                <button>Register</button>
+            </div>
+            <div class="event-card">
+                <h3>Data Protection Seminar</h3>
+                <p>Date: November 5, 2023</p>
+                <span class="badge upcoming">Upcoming</span>
+                <button>Register</button>
+            </div>
+            <div class="event-card">
+                <h3>Network Security Training</h3>
+                <p>Date: November 15, 2023</p>
+                <span class="badge upcoming">Upcoming</span>
+                <button>Register</button>
+            </div>
+        </div>
+    </div>
+    <section class="subscription-section">
+        <h2>Email Notifications</h2>
+        <p>Sign up to receive email reminders about upcoming events.</p>
+        <input type="email" id="email" placeholder="Enter your email">
+        <button onclick="subscribe()">Subscribe</button>
+        <p id="subscription-message"></p>
+    </section>
+    <section class="past-events">
+        <h2>Past Events</h2>
+        <input type="text" id="searchPastEvents" placeholder="Search past events...">
+        <div class="event-card">
+            <h3>Introduction to IT Security</h3>
+            <p>Date: September 10, 2023</p>
+            <p>A comprehensive introduction to IT security principles.</p>
+            <a href="#">View Resources</a>
+        </div>
+        <div class="event-card">
+            <h3>Advanced Malware Analysis</h3>
+            <p>Date: September 20, 2023</p>
+            <p>Learn advanced techniques for malware analysis.</p>
+            <a href="#">View Resources</a>
+        </div>
+    </section>
+    <script>
+        function subscribe() {
+            const email = document.getElementById('email').value;
+            if (email) {
+                document.getElementById('subscription-message').innerText = 'Subscribed successfully!';
+            }
+        }
+    </script>
+</body>
+</html>

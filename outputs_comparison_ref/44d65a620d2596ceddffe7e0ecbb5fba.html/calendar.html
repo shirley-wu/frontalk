@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Events Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Community Events Calendar</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="calendar-container">
+        <div class="calendar-sidebar">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li class="event-item" data-category="sports">
+                    <span>🏀</span> Local Basketball Game
+                    <div class="event-popup">Date: 2023-11-12, Category: Sports</div>
+                </li>
+                <!-- Add more events here -->
+            </ul>
+        </div>
+
+        <div class="calendar-main">
+            <h2>Event Map</h2>
+            <div id="map"></div>
+            <div class="map-filters">
+                <label><input type="checkbox" value="sports" checked> Sports</label>
+                <label><input type="checkbox" value="arts" checked> Arts</label>
+                <label><input type="checkbox" value="education" checked> Education</label>
+                <label><input type="checkbox" value="community" checked> Community</label>
+            </div>
+        </div>
+    </div>
+
+    <section id="event-submission">
+        <h2>Submit a New Event</h2>
+        <form id="event-form">
+            <label>Event Name: <input type="text" required></label>
+            <label>Date: <input type="date" required></label>
+            <label>Description: <textarea required></textarea></label>
+            <button type="submit">Submit Event</button>
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

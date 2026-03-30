@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Community Forum</h1>
+    </header>
+
+    <main>
+        <div class="profile-card">
+            <img src="../../../../placeholder/placeholder.png" alt="Profile Picture" class="profile-picture">
+            <h2>Username</h2>
+            <p>Email: user@example.com</p>
+            <p>Reputation: 150 <span class="badge">🏆</span></p>
+        </div>
+
+        <h3>Your Posts</h3>
+        <ul>
+            <li><a href="thread.html?id=1">Your Thread Title 1</a></li>
+            <li><a href="thread.html?id=2">Your Thread Title 2</a></li>
+            <li><a href="thread.html?id=3">Your Thread Title 3</a></li>
+        </ul>
+
+        <h3>Notification Settings</h3>
+        <form action="#" method="post">
+            <label>
+                <input type="checkbox" checked> Replies to your threads
+            </label>
+            <label>
+                <input type="checkbox" checked> Likes on your posts
+            </label>
+            <label>
+                <input type="checkbox"> Dislikes on your posts
+            </label>
+            <label>
+                <input type="checkbox" checked> Reputation changes
+            </label>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Community Forum</p>
+    </footer>
+
+    <style>
+        .profile-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .profile-picture {
+            border-radius: 50%;
+            border: 2px solid #6200ea;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</body>
+</html>

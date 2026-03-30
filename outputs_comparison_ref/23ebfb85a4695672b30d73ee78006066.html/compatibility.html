@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zodiac Compatibility Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Zodiac Compatibility Checker</h1>
+        <a href="index.html" class="back-home">Back to Homepage</a>
+    </header>
+    <main>
+        <div class="compatibility-checker">
+            <label for="sign1">
+                <img src="../../../../placeholder/placeholder.png" alt="Zodiac Icon">
+                Choose your sign:
+            </label>
+            <select id="sign1">
+                <option value="aries">Aries</option>
+                <option value="taurus">Taurus</option>
+                <!-- Add more options for other signs -->
+            </select>
+            
+            <label for="sign2">
+                <img src="../../../../placeholder/placeholder.png" alt="Zodiac Icon">
+                Choose partner's sign:
+            </label>
+            <select id="sign2">
+                <option value="gemini">Gemini</option>
+                <option value="cancer">Cancer</option>
+                <!-- Add more options for other signs -->
+            </select>
+            
+            <button id="check-compatibility">Check Compatibility</button>
+        </div>
+        <div id="compatibility-result" class="compatibility-result">
+            <!-- Compatibility results will be displayed here -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Everyday Horoscopes</p>
+    </footer>
+    <script>
+        document.getElementById('check-compatibility').addEventListener('click', function() {
+            const resultDiv = document.getElementById('compatibility-result');
+            resultDiv.innerHTML = `
+                <div class="compatibility-card">
+                    <h3>Compatibility Result</h3>
+                    <p>The compatibility between Aries and Gemini is very strong. Both signs are adventurous and love to explore new things together.</p>
+                </div>
+            `;
+        });
+    </script>
+    <style>
+        body {
+            background-image: url('../../../../placeholder/placeholder.png');
+            background-size: cover;
+        }
+        
+        .compatibility-checker {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        label {
+            margin: 10px 0;
+        }
+
+        select {
+            margin-bottom: 20px;
+            padding: 5px;
+        }
+
+        #check-compatibility {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        #check-compatibility:hover {
+            background-color: #0056b3;
+            box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+        }
+
+        .compatibility-result {
+            margin: 20px;
+        }
+
+        .compatibility-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</body>
+</html>

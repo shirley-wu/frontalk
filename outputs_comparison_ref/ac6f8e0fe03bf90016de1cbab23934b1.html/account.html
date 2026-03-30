@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - ABC TV Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ABC TV Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="account">
+            <h2>My Account</h2>
+            <div class="watch-history">
+                <h3>Watch History</h3>
+                <ul>
+                    <li><a href="show1.html">Show Title 1 - Episode 1</a></li>
+                    <li><a href="show2.html">Show Title 2 - Episode 3</a></li>
+                    <li><a href="show3.html">Show Title 3 - Episode 2</a></li>
+                </ul>
+                <button onclick="clearHistory()">Clear History</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 ABC TV Hub</p>
+    </footer>
+
+    <script>
+        function clearHistory() {
+            if (confirm("Are you sure you want to clear your watch history?")) {
+                // Clear watch history logic here
+                alert("Watch history cleared.");
+            }
+        }
+    </script>
+</body>
+</html>

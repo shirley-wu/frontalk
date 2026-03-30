@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistry Market</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Artistry Market</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li>
+                    <form action="search.html" method="get" id="searchForm">
+                        <input type="text" name="query" placeholder="Search artworks..." required>
+                        <button type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="featured-carousel">
+            <div class="carousel-slide">
+                <img src="../../../../placeholder/placeholder.png" alt="Featured Artwork 1">
+                <div class="carousel-caption">
+                    <h2>Artwork Title 1</h2>
+                    <p>by <strong>Artist Name 1</strong></p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="../../../../placeholder/placeholder.png" alt="Featured Artwork 2">
+                <div class="carousel-caption">
+                    <h2>Artwork Title 2</h2>
+                    <p>by <strong>Artist Name 2</strong></p>
+                </div>
+            </div>
+            <!-- Add more slides as needed -->
+            <button class="carousel-prev">‹</button>
+            <button class="carousel-next">›</button>
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <!-- Add more dots corresponding to slides -->
+            </div>
+        </section>
+
+        <section id="artworks">
+            <h2>Available Artworks</h2>
+            <div class="artwork-grid">
+                <div class="artwork-card">
+                    <img src="../../../../placeholder/placeholder.png" alt="Artwork 1">
+                    <h3>Artwork Title 1</h3>
+                    <p>by <a href="artist.html">Artist Name 1</a></p>
+                    <button onclick="addToWishlist()">Add to Wishlist</button>
+                </div>
+                <!-- Add more artwork cards as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Artistry Market</p>
+    </footer>
+</body>
+</html>

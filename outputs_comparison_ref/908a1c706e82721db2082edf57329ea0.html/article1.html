@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUO Reports - Political Update</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="politics.html">Politics</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="entertainment.html">Entertainment</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li>
+                    <form action="search.html" method="GET">
+                        <input type="text" name="query" placeholder="Search articles...">
+                        <button type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Political Update</h1>
+            <p>Full content of the political update...</p>
+            <div class="share-buttons">
+                <a href="#">Share on Facebook</a>
+                <a href="#">Share on Twitter</a>
+                <a href="#">Share on WhatsApp</a>
+            </div>
+            <section class="comments">
+                <h2>Comments</h2>
+                <div class="comment-form">
+                    <label for="comment">Leave a comment:</label>
+                    <textarea id="comment" rows="4"></textarea>
+                    <button type="submit">Post Comment</button>
+                </div>
+                <div class="comment-list">
+                    <p><strong>User1:</strong> Great article!</p>
+                    <p><strong>User2:</strong> Very informative.</p>
+                </div>
+            </section>
+            <section class="author-bio">
+                <img src="../../../../placeholder/placeholder.png" alt="Author Image" class="author-img">
+                <div class="author-info">
+                    <p>Author Name</p>
+                    <p>Short bio of the author...</p>
+                </div>
+            </section>
+            <section class="related-articles">
+                <h2>Related Articles</h2>
+                <div class="related-grid">
+                    <div class="related-item">
+                        <img src="../../../../placeholder/placeholder.png" alt="Related Article 1">
+                        <a href="#">Related Article 1</a>
+                    </div>
+                    <div class="related-item">
+                        <img src="../../../../placeholder/placeholder.png" alt="Related Article 2">
+                        <a href="#">Related Article 2</a>
+                    </div>
+                    <div class="related-item">
+                        <img src="../../../../placeholder/placeholder.png" alt="Related Article 3">
+                        <a href="#">Related Article 3</a>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <form action="subscribe.html" method="POST">
+            <label for="email">
+                <span>📧</span>
+                <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+            </label>
+            <button type="submit" class="subscribe-button">Subscribe</button>
+        </form>
+    </footer>
+</body>
+</html>

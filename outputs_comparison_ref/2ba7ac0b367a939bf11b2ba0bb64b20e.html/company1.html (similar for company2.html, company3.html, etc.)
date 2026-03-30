@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company One Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Washington Business Insights</h1>
+    </header>
+    <main>
+        <section id="company-banner">
+            <div class="banner">
+                <h2>Company One <span class="badge">Registered</span></h2>
+                <img src="../../../../placeholder/placeholder.png" alt="Business Banner">
+            </div>
+        </section>
+        <section id="company-details">
+            <h3>Company Details</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button id="view-credit-report">View Credit Report</button>
+        </section>
+        <section id="credit-report" style="display:none;">
+            <h3>Credit Report</h3>
+            <div class="credit-panel">
+                <p><img src="icon.png" alt="Credit Score Icon"> Credit Score: 750</p>
+                <p><img src="icon.png" alt="Financial Ratio Icon"> Financial Ratio: 1.5</p>
+                <p><img src="icon.png" alt="Risk Assessment Icon"> Risk Assessment: Low</p>
+            </div>
+        </section>
+        <section id="directors">
+            <h3>Directors and Key Personnel</h3>
+            <div class="card">
+                <img src="../../../../placeholder/placeholder.png" alt="Profile Image" class="profile-img">
+                <h4>John Doe</h4>
+                <p>CEO</p>
+                <p>John has over 20 years of experience...</p>
+                <a href="#" class="more-details">More Details</a>
+            </div>
+            <!-- Similar cards for other personnel -->
+        </section>
+        <section id="user-reviews">
+            <h3>User Reviews</h3>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <textarea placeholder="Your Comments"></textarea>
+                <input type="number" min="1" max="5" placeholder="Rating">
+                <button type="submit">Submit Review</button>
+            </form>
+            <div class="reviews">
+                <p><strong>Jane Doe:</strong> Excellent service! ★★★★☆</p>
+                <!-- More reviews -->
+            </div>
+        </section>
+        <section id="similar-companies">
+            <h3>Similar Companies</h3>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <h4>Company Two</h4>
+                    <p>Brief summary...</p>
+                </div>
+                <!-- More carousel items -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Washington Business Insights</p>
+    </footer>
+    <script>
+        document.getElementById('view-credit-report').addEventListener('click', function() {
+            document.getElementById('credit-report').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
