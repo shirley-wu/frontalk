@@ -72,7 +72,7 @@ def main_func(data, args, messages):
     if image is not None:
         image.save(os.path.join(draw_out_dirname, f'{i}.png'))
         messages[-1]['content'].append({"type": "image_url", "image_url": {
-            "url": "data:image/jpeg;base64,{}".format(encode_pil_image(image))
+            "url": "data:image/png;base64,{}".format(encode_pil_image(image))
         }})
 
     # iteratively request, until NOT overlength

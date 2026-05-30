@@ -114,7 +114,7 @@ def request_(messages, model: str, local_openai_port: int = None, openai_api_key
                             assert m['content'][1]['type'] == 'image_url'
                             image_base64 = m['content'][-1]["image_url"]["url"].split(";base64,")[-1]
                             parts_list.append(Part.from_bytes(
-                                data=base64.b64decode(image_base64), mime_type='image/jpeg')
+                                data=base64.b64decode(image_base64), mime_type='image/png')
                             )
                     history.append(Content(role=role, parts=parts_list))
             return system, history

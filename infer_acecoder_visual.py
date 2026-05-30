@@ -52,7 +52,7 @@ def main_func(data, args, messages):
     ]})
     if image is not None:
         image.save(os.path.join(draw_out_dirname, f'{i}.png'))
-        msg = {'url': "data:image/jpeg;base64,{}".format(encode_pil_image(image))}
+        msg = {'url': "data:image/png;base64,{}".format(encode_pil_image(image))}
         messages[-1]['content'].append({"type": "image_url", "image_url": msg})
     else:
         msg = None

@@ -131,36 +131,45 @@ def draw(client_kwargs, i, t, data, html_dir=None):
     # then, append images if the website already exists
     if i > 0:  # visualize the existing websites if any
         driver = get_default_driver(tmp_path)
-        assert html_dir is not None
-        for fn in glob.glob(os.path.join(html_dir, "**", "*.html"), recursive=True):
-            success = driver_get_safe(driver, 'file://' + os.path.abspath(fn))
-            if success:
-                basename = os.path.relpath(fn, start=html_dir)
-                image_fname = os.path.join(
-                    tmp_path, 'screenshot_' + basename.replace("/", "_").replace(".html", ".png")
-                )
-                try:
-                    try:  # just quickly abort the alert
-                        alert = driver .switch_to.alert
-                        alert.accept()
-                    except NoAlertPresentException:
-                        pass
-                    html, coord = get_html_state(driver, image_fname, dont_quit=True)
-                except Exception as e:
-                    print("Weird error when loading html")
-                    print(e)
-                else:
-                    prompt = USER_PROMPT_EXISTING_WEBSITE.replace("{{{PAGE_NAME}}}", basename). \
-                        replace("{{{IMG_NAME}}}", os.path.basename(image_fname)). \
-                        replace("{{{CODE}}}", html.strip()). \
-                        replace("{{{COORDS}}}", json.dumps(coord, indent=2))
-                    messages.append({'role': 'user', 'content': [
-                        {"type": "text", "text": prompt},
-                        {"type": "image_url", "image_url": {
-                            "url": "data:image/jpeg;base64,{}".format(encode_image(image_fname))
-                        }},
-                    ]})
-        driver.quit()
+        try:
+            assert html_dir is not None
+            for fn in glob.glob(os.path.join(html_dir, "**", "*.html"), recursive=True):
+                success = driver_get_safe(driver, 'file://' + os.path.abspath(fn))
+                if success:
+                    basename = os.path.relpath(fn, start=html_dir)
+                    image_fname = os.path.join(
+                        tmp_path, 'screenshot_' + basename.replace("/", "_").replace(".html", ".png")
+                    )
+                    try:
+                        try:  # just quickly abort the alert
+                            alert = driver.switch_to.alert
+                            alert.accept()
+                        except NoAlertPresentException:
+                            pass
+                        html, coord = get_html_state(driver, image_fname, dont_quit=True)
+                    except Exception as e:
+                        print("Weird error when loading html")
+                        print(e)
+                    else:
+                        prompt = USER_PROMPT_EXISTING_WEBSITE.replace("{{{PAGE_NAME}}}", basename). \
+                            replace("{{{IMG_NAME}}}", os.path.basename(image_fname)). \
+                            replace("{{{CODE}}}", html.strip()). \
+                            replace("{{{COORDS}}}", json.dumps(coord, indent=2))
+                        messages.append({'role': 'user', 'content': [
+                            {"type": "text", "text": prompt},
+                            {"type": "image_url", "image_url": {
+                                "url": "data:image/png;base64,{}".format(encode_image(image_fname))
+                            }},
+                        ]})
+        except:
+            try:
+                driver.quit()
+            except:
+                pass
+            raise
+
+        else:
+            driver.quit()
 
         if len(messages) == 1:
             messages[0]['content'] += "\n\n# Screenshot, HTML and Coordinates of Existing Website" \
@@ -218,7 +227,7 @@ def draw(client_kwargs, i, t, data, html_dir=None):
         messages.append({'role': 'user', 'content': [
             {"type": "text", "text": prompt},
             {"type": "image_url", "image_url": {
-                "url": "data:image/jpeg;base64,{}".format(encode_pil_image(image)),
+                "url": "data:image/png;base64,{}".format(encode_pil_image(image)),
             }}
         ]})
 
